@@ -32,7 +32,7 @@ head
           include ../includes/_share.pug
         img(src='../img/blokus.png' alt=titles[index])
         .game-overview
-          .flex-wrap(style='width: 360px')
+          .row
             .tag
               .icon
                 img(src='../img/people.svg' alt='complexity')
@@ -45,7 +45,7 @@ head
               .icon
                 img(src='../img/designer.svg' alt='designer')
               | Designer: Bernard Tavitian
-          h3 Game Overview
+          a.text-link(href="https://amzn.to/3ft75nv") Buy #{titles[index]} on Amazon
         p
           | "How could you do this to me?" - Every Blokus player
           br

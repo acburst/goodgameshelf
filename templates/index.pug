@@ -1,0 +1,41 @@
+- titles = ['Azul', 'Blokus', 'Codenames', 'Coup', 'Settlers of Catan', 'Ticket to Ride'];
+-
+  toID = function(string) {
+    return string.replace(/\s/g, '').toLowerCase();
+  }
+
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='x-ua-compatible' content='ie=edge')
+  title Good Game Shelf
+  meta(name='description' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img/icon.png')
+  link(rel='stylesheet' href='../style.css')
+  link(href='https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap' rel='stylesheet')
+.container
+  .navbar
+    a.logo-title(href='index.html')
+      img(src='../img/logo.png' alt='Good Game Shelf')
+    include ../includes/_sidebar.pug
+  main
+    .content
+      .section
+        h1 About Good Game Shelf
+        p
+          | With so many awesome board games coming out each year, it can be tough to know which games you're going to love. We give curated recommendations for games you should try, based on a game you already enjoy playing. We want to make the world of board games more approachable to new players, while also helping experienced players find their next favorite.
+        h2 About Our Team
+        p
+          | We are 3 friends who love playing games and working on side projects together. Video games and board games have been a huge part of our lives, and we have always wanted to make games of our own one day. To make that happen, we founded Spiralburst Studio in 2019, and you can check out all of our projects below!
+        hr
+
+        img(src='../img/hexicon.png' alt="hexicon")
+        br
+        h2 Hexicon: Strategy Word Game
+        p
+          | Hexicon is a new multiplayer word game with a territory control twist. If you enjoy strategy board games, you’ll love Hexicon!
+        a.text-link(href="https://hexiconapp.com") Play Hexicon (Open Beta) on Android and iOS
+        br
+        br
+include ../includes/_footer.pug

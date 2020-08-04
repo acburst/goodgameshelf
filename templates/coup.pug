@@ -30,22 +30,22 @@ head
         .top-bar.row
           span.date August 1, 2020
           include ../includes/_share.pug
-        img(src='../img/coup.png' alt='Coup')
+        img(src='../img/coup.png' alt=titles[index])
         .game-overview
-          .flex-wrap(style='width: 360px')
+          .row
             .tag
-              .icon
+              .icon.small
                 img(src='../img/people.svg' alt='complexity')
-              |                   2-6 Players
+              | 2-6 Players
             .tag
-              .icon
+              .icon.small
                 img(src='../img/time.svg' alt='play time')
-              |                   30-45 minutes
+              | 30-45 minutes
             .tag
-              .icon
+              .icon.small
                 img(src='../img/designer.svg' alt='designer')
-              |                   Rikki Tahta
-          h3 Game Overview
+              | Rikki Tahta
+          a.text-link(href="https://amzn.to/33kuyox") Buy #{titles[index]} on Amazon
         p
           | Coup is an awesome bluffing game that has simple rules and usually ends in laughter. Every turn, you need the willpower to keep it together while lying to everyone at the table about your secret roles. "That's funny, I am...also the Duke..."
           br
