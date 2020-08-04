@@ -29,7 +29,7 @@ h1::after {
   content: '';
   display: block;
   position: absolute;
-  top: 40%;
+  top: 16px;
   left: 0;
   right: 0;
   height: 70%;
@@ -223,7 +223,7 @@ h3 {
 main {
   display: flex;
   max-width: 700px;
-  width: 100%;
+  flex-grow: 1;
   margin-left: 332px; /* 32px of padding */
 }
 
@@ -254,7 +254,8 @@ main {
   width: 4px;
   position: absolute;
   top: -8px;
-  background-color: #1F1F1F;
+  /*background-color: #1F1F1F;*/
+  background-color: #FF6C4B;
   transition: transform .3s cubic-bezier(.5,.5,0,1.75);
 }
 .toc .indicator .progress {

@@ -23,12 +23,9 @@
       let link = document.querySelector('.section-link[data-target='+id+']');
       scrollTop += contentOffset;
 
-      // console.log(i, scrollTop, top);
-
-
 
       if (i === 0) {
-        progress.style.height = '100%';
+        // progress.style.height = '100%';
         indicator.style.transform = '';
         for (let i = 0; i < links.length; i++) { links[i].classList.remove('active') }
 
@@ -38,31 +35,35 @@
 
       } else if (i === sections.length - 1 &&
                  (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        progress.style.height = '100%';
-        indicator.style.transform = `translateY(${i * 36}px)`;
-        link.classList.add('active');
+        // progress.style.height = '100%';
+        if (!link.classList.contains('active')) {
+          indicator.style.transform = `translateY(${i * 36}px)`;
+          link.classList.add('active');
+        }
 
       } else if (scrollTop > top && scrollTop < bottom) {
         let perc = Math.min(Math.max((scrollTop - top) / rect.height, 0), 1);
         // console.log("ACTIVE", i, perc);
-        progress.style.height = perc * 100 + '%';
-        indicator.style.transform = `translateY(${i * 36}px)`;
-        link.classList.add('active');
+        // progress.style.height = perc * 100 + '%';
+        if (!link.classList.contains('active')) {
+          indicator.style.transform = `translateY(${i * 36}px)`;
+          link.classList.add('active');
+        }
         if (stickyTags) {
           let tagsRect = stickyTags.getBoundingClientRect();
-          if (scrollTop > bottom - tagsRect.height) {
+          if (scrollTop > bottom - tagsRect.height - contentOffset) {
             if (!stickyTags.classList.contains('sticky-bottom')) {
-              console.log("STICKY BOTTOM", scrollTop,  bottom, tagsRect.height);
+              // console.log("STICKY BOTTOM", scrollTop,  bottom, tagsRect.height);
               stickyTags.classList.remove('sticky');
               stickyTags.classList.add('sticky-bottom');
               stickyTags.style = null;
               stickyTags.style.top = 'auto';
-              stickyTags.style.bottom = 0;
+              stickyTags.style.bottom = contentOffset + 'px';
             }
           } else if (!stickyTags.classList.contains('sticky')) {
             stickyTags.classList.remove('sticky-bottom');
             stickyTags.classList.add('sticky');
-            console.log("STICKY", `${tagsRect.left + tagsRect.width}px`);
+            // console.log("STICKY", `${tagsRect.left + tagsRect.width}px`);
             stickyTags.style = null;
             stickyTags.style.position = 'fixed';
             stickyTags.style.transform = 'translateX(0)';
@@ -84,6 +85,7 @@
 
   for (var i = 0; i < links.length; i++) {
     links[i].addEventListener('click', (e) => {
+      e.preventDefault();
       let target = e.target.getAttribute('data-target');
       console.log(target);
       let section = document.querySelector('#' + target);
