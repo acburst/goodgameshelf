@@ -1,0 +1,14 @@
+.links
+  span.link-section If you like:
+  each val, i in titles
+    if index === i
+      div
+        .toc
+          a.section-title.active(href='index.html') #{val}
+          .indicator
+            .progress
+          a.section-link(data-target=`${toID(rec1)}` href=`#${toID(rec1)}`) #{rec1}
+          a.section-link(data-target=`${toID(rec2)}` href=`#${toID(rec2)}`) #{rec2}
+          a.section-link(data-target=`${toID(rec3)}` href=`#${toID(rec3)}`) #{rec3}
+    else
+      a.section-title(href=`${toID(val)}.html`) #{val}

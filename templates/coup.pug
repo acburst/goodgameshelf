@@ -1,0 +1,161 @@
+- titles = ['Azul', 'Blokus', 'Codenames', 'Coup', 'Settlers of Catan', 'Ticket to Ride'];
+-
+  toID = function(string) {
+    return string.replace(/\s/g, '').toLowerCase();
+  }
+- index = 3;
+- rec1 = "Werewords";
+- rec2 = "Two Rooms and a Boom";
+- rec3 = "Sherrif of Nottingham";
+
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='x-ua-compatible' content='ie=edge')
+  title #{titles[index]}
+  meta(name='description' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img/icon.png')
+  link(rel='stylesheet' href='../style.css')
+  link(href='https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap' rel='stylesheet')
+.container
+  .navbar
+    a.logo-title(href='index.html')
+      img(src='../img/logo.png' alt='Good Game Shelf')
+    include ../includes/_sidebar.pug
+  main
+    .content
+      .section
+        h1 If you like #{titles[index]}, try these 3 games
+        .top-bar.row
+          span.date August 1, 2020
+          .row
+            .icon
+              img(src='../img/twitter.svg' alt='complexity')
+            .icon
+              img(src='../img/facebook.svg' alt='complexity')
+            .icon
+              img(src='../img/link.svg' alt='complexity')
+        img(src='../img/codenames.jpg' alt='codenames')
+        .game-overview
+          .flex-wrap(style='width: 360px')
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='complexity')
+              |                   2-6 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              |                   30-45 minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              |                   Rikki Tahta
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              |                   More Complex
+          h3 Game Overview
+        p
+          | Coup is an awesome bluffing game that has simple rules and usually ends in laughter. Every turn, you need the willpower to keep it together while lying to everyone at the table about your secret roles. "That's funny, I am...also the Duke..."
+          br
+          br
+          | We've picked 3 great games that will give you a similar experience if you're looking for something new.
+      .section(id=`${toID(rec1)}`)
+        h2 #{rec1}
+        p
+          | You may need an even better poker face for this one! Sheriff of Nottingham is another bluffing game that combines strategy with tons of laughter. Each round, one player acts as the sheriff while the others load up their bags with goods. Players may add any combination of legal goods or contraband, but must declare only legal goods to the sheriff! It goes something like this:
+          br
+          br
+          span.quote
+            | #[strong Sheriff:] "Alright Sam, what's in the bag?"
+            br
+            | #[strong Sam:] "Uhhh. Five chickens."
+            br
+            | #[strong Sheriff:] "No way" *pops open bag, smiling*
+            br
+            | #[strong Sheriff:] *Finds five chickens* "NOOOOOO"
+          br
+          br
+          | Legal goods like apples, bread, cheese, or chickens are worth low points, but they can be safely added to your bag. Contraband is worth many more points, but it will be confiscated if the sheriff chooses to open your bag and finds any!
+          br
+          br
+          | If you love Coup but want a longer game with a more involved scoring system, Sheriff is a great option.  This game takes more time to play, but nobody can be eliminated like they can in Coup. It's also harder to tell exactly who is in the lead in Sheriff, which adds to the mind games and strategy.
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | More Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | Fewer Players (2-5)
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Longer Playtime (45-60 min)
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designer Name
+      .section(id=`${toID(rec2)}`)
+        h2 #{rec2}
+        p
+          | If you want a game that is just as fun, quick, and simple as Coup, you should give Werewords a try. Werewords is also a deception game, and it's basically a combination of Mafia and 20 Questions. Instead of being a free for all like Coup though, Werewords requires some teamwork.
+          br
+          br
+          | Each player is assigned a secret role - Villager, Seer, or Werewolf. A secret word is shared with the Werewolves and the Seer, but not the Villagers. All players then begin asking "yes" or "no" questions to try to figure out the word.
+          br
+          br
+          | Not everyone has the same objective though... The Werewolves want to mislead everyone with their questions, while the Seer aims to help the Villagers. However, you can't be too obvious with your help or deception! If the word isn't guessed, the losing team can turn around and win by correctly identifying the Seer or Werewolf.
+          br
+          br
+          | Werewords uses a nice (free) mobile app which "narrates" the game and chooses the secret word for the group. This makes the game flow quickly and means it fits into a tiny box just like Coup!
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | More Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | Fewer Players (2-5)
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Longer Playtime (45-60 min)
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designer Name
+      .section(id=`${toID(rec3)}`)
+        h2 #{rec3}
+        p
+          | If you've got a bigger group, you've got to try Two Rooms and a Boom. This is a ridiculously fun game of deception for how simple it is, thanks to the unique use of your home's floorplan. This game plays anywhere from 6 to 30 players!
+          br
+          br
+          | To start, the group splits up into two adjacent rooms in your home, and everyone is assigned a secret team color - Red or Blue. One Red player will also be the "Bomber," and one Blue player will be the "President." At the end of the game, Red wins if the Bomber and President are in the same room, and Blue wins if they are separated.
+          br
+          br
+          | The game is played over 3 timed rounds, and each room may talk openly together. Thus begins the insanity - you may choose to share your identity, keep it secret, lie to one person, or lie to everyone. You can even stay completely silent - it's up to you. But at the end of each round, each room votes to send a single person to the other room. Who will it be?
+          br
+          br
+          | This game never disappoints and is one of the few games that caters to larger crowds. Just make sure to play at someone's home whose neighbors won't mind - people tend to yell...
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | More Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | Fewer Players (2-5)
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Longer Playtime (45-60 min)
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designer Name
+include ../includes/_footer.pug

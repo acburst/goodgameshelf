@@ -2,6 +2,10 @@
 (function() {
   let links = document.querySelectorAll('.section-link');
 
+  const toID = (string) => {
+    return string.replace(/\s/g, '').toLowerCase();
+  }
+
   const handleScroll = (e) => {
     let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;

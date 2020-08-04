@@ -7,8 +7,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #FFFDF6;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 a {
   color: #232323;
@@ -25,15 +23,16 @@ h1 {
   display: inline-block;
   position: relative;
   font-size: 40px;
+  line-height: 40px;
 }
 h1::after {
   content: '';
   display: block;
   position: absolute;
-  top: 12px;
+  top: 40%;
   left: 0;
   right: 0;
-  height: 28px;
+  height: 70%;
   background-color: #FFE4DE;
   z-index: -1;
 }
@@ -67,13 +66,54 @@ h3 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+::selection {
+  background: #FFE4DE; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FFE4DE; /* Gecko Browsers */
+}
+.text-link {
+  padding: 0;
+  position: relative;
+  display: inline-block;
+}
+.text-link::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #FF6C4B;
+  z-index: -1;
+  transition: height .2s, background-color .2s, transform .2s;
+}
+.text-link:hover::after {
+  height: 16px;
+  transform: translateY(-2px);
+  background-color: #FFE4DE;
+}
+
+.quote {
+  display: inline-block;
+  margin-left: 24px;
+  font-size: 24px;
+}
+
+.link-section {
+  font-size: 16px;
+  color: #1F1F1F;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  height: 20px;
+}
 
 
 .navbar {
-  font-family: 'PT Serif', serif;
+  font-family: 'Avenir', serif;
   position: fixed;
   display: flex;
-  width: 260px;
+  width: 300px;
   flex-direction: column;
   justify-content: space-between;
   padding: 32px 64px;
@@ -175,12 +215,16 @@ h3 {
   opacity: 0;
 }
 
-
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
 main {
   display: flex;
   max-width: 700px;
   width: 100%;
-  margin-left: 292px; /* 32px of padding */
+  margin-left: 332px; /* 32px of padding */
 }
 
 .content {
@@ -224,6 +268,7 @@ main {
 }
 .section {
   position: relative;
+  padding-bottom: 20px;
 }
 
 .top-bar {
@@ -248,6 +293,10 @@ main {
   top: 0;
   right: -20px;
   transform: translateX(100%);
+  transition: opacity .3s;
+}
+.tags.sticky-bottom {
+  opacity: 0;
 }
 .tag {
   display: flex;
@@ -275,7 +324,7 @@ footer {
   display: flex;
   max-width: 700px;
   width: 100%;
-  margin: 40px auto;
+  margin: 40px 0 40px 332px; /* 32px of padding */
 }
 
 
