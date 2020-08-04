@@ -3,7 +3,6 @@
   toID = function(string) {
     return string.replace(/\s/g, '').toLowerCase();
   }
-- title = "Azul"
 - index = 0;
 - rec1 = "Sagrada";
 - rec2 = "Kingdomino";
@@ -13,7 +12,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='x-ua-compatible' content='ie=edge')
-  title #{title}
+  title If you like #{titles[index]}, try these 3 games
   meta(name='description' content='')
   meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
   link(rel='shortcut icon' type='image/png' href='../img/icon.png')
@@ -27,17 +26,11 @@ head
   main
     .content
       .section
-        h1 If you like #{title}, try these 3 games
+        h1 If you like #{titles[index]}, try these 3 games
         .top-bar.row
           span.date August 1, 2020
-          .row
-            .icon
-              img(src='../img/twitter.svg' alt='complexity')
-            .icon
-              img(src='../img/facebook.svg' alt='complexity')
-            .icon
-              img(src='../img/link.svg' alt='complexity')
-        img(src='https://via.placeholder.com/900x300' alt='')
+          include ../includes/_share.pug
+        img(src='../img/azul.jpg' alt='azul')
         .game-overview
           .flex-wrap(style='width: 360px')
             .tag
@@ -60,6 +53,7 @@ head
           | These 3 games share many of Azul&apos;s best features along with their own unique twists &amp; fun themes.
       .section(id=`${rec1.trim().toLowerCase()}`)
         h2 #{rec1}
+        img(src='../img/sagrada.jpg' alt='sagrada')
         ul
           li Slightly more complex, but still pretty easy to teach to anyone
           li Theme 10/10
@@ -90,6 +84,7 @@ head
             | Designers: Adrian Adamescu, Daryl Andrews
       .section(id=`${rec2.trim().toLowerCase()}`)
         h2 #{rec2}
+        img(src='../img/kingdomino.jpg' alt='kingdomino')
         ul
           li Similar complexity and easy to learn
         p
@@ -119,6 +114,7 @@ head
             | Designers: Bruno Cathala
       .section(id=`${rec3.trim().toLowerCase()}`)
         h2 #{rec3}
+        img(src='../img/reef.jpg' alt='reef')
         ul
           li More complex
         p

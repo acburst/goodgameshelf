@@ -12,7 +12,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='x-ua-compatible' content='ie=edge')
-  title #{titles[index]}
+  title If you like #{titles[index]}, try these 3 games
   meta(name='description' content='')
   meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
   link(rel='shortcut icon' type='image/png' href='../img/icon.png')
@@ -29,14 +29,8 @@ head
         h1 If you like #{titles[index]}, try these 3 games
         .top-bar.row
           span.date August 1, 2020
-          .row
-            .icon
-              img(src='../img/twitter.svg' alt='complexity')
-            .icon
-              img(src='../img/facebook.svg' alt='complexity')
-            .icon
-              img(src='../img/link.svg' alt='complexity')
-        img(src='https://via.placeholder.com/900x300' alt='')
+          include ../includes/_share.pug
+        img(src='../img/blokus.png' alt=titles[index])
         .game-overview
           .flex-wrap(style='width: 360px')
             .tag
@@ -62,6 +56,7 @@ head
           | Here are 3 games that will also give you that satisfying experience while bringing new gameplay mechanics to the table.
       .section(id=`${toID(rec1)}`)
         h2 #{rec1}
+        img(src='../img/dropit.png' alt=rec1)
         p
           | Drop It! is a simple game that anyone can play and have fun with immediately. Like Blokus, you take turns strategically choosing and "placing" colored pieces. However, careful planning goes out the window in Drop It! and you usually will end your turn yelling and laughing.
           br
@@ -73,6 +68,9 @@ head
           br
           br
           | If you're looking for something more casual and lighthearted than Blokus, definitely check out Drop It! You'll get 250% more laughter without the cutthroat blocking.
+          br
+          br
+          a.text-link(href="https://amzn.to/3i6oRic") Buy #{rec1} on Amazon
         .tags
           .tag
             .icon
@@ -92,6 +90,7 @@ head
             | Designers: Bernhard Lach, Uwe Rapp
       .section(id=`${toID(rec2)}`)
         h2 #{rec2}
+        img(src='../img/nmbr9.jpg' alt=rec2)
         p
           | If you enjoy the puzzle-y nature of Blokus but would rather not deal with backstabbing blockers, NMBR 9 is for you. This game takes the Tetris-style pieces of Blokus to a new level by having you literally stack them on top of each other. You play completely in your own area, so it's impossible to block or get blocked by other players.
           br
@@ -100,6 +99,9 @@ head
           br
           br
           | Similarly to Blokus, all players will use the same set of tiles in this game, playing one each turn. It all comes down to who planned their number stacks most efficiently! You can even play this game solo to compete for a personal best score. Overall, this game is a fun brain burner that's definitely less likely to ruin friendships than Blokus.
+          br
+          br
+          a.text-link(href="https://amzn.to/3gu3JBZ") Buy #{rec2} on Amazon
         .tags
           .tag
             .icon
@@ -119,6 +121,7 @@ head
             | Designer: Peter Wichmann
       .section(id=`${toID(rec3)}`)
         h2 #{rec3}
+        img(src='../img/patchwork.png' alt=rec3)
         p
           | Patchwork is an awesome 2-player puzzle game that has a similar feel to Blokus, but in this game, your goal is to knit a patchwork quilt. Instead of having your own set of pieces to choose from, you and your opponent choose from fabric pieces laid out in the center of the table.
           br
@@ -130,6 +133,9 @@ head
           br
           br
           | If you have played the 2-player Blokus but want something with more variety and complexity, look no further than Patchwork. This is such a well-designed game, and it can be played many times over without losing its charm.
+          br
+          br
+          a.text-link(href="https://amzn.to/2ERaMqF") Buy #{rec3} on Amazon
         .tags
           .tag
             .icon

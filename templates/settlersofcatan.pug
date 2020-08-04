@@ -12,7 +12,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='x-ua-compatible' content='ie=edge')
-  title #{titles[index]}
+  title If you like #{titles[index]}, try these 3 games
   meta(name='description' content='')
   meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
   link(rel='shortcut icon' type='image/png' href='../img/icon.png')
@@ -29,13 +29,7 @@ head
         h1 If you like #{titles[index]}, try these 3 games
         .top-bar.row
           span.date August 1, 2020
-          .row
-            .icon
-              img(src='../img/twitter.svg' alt='complexity')
-            .icon
-              img(src='../img/facebook.svg' alt='complexity')
-            .icon
-              img(src='../img/link.svg' alt='complexity')
+          include ../includes/_share.pug
         img(src='https://via.placeholder.com/900x300' alt='')
         .game-overview
           .flex-wrap(style='width: 360px')

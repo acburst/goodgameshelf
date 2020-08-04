@@ -12,8 +12,8 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='x-ua-compatible' content='ie=edge')
-  title #{titles[index]}
-  meta(name='description' content='')
+  title If you like #{titles[index]}, try these 3 games
+  meta(name='description' content='Expand your horizons a bit more with these 3 games that introduce new game mechanics to the card drawing and route-connecting fun of Ticket to Ride.')
   meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
   link(rel='shortcut icon' type='image/png' href='../img/icon.png')
   link(rel='stylesheet' href='../style.css')
@@ -29,14 +29,8 @@ head
         h1 If you like #{titles[index]}, try these 3 games
         .top-bar.row
           span.date August 1, 2020
-          .row
-            .icon
-              img(src='../img/twitter.svg' alt='complexity')
-            .icon
-              img(src='../img/facebook.svg' alt='complexity')
-            .icon
-              img(src='../img/link.svg' alt='complexity')
-        img(src='https://via.placeholder.com/900x300' alt='')
+          include ../includes/_share.pug
+        img(src='../img/ticket.jpg' alt=titles[index])
         .game-overview
           .flex-wrap(style='width: 360px')
             .tag
@@ -59,6 +53,7 @@ head
           | If you're looking to expand this gaming experience further, try out the #[a.text-link(href="#") Ticket to Ride 1910] expansion, which adds more routes to the base game to increase the challenge and replayability. Otherwise, you can expand your horizons a bit more with these 3 games that introduce new game mechanics to the card drawing and route-connecting fun of Ticket to Ride.
       .section(id=`${toID(rec1)}`)
         h2 #{rec1}
+        img(src='../img/railroadink.jpg' alt=rec1)
         p
           | In Railroad Ink, you connect train tracks and roads by literally drawing them on paper.  This game is a "Roll & Write", which means that you roll some dice to determine what you and your opponents can draw each turn. Each time you play the game, you'll have a different experience based on the dice rolls, but all players work with the same inputs.
           br
@@ -89,6 +84,7 @@ head
             | Designer: Hjalmar Hach, Lorenzo Silva
       .section(id=`${toID(rec2)}`)
         h2 #{rec2}
+        img(src='../img/copenhagen.png' alt=rec2)
         p
           | If you enjoy the mechanism of collecting colored cards to execute your plans, you should give Copenhagen a try. You'll gather cards like in Ticket to Ride in this game, but Copenhagen has some interesting twists beyond that.
           br
@@ -122,6 +118,7 @@ head
             | Designer: Asger Harding Granerud, Daniel Skjold Pedersen
       .section(id=`${toID(rec3)}`)
         h2 #{rec3}
+        img(src='../img/powergrid.jpg' alt=rec3)
         p
           | In Power Grid, the game ends when you build a large network of connected cities and supply power to all of them. Expanding your power grid will feel similar to route building in Ticket to Ride, but the rest of the game takes a different direction.
           br

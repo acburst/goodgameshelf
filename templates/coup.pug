@@ -4,15 +4,15 @@
     return string.replace(/\s/g, '').toLowerCase();
   }
 - index = 3;
-- rec1 = "Werewords";
-- rec2 = "Two Rooms and a Boom";
-- rec3 = "Sherrif of Nottingham";
+- rec1 = "Sherrif of Nottingham";
+- rec2 = "Werewords";
+- rec3 = "Two Rooms and a Boom";
 
 doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='x-ua-compatible' content='ie=edge')
-  title #{titles[index]}
+  title If you like #{titles[index]}, try these 3 games
   meta(name='description' content='')
   meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
   link(rel='shortcut icon' type='image/png' href='../img/icon.png')
@@ -29,14 +29,8 @@ head
         h1 If you like #{titles[index]}, try these 3 games
         .top-bar.row
           span.date August 1, 2020
-          .row
-            .icon
-              img(src='../img/twitter.svg' alt='complexity')
-            .icon
-              img(src='../img/facebook.svg' alt='complexity')
-            .icon
-              img(src='../img/link.svg' alt='complexity')
-        img(src='../img/codenames.jpg' alt='codenames')
+          include ../includes/_share.pug
+        img(src='../img/coup.png' alt='Coup')
         .game-overview
           .flex-wrap(style='width: 360px')
             .tag
@@ -59,6 +53,7 @@ head
           | We've picked 3 great games that will give you a similar experience if you're looking for something new.
       .section(id=`${toID(rec1)}`)
         h2 #{rec1}
+        img(src='../img/sheriffs.png' alt=rec1)
         p
           | You may need an even better poker face for this one! Sheriff of Nottingham is another bluffing game that combines strategy with tons of laughter. Each round, one player acts as the sheriff while the others load up their bags with goods. Players may add any combination of legal goods or contraband, but must declare only legal goods to the sheriff! It goes something like this:
           br
@@ -99,6 +94,7 @@ head
             | Designers: Sérgio Halaban, André Zatz
       .section(id=`${toID(rec2)}`)
         h2 #{rec2}
+        img(src='../img/werewords.png' alt=rec2)
         p
           | If you want a game that is just as fun, quick, and simple as Coup, you should give Werewords a try. Werewords is also a deception game, and it's basically a combination of Mafia and 20 Questions. Instead of being a free for all like Coup though, Werewords requires some teamwork.
           br
@@ -132,6 +128,7 @@ head
             | Designers: Ted Alspach
       .section(id=`${toID(rec3)}`)
         h2 #{rec3}
+        img(src='../img/tworooms.png' alt=rec3)
         p
           | If you've got a bigger group, you've got to try Two Rooms and a Boom. This is a ridiculously fun game of deception for how simple it is, thanks to the unique use of your home's floorplan. This game plays anywhere from 6 to 30 players!
           br
