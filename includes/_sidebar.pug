@@ -7,9 +7,10 @@
           a.section-title.active(href='index.html') #{val}
           .indicator
             .progress
-          a.section-link(data-target=`${toID(rec1)}` href=`#${toID(rec1)}`) #{rec1}
-          a.section-link(data-target=`${toID(rec2)}` href=`#${toID(rec2)}`) #{rec2}
-          a.section-link(data-target=`${toID(rec3)}` href=`#${toID(rec3)}`) #{rec3}
+          .section-links
+            a.section-link(data-target=`${toID(rec1)}` href=`#${toID(rec1)}`) #{rec1}
+            a.section-link(data-target=`${toID(rec2)}` href=`#${toID(rec2)}`) #{rec2}
+            a.section-link(data-target=`${toID(rec3)}` href=`#${toID(rec3)}`) #{rec3}
     else
       - var link = isIndex ? `recommendations/${toID(val)}.html` : `${toID(val)}.html`;
       a.section-title(href=link) #{val}

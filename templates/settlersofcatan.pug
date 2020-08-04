@@ -28,7 +28,7 @@ head
       .section
         h1 If you like #{titles[index]}, try these 3 games
         .top-bar.row
-          span.date August 1, 2020
+          span.date August 4, 2020
           include ../includes/_share.pug
         img(src='../img/catan.jpg' alt=titles[index])
         .game-overview
@@ -40,7 +40,7 @@ head
             .tag
               .icon
                 img(src='../img/time.svg' alt='play time')
-              | Playtime: 60-120 minutes
+              | 60-120 minutes
             .tag
               .icon
                 img(src='../img/designer.svg' alt='designer')
@@ -54,20 +54,6 @@ head
       .section(id=`${toID(rec1)}`)
         h2 #{rec1}
         img(src='../img/concordia.png' alt=rec1)
-        p
-          | Concordia plays like an advanced version of Settlers of Catan with less luck. Players explore a map of the Mediterranean Sea and form settlements that provide resources - bricks, wheat, tools, wine, or cloth. However, the players decide which settlements produce, instead of a dice roll
-          br
-          br
-          | Everyone in Concordia starts with the same 6-card hand and plays one card each turn. One card lets you move around the map and build settlements, one lets you sell goods, and another causes settlements to produce resources. However, cards go into your discard pile once they are played. You'll have to spend a whole turn to draw your hand back up, so plan efficiently!
-          br
-          br
-          | Throughout the game, players may also buy new cards to unlock more actions that change the flow of the game. This means that each player will have a different set of cards, making each game of Concordia new and interesting.
-          br
-          br
-          | This is definitely a game to check out if you are ready to play something more complex than Catan. Concordia takes longer to play, but it will open the door to other great strategy games!
-          br
-          br
-          a.text-link(href="https://amzn.to/2Pnlzec") Buy #{rec1} on Amazon
         .tags
           .tag
             .icon
@@ -85,9 +71,40 @@ head
             .icon
               img(src='../img/designer.svg' alt='designer')
             | Designer: Mac Gerdts
+        p
+          | Concordia plays like an advanced version of Settlers of Catan with less luck. Players explore a map of the Mediterranean Sea and form settlements that provide resources - bricks, wheat, tools, wine, or cloth. However, the players decide which settlements produce, instead of a dice roll
+          br
+          br
+          | Everyone in Concordia starts with the same 6-card hand and plays one card each turn. One card lets you move around the map and build settlements, one lets you sell goods, and another causes settlements to produce resources. However, cards go into your discard pile once they are played. You'll have to spend a whole turn to draw your hand back up, so plan efficiently!
+          br
+          br
+          | Throughout the game, players may also buy new cards to unlock more actions that change the flow of the game. This means that each player will have a different set of cards, making each game of Concordia new and interesting.
+          br
+          br
+          | This is definitely a game to check out if you are ready to play something more complex than Catan. Concordia takes longer to play, but it will open the door to other great strategy games!
+          br
+          br
+          a.text-link(href="https://amzn.to/2Pnlzec") Buy #{rec1} on Amazon
       .section(id=`${toID(rec2)}`)
         h2 #{rec2}
         img(src='../img/bohnanza.png' alt=rec2)
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Less Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-7 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 45 minute
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designer: Uwe Rosenberg
         p
           | At a glance, Bohnanza is a very different game from Settlers of Catan. If you enjoy the resource trading aspect of Catan though (two sheep for one wood, anyone?), Bohnanza won't disappoint - it's all about trading beans!
           br
@@ -114,40 +131,9 @@ head
           br
           br
           a.text-link(href="https://www.boardgameprices.com/prices/bohnanza") Buy #{rec2} on Amazon
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | Less Complex
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 2-7 Players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 45 minute
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designer: Uwe Rosenberg
       .section(id=`${toID(rec3)}`)
         h2 #{rec3}
         img(src='../img/tinytowns.jpg' alt=rec3)
-        p
-          | Tiny Towns is a tricky puzzle game in which you use resources to construct buildings in your town square. You play on your own 4x4 grid, and on your turn, you will choose a material - Hay, Brick, Wood, Stone, or Glass. The cool part is that everyone else also takes this resource, and you individually decide where to place it on your board. You will all get an equal number of resources, but you can't control what your opponents will pick, so it becomes challenging to plan out your town.
-          br
-          br
-          | You spend the resources according to recipes to make buildings that score points in unique ways. When materials on your board match a pattern, you may discard those materials to construct that building. For example, Cottages score points anywhere they are placed, but only if fed by a Farm. Tailors score points if they're next to other Tailors, and Cloisters score points if they're placed in the corners.
-          br
-          br
-          | Buildings take up one space each, and you'll quickly run out of room for new resources and buildings. If you get stuck and can't place another piece, your town is complete and you wait for the others to finish. Hopefully you fill up most of your town with buildings, as empty spaces cost you points at the end of the game!
-          br
-          br
-          | Tiny Towns is more straightforward than Catan, but it adds an element of abstract strategy that makes it quite challenging. Learning the rules is easy, but mastering Tiny Towns will be difficult! This is a great option if you're looking to add a puzzle game with a fun theme to your collection.
-          br
-          br
-          a.text-link(href="https://amzn.to/2PiNpYO") Buy #{rec3} on Amazon
         .tags
           .tag
             .icon
@@ -165,4 +151,18 @@ head
             .icon
               img(src='../img/designer.svg' alt='designer')
             | Designer: Peter McPherson
+        p
+          | Tiny Towns is a tricky puzzle game in which you use resources to construct buildings in your town square. You play on your own 4x4 grid, and on your turn, you will choose a material - Hay, Brick, Wood, Stone, or Glass. The cool part is that everyone else also takes this resource, and you individually decide where to place it on your board. You will all get an equal number of resources, but you can't control what your opponents will pick, so it becomes challenging to plan out your town.
+          br
+          br
+          | You spend the resources according to recipes to make buildings that score points in unique ways. When materials on your board match a pattern, you may discard those materials to construct that building. For example, Cottages score points anywhere they are placed, but only if fed by a Farm. Tailors score points if they're next to other Tailors, and Cloisters score points if they're placed in the corners.
+          br
+          br
+          | Buildings take up one space each, and you'll quickly run out of room for new resources and buildings. If you get stuck and can't place another piece, your town is complete and you wait for the others to finish. Hopefully you fill up most of your town with buildings, as empty spaces cost you points at the end of the game!
+          br
+          br
+          | Tiny Towns is more straightforward than Catan, but it adds an element of abstract strategy that makes it quite challenging. Learning the rules is easy, but mastering Tiny Towns will be difficult! This is a great option if you're looking to add a puzzle game with a fun theme to your collection.
+          br
+          br
+          a.text-link(href="https://amzn.to/2PiNpYO") Buy #{rec3} on Amazon
 include ../includes/_footer.pug

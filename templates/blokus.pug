@@ -1,7 +1,7 @@
 - titles = ['Azul', 'Blokus', 'Codenames', 'Coup', 'Settlers of Catan', 'Ticket to Ride'];
 -
   toID = function(string) {
-    return string.replace(/\s/g, '').toLowerCase();
+    return string.replace(/[\s!]/g, '').toLowerCase();
   }
 - index = 1;
 - rec1 = "Drop It!";
@@ -28,7 +28,7 @@ head
       .section
         h1 If you like #{titles[index]}, try these 3 games
         .top-bar.row
-          span.date August 1, 2020
+          span.date August 4, 2020
           include ../includes/_share.pug
         img(src='../img/blokus.png' alt=titles[index])
         .game-overview
@@ -40,7 +40,7 @@ head
             .tag
               .icon
                 img(src='../img/time.svg' alt='play time')
-              | Playtime: 20-30 Minutes
+              | 20-30 Minutes
             .tag
               .icon
                 img(src='../img/designer.svg' alt='designer')
@@ -57,20 +57,6 @@ head
       .section(id=`${toID(rec1)}`)
         h2 #{rec1}
         img(src='../img/dropit.png' alt=rec1)
-        p
-          | Drop It! is a simple game that anyone can play and have fun with immediately. Like Blokus, you take turns strategically choosing and "placing" colored pieces. However, careful planning goes out the window in Drop It! and you usually will end your turn yelling and laughing.
-          br
-          br
-          | Drop It! is also similar to Connect 4, except with circle, square, triangle, and rhombus pieces and no vertical tracks. You drop pieces into the top of a see-through plastic tower, hoping they fall into the right place. Points are awarded based on how your piece lands, but you have to avoid breaking any rules! If your piece touches another piece of the same shape or color, you get zero points for that turn.
-          br
-          br
-          | This game is so unpredictable in a fun way, and your "perfectly" aligned rhombus will often fly across the tower to touch another rhombus. Zero points! Later on though, you'll drop your triangle just right, not break any rules, get some bonus points, and turn the game around.
-          br
-          br
-          | If you're looking for something more casual and lighthearted than Blokus, definitely check out Drop It! You'll get 250% more laughter without the cutthroat blocking.
-          br
-          br
-          a.text-link(href="https://amzn.to/3i6oRic") Buy #{rec1} on Amazon
         .tags
           .tag
             .icon
@@ -88,20 +74,23 @@ head
             .icon
               img(src='../img/designer.svg' alt='designer')
             | Designers: Bernhard Lach, Uwe Rapp
+        p
+          | Drop It! is a simple game that anyone can play and have fun with immediately. Like Blokus, you take turns strategically choosing and "placing" colored pieces. However, careful planning goes out the window in Drop It! and you usually will end your turn yelling and laughing.
+          br
+          br
+          | Drop It! is also similar to Connect 4, except with circle, square, triangle, and rhombus pieces and no vertical tracks. You drop pieces into the top of a see-through plastic tower, hoping they fall into the right place. Points are awarded based on how your piece lands, but you have to avoid breaking any rules! If your piece touches another piece of the same shape or color, you get zero points for that turn.
+          br
+          br
+          | This game is so unpredictable in a fun way, and your "perfectly" aligned rhombus will often fly across the tower to touch another rhombus. Zero points! Later on though, you'll drop your triangle just right, not break any rules, get some bonus points, and turn the game around.
+          br
+          br
+          | If you're looking for something more casual and lighthearted than Blokus, definitely check out Drop It! You'll get 250% more laughter without the cutthroat blocking.
+          br
+          br
+          a.text-link(href="https://amzn.to/31g5TyD") Buy #{rec1} on Amazon
       .section(id=`${toID(rec2)}`)
         h2 #{rec2}
         img(src='../img/nmbr9.jpg' alt=rec2)
-        p
-          | If you enjoy the puzzle-y nature of Blokus but would rather not deal with backstabbing blockers, NMBR 9 is for you. This game takes the Tetris-style pieces of Blokus to a new level by having you literally stack them on top of each other. You play completely in your own area, so it's impossible to block or get blocked by other players.
-          br
-          br
-          | In NMBR 9, you will stack tiles in the blocky shapes of the numbers 0-9 on top of each other to score points. The level you place a number tile on determines its point multiplier. So if I place a 4 on level 1, I'll get 4 (4x1) points. If I place that 4 on level 2 instead, I'll earn 8 (4x2) points. That sounds simple enough, but there's a catch: you cannot place a tile if any part of it is hanging over nothing. This means that, if you don't plan carefully, you might have to place that 9 directly on the table for 0 (9x0) points!
-          br
-          br
-          | Similarly to Blokus, all players will use the same set of tiles in this game, playing one each turn. It all comes down to who planned their number stacks most efficiently! You can even play this game solo to compete for a personal best score. Overall, this game is a fun brain burner that's definitely less likely to ruin friendships than Blokus.
-          br
-          br
-          a.text-link(href="https://amzn.to/3gu3JBZ") Buy #{rec2} on Amazon
         .tags
           .tag
             .icon
@@ -119,23 +108,20 @@ head
             .icon
               img(src='../img/designer.svg' alt='designer')
             | Designer: Peter Wichmann
+        p
+          | If you enjoy the puzzle-y nature of Blokus but would rather not deal with pesky opponents getting in your way, NMBR 9 is for you. This game takes the Tetris-style pieces of Blokus to a new level by having you literally stack them on top of each other. You play completely in your own area, so it's impossible to block or get blocked by other players.
+          br
+          br
+          | In NMBR 9, you will stack tiles in shapes of blocky numbers 0-9 on top of each other to score points. The level you place a number tile on determines its point multiplier. So if I place a 4 on level 1, I'll get 4 (4x1) points. If I place that 4 on level 2 instead, I'll earn 8 (4x2) points. That sounds simple enough, but there's a catch: you cannot place a tile if any part of it is hanging over an edge. This means that if you don't plan carefully, you might have to place that 9 directly on the table for 0 (9x0) points!
+          br
+          br
+          | Similarly to Blokus, all players will use the same set of tiles in this game, playing one each turn. It all comes down to who planned their number stacks most efficiently! You can even play this game solo to compete for a personal best score. Overall, this game is a fun brain burner that's definitely less likely to ruin friendships than Blokus.
+          br
+          br
+          a.text-link(href="https://amzn.to/31jkOIz") Buy #{rec2} on Amazon
       .section(id=`${toID(rec3)}`)
         h2 #{rec3}
         img(src='../img/patchwork.png' alt=rec3)
-        p
-          | Patchwork is an awesome 2-player puzzle game that has a similar feel to Blokus, but in this game, your goal is to knit a patchwork quilt. Instead of having your own set of pieces to choose from, you and your opponent choose from fabric pieces laid out in the center of the table.
-          br
-          br
-          | Quilt pieces are shaped like the ones in Blokus, but they are more intricate - they all cost buttons (money) and different amounts of time to knit. Time is expressed as a spiraling track on a board shared by both players, and once a player reaches the end of the track, their quilt is finished and their opponent continues. You may end with a different number of quilt pieces!
-          br
-          br
-          | Some pieces also award buttons each turn which make them more valuable, as buttons are both your points and money. Patchwork is all about choosing pieces that will not only fit nicely, but will also set you up for later in the game. The winner will be the person who has accumulated the most points at the end of the game, which will be your buttons minus any empty quilt squares.
-          br
-          br
-          | If you have played the 2-player Blokus but want something with more variety and complexity, look no further than Patchwork. This is such a well-designed game, and it can be played many times over without losing its charm.
-          br
-          br
-          a.text-link(href="https://amzn.to/2ERaMqF") Buy #{rec3} on Amazon
         .tags
           .tag
             .icon
@@ -153,4 +139,18 @@ head
             .icon
               img(src='../img/designer.svg' alt='designer')
             | Designer: Uwe Rosenberg
+        p
+          | Patchwork is an awesome 2-player puzzle game that has a similar feel to Blokus, but in this game, your goal is to knit a patchwork quilt. Instead of having your own set of pieces to choose from, you and your opponent choose from fabric pieces laid out in the center of the table.
+          br
+          br
+          | Quilt pieces are shaped like the ones in Blokus, but they are more intricate - they all cost buttons (money) and different amounts of time to knit. Time is expressed as a spiraling track on a board shared by both players, and once a player reaches the end of the track, their quilt is finished and their opponent continues. You may end with a different number of quilt pieces!
+          br
+          br
+          | Some pieces also award buttons each turn which make them more valuable, as buttons are both your points and money. Patchwork is all about choosing pieces that will not only fit nicely, but will also set you up for later in the game. The winner will be the person who has accumulated the most points at the end of the game, which will be your buttons minus any empty quilt squares.
+          br
+          br
+          | If you have played the 2-player Blokus but want something with more variety and complexity, look no further than Patchwork. This is such a well-designed game, and it can be played many times over without losing its charm.
+          br
+          br
+          a.text-link(href="https://amzn.to/2Dg7v3y") Buy #{rec3} on Amazon
 include ../includes/_footer.pug

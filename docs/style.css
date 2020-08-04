@@ -102,7 +102,6 @@ hr {
 .quote {
   display: inline-block;
   margin-left: 24px;
-  font-size: 24px;
 }
 
 .link-section {
@@ -230,11 +229,12 @@ main {
   max-width: 700px;
   flex-grow: 1;
   margin-left: 332px; /* 32px of padding */
+  width: calc(100% - 652px); /* 300px + 20px for right sticky */
 }
 
 .content {
   margin-top: 100px;
-  width: inherit;
+  width: 100%;
 }
 .content img {
   display: block;
@@ -249,7 +249,9 @@ main {
 .toc a {
   color: #1F1F1F;
 }
-.toc .section-link {
+.toc .section-links {
+  display: flex;
+  flex-direction: column;
   margin-left: 20px;
 }
 .toc .indicator {
@@ -292,8 +294,16 @@ main {
   justify-content: space-between;
   border-bottom: 1px solid #A68A87;
 }
+.game-overview .row {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.game-overview .tag {
+  margin-right: 16px;
+}
 
 .tags {
+  width: 300px;
   position: absolute;
   top: 0;
   right: -20px;
@@ -338,24 +348,82 @@ footer {
   color: #fff;
   display: flex;
   max-width: 700px;
-  width: 100%;
+  width: calc(100% - 652px); /* 300px + 20px for right sticky */
   margin: 40px 0 40px 332px; /* 32px of padding */
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .navbar {
-    padding: 10px 0;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .navbar .links {
-    margin-top: 20px;
+    padding: 16px;
   }
 
-  .members {
-    flex-direction: column;
+  main,
+  .footer-content {
+    width: calc(100% - 556px); /* -96px for narrower padding */
+    margin-left: 204px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+
+  main,
+  .footer-content {
+    width: calc(100% - 456px); /* -100px for smaller tags */
+  }
+
+  .tags {
+    width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+  }
+  .navbar .links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .navbar .link-section {
+    display: block;
+    width: 100%;
+  }
+  .navbar .indicator {
+    display: none;
+  }
+
+  .toc .section-links {
+    display: none;
+  }
+
+  main,
+  .footer-content {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .content {
+    margin-top: 0;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    position: relative;
+    width: 100%;
+    transform: none;
+    right: auto;
+  }
+  .tags .tag {
+    margin-right: 16px;
   }
 }
