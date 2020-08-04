@@ -11,4 +11,5 @@
           a.section-link(data-target=`${toID(rec2)}` href=`#${toID(rec2)}`) #{rec2}
           a.section-link(data-target=`${toID(rec3)}` href=`#${toID(rec3)}`) #{rec3}
     else
-      a.section-title(href=`${toID(val)}.html`) #{val}
+      - var link = isIndex ? `recommendations/${toID(val)}.html` : `${toID(val)}.html`;
+      a.section-title(href=link) #{val}

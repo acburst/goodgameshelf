@@ -3,6 +3,7 @@
   toID = function(string) {
     return string.replace(/\s/g, '').toLowerCase();
   }
+- isIndex = true;
 
 doctype html
 head
@@ -11,13 +12,13 @@ head
   title Good Game Shelf
   meta(name='description' content='')
   meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='../img/icon.png')
-  link(rel='stylesheet' href='../style.css')
+  link(rel='shortcut icon' type='image/png' href='img/icon.png')
+  link(rel='stylesheet' href='style.css')
   link(href='https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap' rel='stylesheet')
 .container
   .navbar
-    a.logo-title(href='index.html')
-      img(src='../img/logo.png' alt='Good Game Shelf')
+    a.logo-title(href='https://goodgameshelf.com')
+      img(src='img/logo.png' alt='Good Game Shelf')
     include ../includes/_sidebar.pug
   main
     .content
@@ -30,7 +31,7 @@ head
           | We are 3 friends who love playing games and working on side projects together. Video games and board games have been a huge part of our lives, and we have always wanted to make games of our own one day. To make that happen, we founded Spiralburst Studio in 2019, and you can check out all of our projects below!
         hr
 
-        img(src='../img/hexicon.png' alt="hexicon")
+        img(src='img/hexicon.png' alt="hexicon")
         br
         h2 Hexicon: Strategy Word Game
         p

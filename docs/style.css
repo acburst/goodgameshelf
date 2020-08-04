@@ -37,6 +37,7 @@ h1::after {
   z-index: -1;
 }
 h2 {
+  margin-top: 24px;
   font-size: 24px;
 }
 h3 {
