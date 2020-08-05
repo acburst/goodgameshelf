@@ -1,6 +1,8 @@
 // self executing function here
 (function() {
   let links = document.querySelectorAll('.section-link');
+  const footer = document.querySelector('footer');
+  const navbar = document.querySelector('.navbar');
 
   const toID = (string) => {
     return string.replace(/\s/g, '').toLowerCase();
@@ -77,6 +79,32 @@
 
           }
 
+        }
+      }
+    }
+
+    // Navbar
+    if (footer) {
+      if (window.innerWidth > 700) {
+        let footerRect = footer.getBoundingClientRect();
+        console.log(document.body.offsetHeight , scrollTop , footerRect.height);
+        if (scrollTop - footerRect.height > document.body.offsetHeight - window.innerHeight) {
+          let navbarRect = navbar.getBoundingClientRect();
+          console.log(navbarRect);
+          if (!navbar.classList.contains('sticky-bottom')) {
+            navbar.classList.add('sticky-bottom');
+            navbar.style.top = (footer.offsetTop - navbarRect.height) + 'px';
+          }
+        } else {
+          if (navbar.classList.contains('sticky-bottom')) {
+            navbar.classList.remove('sticky-bottom');
+            navbar.style = null;
+          }
+        }
+      } else {
+        if (navbar.classList.contains('sticky-bottom')) {
+          navbar.classList.remove('sticky-bottom');
+          navbar.style = null;
         }
       }
     }
