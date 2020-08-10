@@ -1,0 +1,19 @@
+- var favicon = isIndex ? 'favicon.ico' : '../favicon.ico';
+- var style = isIndex ? 'style.css' : '../style.css';
+- var title = isIndex ? 'Good Game Shelf' : `If you like ${titles[index]}, try these 3 games`
+head
+  //- Global site tag (gtag.js) - Google Analytics
+  script(async,src="https://www.googletagmanager.com/gtag/js?id=UA-144373794-2")
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-144373794-2');
+  meta(charset='utf-8')
+  meta(http-equiv='x-ua-compatible' content='ie=edge')
+  title #{title}
+  meta(name='description' content=metadescription)
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href=favicon)
+  link(rel='stylesheet' href=style)
+  link(href='https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap' rel='stylesheet')
