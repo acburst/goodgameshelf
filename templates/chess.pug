@@ -1,0 +1,145 @@
+- titles = ['Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Ticket to Ride'];
+-
+  toID = function(string) {
+    return string.replace(/\s/g, '').toLowerCase();
+  }
+- index = 2;
+- rec1 = "Onitama";
+- rec2 = "Quarto";
+- rec3 = "Seikatsu";
+- metadescription = 'If you want a new competitive game that revolves around planning ahead and abstract strategy, check out these 3 games like Chess.';
+
+doctype html
+include ../includes/_head.pug
+.container
+  .navbar
+    a.logo-title(href='https://goodgameshelf.com')
+      img(src='../img/logo.png' alt='Good Game Shelf')
+    include ../includes/_sidebar.pug
+  main
+    .content
+      .section
+        h1 3 Smart Board Games that are Similar to #{titles[index]}
+        .top-bar.row
+          span.date August 16, 2020
+          include ../includes/_share.pug
+        img(src='../img/chess.png' alt=titles[index])
+        .game-overview
+          .row
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='complexity')
+              | 2 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | 30-60 Minutes
+          a.text-link(href="https://amzn.to/3iRh6Nd") Buy #{titles[index]} on Amazon
+        p
+          | Chess is an incredible game that has held up for almost 1500 years. The mechanics that Chess introduced are simple, yet players have come up with so many unique and interesting strategies to win.
+          br
+          br
+          | If you are looking for a new competitive game that revolves around planning ahead and abstract strategy, you should check out these 3 games like Chess. All of these games are also quite beautiful, in both artwork and design, which is a huge plus!
+      .section(id=`${toID(rec1)}`)
+        h2 #{rec1}
+        img(src='../img/onitama.png' alt=rec1)
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Slightly More Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 20 minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designer: Shimpei Sato
+        p
+          | Onitama is an ingenious 2-player game played on a 5x5 grid. Similar to Chess, players move their pieces to control the board and capture their opponent's pieces. However, each piece does not move in a unique way like they do in Chess. In Onitama, 5 randomly drawn cards show movement patterns that you can use for any of your pieces!
+          br
+          br
+          | Each player starts with 4 pawns, 1 emperor, and 2 movement cards. On their turn, a player selects one of their cards and moves one piece by the pattern shown. This card is then placed to the left of the board, and they take the card to the right. Players continue taking turns in this manner - using one card and rotating it out for another.
+          br
+          br
+          | There are also 2 ways to win in Onitama. A player wins if they capture their opponent's emperor OR if they move their emperor onto their opponent's shrine - the space where the emperor starts. This second win condition really turns Onitama into a mind game, as you must constantly be aware of both possibilities.
+          br
+          br
+          | Onitama is a great competitive game that is simple yet challenging, just like Chess. If you are looking for another deep strategy game that is quick to learn and different every time, look no further than Onitama.
+          br
+          br
+          a.text-link(href="https://amzn.to/3i8bA8A") Buy #{rec1} on Amazon
+      .section(id=`${toID(rec2)}`)
+        h2 #{rec2}
+        img(src='../img/quarto.png' alt=rec2)
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Less Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | 10-20 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designer: Blaise Müller
+        p
+          | Quarto is a beautifully designed 2-player game of patterns and deductive reasoning. Players take turns placing pieces with varying features onto a 4x4 grid. The object of this game is to place 4 pieces that share at least 1 matching feature all in one row. The big twist is that you choose the pieces your opponent will place!
+          br
+          br
+          | Each piece in Quarto is unique and varies in 4 features. Pieces can be black or white, tall or short, circle or square, and solid or hollow. On your turn, you choose one of the available pieces and hand it to your opponent. They must place it on an empty space, and they then choose a piece for you to place.
+          br
+          br
+          | A game of Quarto starts off easy, but more thought is required when selecting pieces as the match progresses. As the board fills and more patterns appear, it becomes difficult to identify which pieces are "safe" to give your opponent. However, if you plan ahead and choose wisely, you can corner your opponent and force them to hand you a satisfying win!
+          br
+          br
+          | This game feels like a combination of Chess and Connect 4, and the rule that you choose your opponent's pieces is truly unique. If you want a strategy game that is faster to play than Chess and exercises a different part of your brain, give Quarto a try.
+          br
+          br
+          a.text-link(href="https://amzn.to/2C7XzIY") Buy #{rec2} on Amazon
+      .section(id=`${toID(rec3)}`)
+        h2 #{rec3}
+        img(src='../img/seikatsu.png' alt=rec3)
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | More Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 1-3 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 20-30 minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Matt Loomis, Isaac Shalev
+        p
+          | Seikatsu is an elegant tile placement game, played best with 3 people. Players take turns laying tiles showing colored birds and flowers, on a board themed as a Japanese garden. Each tile scores points twice - once when it is placed, and once at the end of the game. You must think both short-term and long-term in Seikatsu, just like in Chess.
+          br
+          br
+          | Points are first awarded based on how many birds of the same color are adjacent to your placed tile. At the end of the game, you also score points for how many flowers of the same color are in each of your rows. The board is shaped as a hexagonal grid, and each player is in charge of their own "perspective" - a set of 7 rows.
+          br
+          br
+          | You must consider your opponents' perspectives as much as your own in this game. When you place a tile, you are placing a flower in your opponents' rows as well! You must try to place tiles in a way that is both beneficial to you and bad for your opponents, which is no easy task. Each player holds only 2 tiles at once, so making decisions is even more challenging.
+          br
+          br
+          | Seikatsu is for you if you love unique mechanics, beautifully themed games, or simply want an awesome 3-player experience. Seikatsu is also easy to learn and set up, although you will need to play many times before you can call yourself an expert!
+          br
+          br
+          a.text-link(href="https://amzn.to/33Jnt19") Buy #{rec3} on Amazon
+include ../includes/_footer.pug
