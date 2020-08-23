@@ -63,7 +63,8 @@ hr {
   margin-top: 40px;
   align-self: flex-start;
 }
-.navbar .rounded-btn::after {
+.navbar .rounded-btn::after,
+form::after {
   content: '';
   position: absolute;
   top: -24px;
