@@ -14,7 +14,4 @@
     else
       - var link = isIndex ? `recommendations/${toID(val)}.html` : `${toID(val)}.html`;
       a.section-title(href=link) #{val}
-
-  form(action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfIq1HUIXqVRBTbyK5QrfoEKpj1WcrqozVklq_MCcZqGZ-PfA/formResponse" method="post")
-    input(name="entry.430146113" required id="request" value="request")
-    button.rounded-btn(type="submit") Request Game
+  a.rounded-btn(href="mailto:support@scatterbrainstudio.com?subject=GGS: Request a Game") Request a Game 
