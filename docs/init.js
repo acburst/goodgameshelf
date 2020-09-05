@@ -26,12 +26,12 @@
       scrollTop += contentOffset;
 
       if (window.innerWidth <= 700) {
-        indicator.style = null;
+        if (indicator) indicator.style = null;
 
       } else {
         if (i === 0) {
           // progress.style.height = '100%';
-          indicator.style.transform = '';
+          if (indicator) indicator.style.transform = '';
           for (let i = 0; i < links.length; i++) { links[i].classList.remove('active') }
 
         } else if (scrollTop < top) {
@@ -42,7 +42,7 @@
                    (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
           // progress.style.height = '100%';
           if (!link.classList.contains('active')) {
-            indicator.style.transform = `translateY(${i * 36}px)`;
+            if (indicator) indicator.style.transform = `translateY(${i * 36}px)`;
             link.classList.add('active');
           }
 
@@ -51,7 +51,7 @@
           // console.log("ACTIVE", i, perc);
           // progress.style.height = perc * 100 + '%';
           if (!link.classList.contains('active')) {
-            indicator.style.transform = `translateY(${i * 36}px)`;
+            if (indicator) indicator.style.transform = `translateY(${i * 36}px)`;
             link.classList.add('active');
           }
           if (stickyTags) {
@@ -88,7 +88,8 @@
       if (window.innerWidth > 700) {
         let footerRect = footer.getBoundingClientRect();
         console.log(document.body.offsetHeight , scrollTop , footerRect.height);
-        if (scrollTop - footerRect.height > document.body.offsetHeight - window.innerHeight) {
+        //removed: - footerRect.height from LHS of comparator to fix tolerance on index
+        if (scrollTop > document.body.offsetHeight - window.innerHeight) {
           let navbarRect = navbar.getBoundingClientRect();
           console.log(navbarRect);
           if (!navbar.classList.contains('sticky-bottom')) {

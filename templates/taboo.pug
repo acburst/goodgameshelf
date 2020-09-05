@@ -1,7 +1,7 @@
 - titles = ['Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
 -
   toID = function(string) {
-    return string.replace(/\s/g, '').toLowerCase();
+    return string.replace(/[\s!']/g, '').toLowerCase();
   }
 - index = 6;
 - rec1 = "Time's Up!";
@@ -20,7 +20,7 @@ include ../includes/_head.pug
       .section
         h1 If you like #{titles[index]}, try these 3 games
         .top-bar.row
-          span.date August 4, 2020
+          span.date September 5, 2020
           include ../includes/_share.pug
         img(src='../img/taboo.png' alt=titles[index])
         .game-overview
@@ -67,7 +67,7 @@ include ../includes/_head.pug
           | Time's Up! is another game where two teams race to guess the most words before time runs out. This game is played over 3 rounds, and the rules for giving clues become progressively more strict. This gives more variety in gameplay compared to Taboo, where the rules stay the same.
           br
           br
-          | In the Round 1, the clue giver is allowed to say *anything they want* besides the secret word - there are no off-limits words like in Taboo. In Round 2 however, clues can only be a single word! And in Round 3, you can't speak at all and must act out the word like charades.
+          | In the Round 1, the clue giver is allowed to say #[strong anything they want] besides the secret word - there are no off-limits words like in Taboo. In Round 2 however, clues can only be a single word! And in Round 3, you can't speak at all and must act out the word like charades.
           br
           br
           | Here's the catch though - the same 30 cards will be used for all 3 rounds. This means that both teams will hear every secret word after the first round, and you can rely on your memory when you're working with 1-word and charades clues.
@@ -147,15 +147,15 @@ include ../includes/_head.pug
           span.quote
             | #[strong Secret Words:] Flute, Tree, Raccoon, Brain, Pot
             br
-            | #[strong(color="red") Kolby:] "I'm putting trash and panda for Raccoon"
+            | #[strong(style={color: 'red'}) Kolby:] "I'm putting trash and panda for Raccoon"
             br
-            | #[strong(color="red") Levi:] "What the heck, that's not a thing."
+            | #[strong(style={color: 'red'}) Levi:] "What the heck, that's not a thing."
             br
-            | #[strong(color="red") Kolby:] "Just wait."
+            | #[strong(style={color: 'red'}) Kolby:] "Just wait."
             br
-            | #[strong(color="blue") Steven:] "Okay, so this is a living creature, some people call it a trash panda..."
+            | #[strong(style={color: 'blue'}) Steven:] "Okay, so this is a living creature, some people call it a trash panda..."
             br
-            | #[strong(color="red") Kolby:] "TRASHPANDAAAAAAA WE'LL TAKE THOSE POINTS LET'S GOOOO"
+            | #[strong(style={color: 'red'}) Kolby:] "TRASHPANDAAA! WE'LL TAKE THOSE POINTS, LET'S GOOO!"
           br
           br
           | If you love Taboo but would prefer more teamwork and ridiculousness, Banned Words will give you exactly that. This game will keep everyone entertained and is perfect for a tight-knit group.
