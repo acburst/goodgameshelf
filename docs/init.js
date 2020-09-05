@@ -88,8 +88,7 @@
       if (window.innerWidth > 700) {
         let footerRect = footer.getBoundingClientRect();
         console.log(document.body.offsetHeight , scrollTop , footerRect.height);
-        //removed: - footerRect.height from LHS of comparator to fix tolerance on index
-        if (scrollTop > document.body.offsetHeight - window.innerHeight) {
+        if (scrollTop - footerRect.height > document.body.offsetHeight - window.innerHeight) {
           let navbarRect = navbar.getBoundingClientRect();
           console.log(navbarRect);
           if (!navbar.classList.contains('sticky-bottom')) {
