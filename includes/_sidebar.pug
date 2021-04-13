@@ -4,7 +4,7 @@
     if index === i
       div
         .toc
-          a.section-title.active(href='index.html') #{val}
+          a.section-title.active(href=`${toID(val)}.html`) #{val}
           .indicator
             .progress
           .section-links
@@ -14,4 +14,4 @@
     else
       - var link = isIndex ? `recommendations/${toID(val)}.html` : `${toID(val)}.html`;
       a.section-title(href=link) #{val}
-  a.rounded-btn(href="mailto:support@scatterbrainstudio.com?subject=GGS: Request a Game") Request a Game 
+  a.rounded-btn(href="mailto:support@spiralburst.com?subject=GGS: Request a Game") Request a Game

@@ -28,9 +28,9 @@ footer
               name="successRedirectUrl",
               value="")
             button.rounded-btn(type="submit") I want recommendations!
-      
+
       p.amazon-disclaimer *As an Amazon Associate, we earn money from qualifying purchases.
 
       script(src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.5/recaptcha.js")
       script(src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.5/formEmbed.js")
-script(type="text/javascript", src="../init.js")
+script(type="text/javascript", src=isIndex ? "init.js" : "../init.js")

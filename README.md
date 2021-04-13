@@ -1,7 +1,7 @@
 # goodgameshelf
 
 # Setup
-npm install pug
+npm install pug-cli
 
 # Compile for prod
 

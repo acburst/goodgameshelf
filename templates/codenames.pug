@@ -1,15 +1,14 @@
-- titles = ['Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
--
-  toID = function(string) {
-    return string.replace(/\s/g, '').toLowerCase();
-  }
-- index = 3;
+- var gameTitle = "Codenames";
+- var articleTitle = "3 Great Deductive Reasoning Games like Codenames";
+
 - rec1 = "Just One";
 - rec2 = "Crosstalk";
 - rec3 = "Cryptid";
 
 doctype html
 include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
 .container
   .navbar
     a.logo-title(href='https://goodgameshelf.com')
@@ -18,7 +17,7 @@ include ../includes/_head.pug
   main
     .content
       .section
-        h1 If you like #{titles[index]}, try these 3 games
+        h1 #{articleTitle}
         .top-bar.row
           span.date August 4, 2020
           include ../includes/_share.pug

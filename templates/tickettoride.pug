@@ -1,16 +1,15 @@
-- titles = ['Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
--
-  toID = function(string) {
-    return string.replace(/\s/g, '').toLowerCase();
-  }
-- index = 7;
+- var gameTitle = "Ticket to Ride";
+- var articleTitle = "3 games like Ticket to Ride to play next";
+
 - rec1 = "Railroad Ink";
 - rec2 = "Copenhagen";
 - rec3 = "Power Grid";
-- metadescription = 'Expand your horizons a bit more with these 3 games that introduce new game mechanics to the card drawing and route-connecting fun of Ticket to Ride.';
+- metadescription = 'Love Ticket to Ride? These 3 great games build on the card drawing and route-connecting fun of Ticket to Ride!';
 
 doctype html
 include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
 .container
   .navbar
     a.logo-title(href='https://goodgameshelf.com')
@@ -19,7 +18,7 @@ include ../includes/_head.pug
   main
     .content
       .section
-        h1 If you like #{titles[index]}, try these 3 games
+        h1 #{articleTitle}
         .top-bar.row
           span.date August 4, 2020
           include ../includes/_share.pug

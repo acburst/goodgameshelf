@@ -1,15 +1,15 @@
-- titles = ['Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
--
-  toID = function(string) {
-    return string.replace(/[\s!']/g, '').toLowerCase();
-  }
-- index = 6;
+- var gameTitle = "Taboo";
+- var articleTitle = "If you like Taboo, try these 3 word games";
+
 - rec1 = "Time's Up!";
 - rec2 = "Codenames";
 - rec3 = "Banned Words";
 
 doctype html
 include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+- console.log(gameTitle, index)
+
 .container
   .navbar
     a.logo-title(href='https://goodgameshelf.com')
@@ -18,7 +18,7 @@ include ../includes/_head.pug
   main
     .content
       .section
-        h1 If you like #{titles[index]}, try these 3 games
+        h1 #{articleTitle}
         .top-bar.row
           span.date September 5, 2020
           include ../includes/_share.pug
@@ -135,7 +135,7 @@ include ../includes/_head.pug
               img(src='../img/designer.svg' alt='designer')
             | Designer: Forrest-Pruzan Creative, Prospero Hall
         p
-          | Banned Words is similar to Taboo, but instead of each card showing the words that are off-limits, the other team gets to decide! 
+          | Banned Words is similar to Taboo, but instead of each card showing the words that are off-limits, the other team gets to decide!
           br
           br
           | Each round, one team draws a card showing 5 secret words that their opponents will be guessing. They collectively write down 10 "banned words" they think their opponents will use as clues, and hand the card to the clue-giver on the opposing team.

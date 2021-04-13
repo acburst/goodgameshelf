@@ -1,9 +1,6 @@
-- titles = ['Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
--
-  toID = function(string) {
-    return string.replace(/\s/g, '').toLowerCase();
-  }
-- index = 2;
+- var gameTitle = "Chess";
+- var articleTitle = "3 Strategy Board Games like Chess";
+
 - rec1 = "Onitama";
 - rec2 = "Quarto";
 - rec3 = "Seikatsu";
@@ -11,6 +8,8 @@
 
 doctype html
 include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
 .container
   .navbar
     a.logo-title(href='https://goodgameshelf.com')
@@ -19,7 +18,7 @@ include ../includes/_head.pug
   main
     .content
       .section
-        h1 3 Smart Board Games that are Similar to #{titles[index]}
+        h1 #{articleTitle}
         .top-bar.row
           span.date August 16, 2020
           include ../includes/_share.pug
@@ -98,7 +97,7 @@ include ../includes/_head.pug
           | Quarto is a beautifully designed 2-player game of patterns and deductive reasoning. The big twist in this game is that you choose the pieces your opponent will place!
           br
           br
-          | Each piece in Quarto is unique and varies in 4 features: light or dark, tall or short, circle or square, and solid or hollow. On your turn, you choose one of the available pieces and hand it to your opponent. They place it on an empty space and then choose a piece for you to place. The object of the game is to place 4 pieces in a row that all share at least 1 matching feature.  
+          | Each piece in Quarto is unique and varies in 4 features: light or dark, tall or short, circle or square, and solid or hollow. On your turn, you choose one of the available pieces and hand it to your opponent. They place it on an empty space and then choose a piece for you to place. The object of the game is to place 4 pieces in a row that all share at least 1 matching feature.
           br
           br
           | A game of Quarto starts off easy, but more thought is required when selecting pieces as the match progresses. As the board fills and more patterns appear, it becomes difficult to identify which pieces are "safe" to give your opponent. However, if you plan ahead and choose wisely, you can corner your opponent and force them to hand you a satisfying win!

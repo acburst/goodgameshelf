@@ -1,6 +1,14 @@
+- titles = ['7 Wonders', 'Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
+
 - var favicon = isIndex ? 'favicon.ico' : '../favicon.ico';
 - var style = isIndex ? 'style.css' : '../style.css';
-- var title = isIndex ? 'Good Game Shelf' : `If you like ${titles[index]}, try these 3 games`
+- var title = isIndex ? 'Good Game Shelf' : articleTitle
+
+-
+  toID = function(string) {
+    return string.replace(/[\s!']/g, '').toLowerCase();
+  }
+
 head
   //- Global site tag (gtag.js) - Google Analytics
   script(async,src="https://www.googletagmanager.com/gtag/js?id=UA-144373794-2")

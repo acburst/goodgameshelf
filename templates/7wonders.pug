@@ -1,0 +1,177 @@
+- var gameTitle = "7 Wonders";
+- var articleTitle = "3 Great Games like 7 Wonders that You Need to Try";
+
+- rec1 = "It's a Wonderful World";
+- rec2 = "Sushi Go Party";
+- rec3 = "Between Two Castles";
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
+.container
+  .navbar
+    a.logo-title(href='https://goodgameshelf.com')
+      img(src='../img/logo.png' alt='Good Game Shelf')
+    include ../includes/_sidebar.pug
+  main
+    .content
+      .section
+        h1 #{articleTitle}
+        .top-bar.row
+          span.date April 13, 2021
+          include ../includes/_share.pug
+        .img-container
+          img(src='../img/7wonders.png' alt='7 Wonders')
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://www.7wonders.net/en/games/7-wonders") Repo Productions
+        .game-overview
+          .row
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='complexity')
+              | 3-7 players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | 60-90 minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designer: Antoine Bauza
+          a.text-link(href="https://amzn.to/2R8jLtA") Buy #{titles[index]} on Amazon
+        p
+          | 7 Wonders is a classic strategy game from 2010 that does so many things well: fast-paced gameplay for up to 7 players, simultaneous turns with little downtime, and a diverse set of strategies to choose from.
+          br
+          br
+          | The mechanic of card drafting - playing a single card from your hand and passing the rest to the next player - provides great player interaction and high replayability. This fun mechanic is central to the success of 7 Wonders, and these other games feature it as well!
+          br
+          .note
+            | #[strong Note:] we're linking to the beautifully revamped version of 7 Wonders (released in 2021), so check that out if you haven't seen it yet. Our two favorite expansions,&nbsp;
+            a.text-link(href="https://amzn.to/3wsZ8IE") Cities
+            | &nbsp;and&nbsp;
+            a.text-link(href="https://amzn.to/3sYNy68") Armada
+            |, were also remade!
+      .section(id=`${toID(rec1)}`)
+        h2 #{rec1}
+        img(src='../img/itsawonderfulworld.png' alt="It's a Wonderful World")
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Lower Complexity
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 1-5 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 30-45 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designer: Anthony Wolff
+        p
+          | It's A Wonderful World is a must-try engine-building game for fans of 7 Wonders. In this game, players draft cards 7-Wonders style to build futuristic production empires. Each card you add to your empire produces various resources, gives victory points, or gives a mix of both. The rules are simple and this game is easier to pick up than 7 Wonders, but your brain may be burning even more in the final round!
+          br
+          br
+          | You start off producing very few resources, and every card costs resources to activate. When drafting cards early on, you will likely focus on cheaper cards that increase your production levels. As the game progresses and your production grows stronger, you'll shift toward more expensive cards that focus on victory points.
+          br
+          br
+          | Mastering this shift is no easy task though! You will constantly be weighing your options and will be forced to take risks along the way. You'll often find yourself thinking "this card produces so much Yellow for me, but there's only 1 round of production left. And this card *might* give me 10 VP if I can get enough Blue. But if I pass this card to April, she's going to get so many points! But that Yellow production!"
+          br
+          br
+          | This is a great strategy game that packs a punch for how simple its gameplay is. Simultaneous turns and quick setup make this a great option for any group, big or small. Definitely check this one out if you're looking for a similar 7 Wonders experience and also love engine builders!
+          br
+          br
+          a.text-link(href="https://amzn.to/3sLONW2") Buy #{rec1} on Amazon
+          br
+          .note
+            | #[strong Note:] also consider the&nbsp;
+            a.text-link(href="https://amzn.to/39CgtFh") Corruption &amp; Ascension expansion&nbsp;
+            | which adds some crazy cards for more interesting strategies.
+
+      .section(id=`${toID(rec2)}`)
+        h2 #{rec2}
+        .img-container
+          img(src='../img/sushigoparty.png' alt='Sushi Go Party')
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://www.youtube.com/channel/UCjrwJy6p2SWqyIDXvavEoug") Board Game Weekenders
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Lower Complexity
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-8 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 30-60 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Phil Walker-Harding
+        p
+          .inline-link
+            | Sushi Go Party is another great game in which you keep one card from your hand and pass the rest to the next player. Each card scores points in different ways, and everything is wrapped in a super cute theme of Japanese food. This game is a more elaborate version of&nbsp;
+            a.text-link(href="https://amzn.to/3daDHok") Sushi Go
+            |, adding some new mechanics and about 15 new cards to choose from. These added cards also make Party quite replayable as a bonus!
+          br
+          | During one round, you might press your luck to try to get 4 different Onigiri for a whopping 16 points. In the next round, you can play it safe with the Nigiri cards, worth 1, 2, or 3 points each. And in the final round, you might play risky and take 2 Tofu for 6 points, only to have your friend pass you a 3rd which erases those points!
+          br
+          br
+          | Each time you play Sushi Go Party, you'll be playing with a different set of cards. You'll randomly select 3 Appetizers, 2 Specials, 1 Roll, and 1 Dessert to be in the game. This adds a nice level of strategic variation between plays, and it's always fun to find out which your group's favorite cards will be.
+          br
+          br
+          | Overall, this game is more light-hearted and simpler to teach than 7 Wonders, so it's a great option for less experienced players. However, there's still enough strategy for a more experienced group to enjoy as well!
+          br
+          br
+          a.text-link(href="https://amzn.to/3wnEFor") Buy #{rec2} on Amazon
+      .section(id=`${toID(rec3)}`)
+        h2 #{rec3}
+        img(src='../img/betweentwocastles.png' alt='Between Two Castles')
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Higher Complexity
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 3-7 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 45-75 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Matthew O'Malley, Ben Rosset
+        p
+          | Between Two Castles adds a couple unique twists to the card drafting genre that 7 Wonders is known for. First, you will be drafting tiles rather than drafting cards cards when building your castles.  Second, you are not building alone! You build two shared castles - one with the player on your left, and one with the player on the right - and each castle also scores its own points. This turns Between Two Castles into an awesome game of cooperation-but-not-really, as your final score will be the *lower of* your two castles!
+          br
+          br
+          | Each tile represents one room of a castle, and there are 6 types of rooms which score points in different ways. When drafting tiles, you pick two from your stack and pass the rest to the next player.  You then work with each ally/opponent to decide which tiles to add to your shared castle.
+          br
+          br
+          | To win this game, you need to try your best to score as many points for each of your castles while keeping them relatively balanced, which can be quite challenging. You can't simply put the best tiles into one castle and neglect the other, as only your weaker castle's score matters!
+          br
+          br
+          | Sharing a castle with another player adds a ton of depth to this type of game, and it also reduces competitiveness and makes the game more fun for everyone. This is a game great for newer gamers, as you can collaborate and teach throughout the game!
+          br
+          br
+          a.text-link(href="https://amzn.to/3ubrWDq") Buy #{rec3} on Amazon
+          br
+          .note
+            | #[strong Note:] this game is actually a hybrid of two other games. The scoring mechanics come from&nbsp;
+            a.text-link(href="https://amzn.to/32j8LvT") The Castles of Mad King Ludwig
+            |, and the castle sharing mechanic comes from&nbsp;
+            a.text-link(href="https://amzn.to/3d6YmJO") Between Two Cities
+            |.
+include ../includes/_footer.pug

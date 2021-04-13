@@ -1,15 +1,16 @@
-- titles = ['Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
--
-  toID = function(string) {
-    return string.replace(/[\s!]/g, '').toLowerCase();
-  }
-- index = 1;
+- var gameTitle = "Blokus";
+- var articleTitle = "If you like Blokus, try these 3 games";
+
 - rec1 = "Drop It!";
 - rec2 = "NMBR 9";
 - rec3 = "Patchwork";
 
+
+
 doctype html
 include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
 .container
   .navbar
     a.logo-title(href='https://goodgameshelf.com')
@@ -18,7 +19,7 @@ include ../includes/_head.pug
   main
     .content
       .section
-        h1 If you like #{titles[index]}, try these 3 games
+        h1 #{articleTitle}
         .top-bar.row
           span.date August 4, 2020
           include ../includes/_share.pug
