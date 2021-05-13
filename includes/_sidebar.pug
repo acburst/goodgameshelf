@@ -1,5 +1,5 @@
 .links
-  span.link-section If you like:
+  span.link-section #[strong If you like:]
   each val, i in titles
     if index === i
       div
@@ -14,4 +14,21 @@
     else
       - var link = isIndex ? `recommendations/${toID(val)}.html` : `${toID(val)}.html`;
       a.section-title(href=link) #{val}
+  span.link-section #[strong Best Games for:]
+  each val, i in titlesBestOf
+    if index === i
+      div
+        .toc
+          a.section-title.active(href=`${toID(val)}.html`) #{val}
+          .indicator
+            .progress
+          .section-links
+            a.section-link(data-target=`${toID(rec1)}` href=`#${toID(rec1)}`) #{rec1}
+            //- a.section-link(data-target=`${toID(rec2)}` href=`#${toID(rec2)}`) #{rec2}
+            //- a.section-link(data-target=`${toID(rec3)}` href=`#${toID(rec3)}`) #{rec3}
+    else
+      - var link = isIndex ? `recommendations/${toID(val)}.html` : `${toID(val)}.html`;
+      a.section-title(href=link) #{val}
+  //- .note-container
+  //-   | Not sure what to play next? Shoot us an email and we'll give you some recommendations!
   a.rounded-btn(href="mailto:support@spiralburst.com?subject=GGS: Request a Game") Request a Game
