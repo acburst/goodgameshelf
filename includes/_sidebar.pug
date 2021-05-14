@@ -1,7 +1,7 @@
 .links
   span.link-section #[strong If you like:]
   each val, i in titles
-    if index === i
+    if index === i && articleType === 'IF_YOU_LIKE'
       div
         .toc
           a.section-title.active(href=`${toID(val)}.html`) #{val}
@@ -16,7 +16,7 @@
       a.section-title(href=link) #{val}
   span.link-section #[strong Best Games for:]
   each val, i in titlesBestOf
-    if index === i
+    if index === i && articleType === 'BEST_OF'
       div
         .toc
           a.section-title.active(href=`${toID(val)}.html`) #{val}
