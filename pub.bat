@@ -5,4 +5,5 @@ call pug templates -P -o .\docs\recommendations
 call echo %cd%\docs/recommendations\index.html
 call echo %cd%\docs
 call move /Y %cd%/docs/recommendations\index.html %cd%\docs
+@echo off
 call %cd%\docs\index.html

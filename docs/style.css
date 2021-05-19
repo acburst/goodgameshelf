@@ -130,7 +130,6 @@ form::after {
   height: 20px;
 }
 
-
 .navbar {
   font-family: 'Avenir', serif;
   position: fixed;
@@ -312,10 +311,18 @@ main {
   padding-bottom: 20px;
 }
 
+.honor {
+  padding-bottom: 40px;
+}
 .end-section {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+.final-section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 200px;
 }
 
 .top-bar {
