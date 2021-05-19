@@ -1,0 +1,176 @@
+- var gameTitle = "Dominion";
+- var articleTitle = "3 of the Best Deck Building Board Games like Dominion";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Clank!";
+- rec2 = "Orleans";
+- rec3 = "Dune: Imperium";
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
+.container
+  .navbar
+    a.logo-title(href='https://goodgameshelf.com')
+      img(src='../img/logo.png' alt='Good Game Shelf')
+    include ../includes/_sidebar.pug
+  main
+    .content
+      .section
+        h1 #{articleTitle}
+        .top-bar.row
+          span.date May 20, 2020
+          include ../includes/_share.pug
+        img(src='../img/dominion.png' alt='dominion')
+        .game-overview
+          .row
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='complexity')
+              | 2-4 players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | 30-45 minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designer: Michael Kiesling
+          a.text-link(href="https://amzn.to/3w1UMY0") Buy #{titles[index]} on Amazon
+        p
+          | Dominion popularized the deck-building mechanic in 2008 and has held up as a solid game ever since. Players start on equal footing with the same deck in Dominion, but each may pursue a completely different strategy and combination of cards to add to their decks.
+          br
+          br
+          | Many games have now built around this mechanic while adding their own twists and themes. These are great board games to play next if you're looking for a new challenge that can be played over and over again.
+      .section(id=`${toID(rec1)}`)
+        h2 #{rec1}
+        img(src='../img/clank.png' alt='clank')
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Slightly More Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 1-4 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 30-45 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Adrian Adamescu, Daryl Andrews
+        p
+          | Clank! is a mashup of dungeon-crawling with deck-building. You'll be venturing deep underground to collect loot and fight monsters, and the cards you draw will dictate your combat strength and movement speed each turn. The goal is to have the most points at the end of the game, but there's a catch - you have to make it back to the surface alive!
+          br
+          br
+          | Each starting deck includes "Clank!" cards. Draw too many of these, and you will be at a greater risk of getting scorched when the terrifying Dragon attacks! (Of course there is a Dragon). It's game over if your health runs out! Will you venture further down for more loot and risk more dragon attacks, or come out early to secure the points you already have?
+          br
+          br
+          | Each turn, you may also add new cards to your deck, and these provide new abilities, effects, or victory points. Deck-building is still central to Clank's gameplay, but you'll find that the risk of death drastically changes your priorities compared to other games.
+          br
+          br
+          | Clank! is a fresh take on the deck-building genre and encourages you to push your luck for the biggest payout. Its theme and all-or-nothing outcomes make Clank a more lighthearted game, but a very fun one nonetheless!
+          br
+          br
+          a.text-link(href="https://amzn.to/3oja73O") Buy #{rec1} on Amazon
+      .section(id=`${toID(rec2)}`)
+        h2 #{rec2}
+        img(src='../img/orleans.png' alt='orleans')
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Similar Complexity
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-4 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 15-20 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Bruno Cathala
+        p
+          | Orleans is a heavier strategy game that revolves around bag-building, a unique variant of deck-building. Rather than adding cards to a personal deck, players add various meeples to their bag over the course of the game. Each round, players randomly choose meeples from their bag and then place them on their board to perform certain actions.
+          br
+          br
+          | On one turn, you might activate the Villager action which allows you to add a new meeple to your bag. Adding a Farmer will also improve your harvesting ability, while adding a Builder lets you construct a building with a private action space. Other actions let you move your explorer around the map, construct guilds to gain points, or even remove meeples from your bag!
+          br
+          br
+          | The goal of the game is to gain the most VP, and strategies vary wildly in how and when VP are earned. The challenge comes from the fact that all strategies are governed by the luck of the draw. However, you also get to control your luck by deciding which meeples to add!
+          br
+          br
+          | If you like Dominion and are looking for something with more complexity, definitely give Orleans a try! The addition of worker placement to this genre really makes for a replayable experience that is difficult to master.
+          br
+          br
+          a.text-link(href="https://amzn.to/3y2Ygey") Buy #{rec2} on Amazon
+      .section(id=`${toID(rec3)}`)
+        h2 #{rec3}
+        img(src='../img/dune-imperium.png' alt='dune-imperium')
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | More Complex
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-4 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 30-45 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Chris Quilliams
+        p
+          | Dune: Imperium is a deck-building game themed around Dune, the classic sci-fi novel. This game is much more than just a board game adaptation though. If you are looking for something that has a higher level of player interaction, this is the game to try.
+          br
+          br
+          | It adds worker placement, near-full information, and a refreshingly simple combat system to the core deck-building mechanics.
+          br
+          br
+          | Each card additionally has two modes of use that lead to excellent strategic balance. A card may be either be discarded to visit a location of matching suit, or a card may be saved for the Reveal phase to gain bonuses and Influence to purchase new cards.
+          br
+          br
+          | Pleasantly surprised by this one, and the graphic design and artwork are also excellent! The spice must flow.
+          br
+          br
+          a.text-link(href="https://amzn.to/3w7SSoz") Buy #{rec3} on Amazon
+      .end-section
+        h2 Honorable Mentions
+        p
+          | #[strong Mystic Vale] is a card-builder in addition to a deck-builder! Not only can you choose which cards to add to your deck, but you can also upgrade them by sliding other transparent cards into their sleeves. This adds new strategies and rewarding moments to the game, and building your own cards is just a lot of fun.
+          br
+          br
+          a.text-link(href="https://amzn.to/3ojzjXN") Buy Mystic Vale on Amazon
+          br
+          br
+        p
+          | #[strong Fort] is a friendly deck-building game with lots of player interaction. You'll recruit friends to your treehouse fort and use their special abilities to gain Pizza, Toys, and victory points. If you don't play with a friend though, they might leave to hang out at another player's fort! This a deep but approachable game with high quality components, all packed into a very small box.
+          br
+          br
+          a.text-link(href="https://amzn.to/3w2zE3U") Buy Fort on Amazon
+          br
+          br
+        p
+          | #[strong Taverns of Tiefenthal] is a lighthearted game around brewing ale, expanding your tavern, and winning over nobles (and points). You'll add cards with various effects and bonuses to your deck, and then dice are rolled to determine which actions you may take each turn. The fun theme and increased level of luck make this is a great option for a more relaxing, less competitive experience.
+          br
+          br
+          a.text-link(href="https://amzn.to/2ERaMqF") Buy Taverns of Tiefenthal on Amazon
+          br
+          br
+      .end-section
+        .note
+          | Want more recommendations or have feedback for us? Send us an email at&nbsp;
+          a.text-link(href="mailto:support@spiralburst.com?subject=GGS: Request a Game") support@spiralburst.com
+          | &nbsp;and we'll get back to you!
+include ../includes/_footer.pug

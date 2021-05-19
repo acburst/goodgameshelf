@@ -1,4 +1,4 @@
-- titles = ['7 Wonders', 'Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
+- titles = ['7 Wonders', 'Azul', 'Blokus', 'Chess', 'Codenames', 'Coup', 'Dominion', 'Settlers of Catan', 'Taboo', 'Ticket to Ride'];
 
 - var favicon = isIndex ? 'favicon.ico' : '../favicon.ico';
 - var style = isIndex ? 'style.css' : '../style.css';
@@ -6,7 +6,7 @@
 
 -
   toID = function(string) {
-    return string.replace(/[\s!']/g, '').toLowerCase();
+    return string.replace(/[\s!:']/g, '').toLowerCase();
   }
 
 head
