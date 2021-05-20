@@ -43,7 +43,7 @@ include ../includes/_head.pug
           br
           br
           | These 3 games share many of Azul&apos;s best features along with their own unique twists &amp; fun themes.
-      .section(id=`${rec1.trim().toLowerCase()}`)
+      .section(id=`${toID(rec1)}`)
         h2 #{rec1}
         img(src='../img/sagrada.jpg' alt='sagrada')
         .tags
@@ -74,7 +74,7 @@ include ../includes/_head.pug
           br
           br
           a.text-link(href="https://amzn.to/3i6oRic") Buy #{rec1} on Amazon
-      .section(id=`${rec2.trim().toLowerCase()}`)
+      .section(id=`${toID(rec2)}`)
         h2 #{rec2}
         img(src='../img/kingdomino.jpg' alt='kingdomino')
         .tags
@@ -105,7 +105,7 @@ include ../includes/_head.pug
           br
           br
           a.text-link(href="https://amzn.to/3gu3JBZ") Buy #{rec2} on Amazon
-      .section(id=`${rec3.trim().toLowerCase()}`)
+      .section(id=`${toID(rec3)}`)
         h2 #{rec3}
         img(src='../img/reef.jpg' alt='reef')
         .tags
@@ -138,5 +138,6 @@ include ../includes/_head.pug
           | Reef will stretch your mind even further than Azul, so give it a shot if you want to test your limits. Regardless of who wins, you&apos;ll love the towers of colorful coral in your reef at the end of each play!
           br
           br
-          a.text-link(href="https://amzn.to/3aLsLvs") Buy #{rec3} on Amazon
+          a.text-link(href="https://amzn.to/2ERaMqF") Buy #{rec3} on Amazon
+      include ../includes/_article-end.pug
 include ../includes/_footer.pug

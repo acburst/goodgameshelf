@@ -1,4 +1,4 @@
-.links
+.links(id='sidebar-1')
   span.link-section #[strong If you like:]
   each val, i in titles
     if index === i && articleType === 'IF_YOU_LIKE'
@@ -29,6 +29,5 @@
     else
       - var link = isIndex ? `recommendations/${toID(val)}.html` : `${toID(val)}.html`;
       a.section-title(href=link) #{val}
-  //- .note-container
-  //-   | Not sure what to play next? Shoot us an email and we'll give you some recommendations!
-  a.rounded-btn(href="mailto:support@spiralburst.com?subject=GGS: Request a Game") Request a Game
+  //- a.rounded-btn(href="mailto:support@spiralburst.com?subject=GGS: Request a Game") Request a Game
+  a.rounded-btn(href="https://forms.gle/HAWRTytXp4CV1nob8") Share Feedback

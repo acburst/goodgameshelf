@@ -15,13 +15,13 @@
     let sections = document.querySelectorAll('.section');
     let indicator = document.querySelector('.indicator');
     let progress = document.querySelector('.indicator .progress');
+    let contentOffset = 100;
     for (var i = 0; i < sections.length; i++) {
       let rect = sections[i].getBoundingClientRect()
       let top = rect.top + scrollTop;
       let bottom = top + rect.height;
       let id = sections[i].id || 'null';
       let stickyTags = sections[i].querySelector('.tags');
-      let contentOffset = 100;
       let link = document.querySelector('.section-link[data-target='+id+']');
       scrollTop += contentOffset;
 
@@ -86,9 +86,12 @@
     // Navbar
     if (footer) {
       if (window.innerWidth > 700) {
+        let el = document.getElementById('sidebar-1');
+        console.log(el.offsetHeight);
         let footerRect = footer.getBoundingClientRect();
-        console.log(document.body.offsetHeight , scrollTop , footerRect.height);
-        if (scrollTop - footerRect.height > document.body.offsetHeight - window.innerHeight) {
+        console.log(document.body.offsetHeight , scrollTop , footerRect.height, window.innerHeight);
+        let magicNumber = (sections.length === 1) ? contentOffset : contentOffset - 300; //300 comes from difference in ScrollTop between index and regular articles. not sure why?
+        if (document.body.offsetHeight - footerRect.height < scrollTop + el.offsetHeight + magicNumber) {
           let navbarRect = navbar.getBoundingClientRect();
           console.log(navbarRect);
           if (!navbar.classList.contains('sticky-bottom')) {
