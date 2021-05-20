@@ -86,9 +86,11 @@
     // Navbar
     if (footer) {
       if (window.innerWidth > 700) {
+        let magicNumber = 126; //no idea why these work, sorry for my sins. calculated as (bodyheight - scrollTop) / 2 - CK
+        if (sections.length === 1) magicNumber = 318; //even more confused about this one
         let footerRect = footer.getBoundingClientRect();
-        console.log(document.body.offsetHeight , scrollTop , footerRect.height);
-        if (scrollTop - footerRect.height > document.body.offsetHeight - window.innerHeight) {
+        console.log(document.body.offsetHeight , scrollTop , footerRect.height, window.innerHeight);
+        if (scrollTop - footerRect.height > document.body.offsetHeight - window.innerHeight - magicNumber) {
           let navbarRect = navbar.getBoundingClientRect();
           console.log(navbarRect);
           if (!navbar.classList.contains('sticky-bottom')) {
