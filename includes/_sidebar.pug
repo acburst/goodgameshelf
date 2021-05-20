@@ -31,7 +31,7 @@
             a.section-link(data-target=`${toID(rec6)}` href=`#${toID(rec3)}`) #{rec6}
             a.section-link(data-target=`${toID(rec7)}` href=`#${toID(rec3)}`) #{rec7}
     else
-      - var link = isIndex ? `recommendations/${toID(val)}.html` : `${toID(val)}.html`;
+      - var link = isIndex ? `categories/${toID(val)}.html` : `${toID(val)}.html`;
       a.section-title(href=link) #{val}
   //- a.rounded-btn(href="mailto:support@spiralburst.com?subject=GGS: Request a Game") Request a Game
   a.rounded-btn(href="https://forms.gle/HAWRTytXp4CV1nob8") Share Feedback
