@@ -2,8 +2,8 @@
 call title Publish pug templates
 call echo Publishing pug templates
 call pug templates -P -o .\docs\recommendations
+@echo off
 call echo %cd%\docs/recommendations\index.html
 call echo %cd%\docs
 call move /Y %cd%/docs/recommendations\index.html %cd%\docs
-@echo off
-%cd%\docs\index.html
+call %cd%\docs\index.html

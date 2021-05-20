@@ -1,19 +1,19 @@
 - var gameTitle = "Families";
-- var articleTitle = "The Best Family Board Games The Best Board Games for Families to Play Together";
+- var articleTitle = "8 of The Best Family Games to Play Together [Updated for 2021]";
 - var articleType = "BEST_OF";
 
 
 - rec1 = "Just One";
 - rec2 = "Drop It";
-- rec3 = "Codenames";
+- rec3 = "Kingdomino";
+- rec4 = "Ticket to Ride";
+- rec5 = "Ice Cool";
+- rec6 = "Codenames";
+- rec7 = "Azul";
 
 doctype html
 include ../includes/_head.pug
 - index = titlesBestOf.indexOf(gameTitle);
-//- - index = ;
-//- need to have this page's index be different from original set.
-//- can take length of array and add to this index
-//- also want to have
 
 .container
   .navbar
@@ -25,68 +25,46 @@ include ../includes/_head.pug
       .section
         h1 #{articleTitle}
         .top-bar.row
-          span.date August 4, 2020
+          span.date May 20, 2020
           include ../includes/_share.pug
-        img(src='../img/azul.jpg' alt='azul')
+        img(src='../img/family-playing-game.png' alt='Family Playing Game')
         .game-overview
-          .row
-            .tag
-              .icon
-                img(src='../img/people.svg' alt='complexity')
-              | 2-4 players
-            .tag
-              .icon
-                img(src='../img/time.svg' alt='play time')
-              | 30-45 minutes
-            .tag
-              .icon
-                img(src='../img/designer.svg' alt='designer')
-              | Designer: Michael Kiesling
-          a.text-link(href="https://amzn.to/3i2ItDN") Buy #{titles[index]} on Amazon
         p
-          | Azul has made a huge splash since its release in 2017, thanks to its clever design and the fact that  anyone can learn the game quickly. If you enjoy Azul, you might like the competition of drafting tiles or the puzzle of placing your tiles to earn the highest score. Maybe you just love the beautiful theme and smooth tiles. Or maybe you appreciate that it truly is easy to learn and difficult to master.
+          | It's a ton of fun to play board games with the family! Every family is different though, so finding the perfect game that everyone will enjoy can be tricky. These games are a great place to start, as they are relatively quick to play, and they are easy to learn and teach.
           br
           br
-          | These 3 games share many of Azul&apos;s best features along with their own unique twists &amp; fun themes.
-      .section(id=`${rec1.trim().toLowerCase()}`)
-        h2 #{rec1}
-        img(src='../img/sagrada.jpg' alt='sagrada')
+          | We've played many different games with our families over the years, and these picks consistently make for a good time.
+      .section(id=`${toID(rec1)}`)
+        h2 1. #{rec1}
+        img(src='../img/justone.png' alt='Just One')
         .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | Slightly More Complex
           .tag
             .icon
               img(src='../img/people.svg' alt='player count')
-            | 1-4 Players
+            | 3-7 Players
           .tag
             .icon
               img(src='../img/time.svg' alt='play time')
-            | Playtime: 30-45 Minutes
+            | Playtime: 5-30 Minutes
           .tag
             .icon
               img(src='../img/designer.svg' alt='designer')
-            | Designers: Adrian Adamescu, Daryl Andrews
+            | Designers: Ludovic Roudy, Bruno Sautter
         p
-          | Sagrada is a delightful sister game to Azul - instead of laying tiles, you&apos;re placing panes into a beautiful stained glass window. Like Azul, you spend each turn drafting a piece to add to your board. But in Sagrada, you take colored dice.
+          | Just One is a simple cooperative word game, and it was an immediate success with my family. We were playing within minutes, laughing and cheering, and even my grandparents played with us, which was so much fun. It can be played with up to 7 people too!
           br
           br
-          | When you place dice, you must meet placement requirements based on their color and number to maximize your score at the end of the game. You have to place your dice strategically like in Azul, but you never know what numbers will be rolled on which color dice, so flexibility is key. In case you ever get stuck with a bad die, Sagrada introduces special abilities that you can use to get yourself out of a pinch.
+          | In this game, one player (the guesser) tries to guess a secret word, and everyone else writes just one word as a clue, in private. Then, everyone shows their clues to each other, except the guesser, and any matching words are erased! The guesser has just one guess at what the secret word is based on the remaining clues.
           br
           br
-          | Overall, Sagrada is slightly more complex than Azul, but it&apos;s just as easy to learn. The game also includes window mats of increasing difficulties, so you can test your strategic limits with each play.
+          | This game is easy to pick up, but choosing a good clue can be challenging. Go simple and risk risk matching up with someone else, or go obscure and risk confusing the guesser? Just One is great for new gamers and veterans alike, and the cooperative aspect and minimal downtime is great for families!
           br
           br
-          a.text-link(href="https://amzn.to/3i6oRic") Buy #{rec1} on Amazon
-      .section(id=`${rec2.trim().toLowerCase()}`)
-        h2 #{rec2}
-        img(src='../img/kingdomino.jpg' alt='kingdomino')
+          a.text-link(href="https://amzn.to/3u1f1DD") Buy #{rec1} on Amazon
+      .section(id=`${toID(rec2)}`)
+        h2 2. #{rec2}
+        img(src='../img/dropit.png' alt='Drop It')
         .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | Similar Complexity
           .tag
             .icon
               img(src='../img/people.svg' alt='player count')
@@ -94,30 +72,97 @@ include ../includes/_head.pug
           .tag
             .icon
               img(src='../img/time.svg' alt='play time')
-            | Playtime: 15-20 Minutes
+            | Playtime: 20-30 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Bernard Tavitian
+        p
+          | If your family likes Connect Four, then Drop It is for you! Players take turns dropping colored pieces into a slotted stand, hoping they land in a favorable way to get points. But of course, things often don't go as planned!
+          br
+          br
+          | The higher your piece lands, the more points you get. However, if your piece touches another piece of the same shape or color, you get no points from that piece! You might tell yourself "there's no way my circle will bounce over there to touch that other circle," only for that exact thing to happen seconds later.
+          br
+          br
+          | This game is silly and light-hearted, and it's perfect for kids as well as adults. Drop It always brings a smile to everyone's face (and yelling and laughter), and it takes only a few minutes to get started. I always bring this game with me now when visiting home!
+          br
+          br
+          a.text-link(href="https://amzn.to/2Rre22F") Buy #{rec2} on Amazon
+      .section(id=`${toID(rec3)}`)
+        h2 3. #{rec3}
+        img(src='../img/kingdomino.jpg' alt='Kingdomino')
+        .tags
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-4 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 20-45 Minutes
           .tag
             .icon
               img(src='../img/designer.svg' alt='designer')
             | Designers: Bruno Cathala
         p
-          | Kingdomino is another drafting game: you take turns taking (you guessed it!) domino-like tiles. Instead of having pips, these dominos depict different terrains, which you use to build your own brightly-colored kingdom.
+          | Kingdomino is a modern take on Dominoes - you'll be constructing your kingdom with tiles that have two types of terrain on them. Each tile you add to your kingdom must connect to matching terrain areas, and the larger the area, the more points you score.
           br
           br
-          | In this game, you don&apos;t have to match any specific pattern like the board in Azul - instead, you must place tiles around your starting castle to strategically to build out each terrain. This means that you&apos;ll have to plan your terrains out over several turns and hope that you&apos;re able to secure the right tiles to make your plans work just right. Player interaction is even more important in Kingdomino than Azul - if you keep an eye on your opponents&apos; kingdoms, you might be able to snag a few tiles that would be really valuable for them.
+          | While you each build your own kingdom, you'll be interacting with your family when choosing tiles. Tiles are laid out at the start of each round, and if you take the highest quality tile, you'll be choosing last in the next round. Better tiles have more crowns or rarer terrain, and they will be worth more points at the end of the game.
           br
           br
-          | Just like Azul, you can learn this game in less than 10 minutes, but the strategy isn&apos;t easy to master. Kingdomino is quick to setup, has quick turns, and it lets you build a lovely kingdom by the end of the game, even if you don&apos;t win.
+          | This level of player interaction provides good competition and strategy, without being as cutthroat as some other tile-laying games. This is a quick game with simple rules, and there is minimal downtime so everyone will stay engaged.
           br
           br
-          a.text-link(href="https://amzn.to/3gu3JBZ") Buy #{rec2} on Amazon
-      .section(id=`${rec3.trim().toLowerCase()}`)
-        h2 #{rec3}
-        img(src='../img/reef.jpg' alt='reef')
+          a.text-link(href="https://amzn.to/3u5QFZB") Buy #{rec3} on Amazon
+          br
+          .note
+            | #[strong Note:] You can buy a second copy of&nbsp;
+            a.text-link(href="https://amzn.to/3v6MJsS") Kingdomino
+            | &nbsp;to play up to&nbsp;
+            a.text-link(href="https://s3.amazonaws.com/geekdo-files.com/bgg191864?response-content-disposition=inline%3B%20filename%3D%22Kingdomino_variants_7x7_EN_0.1.pdf%22&response-content-type=application%2Fpdf&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJYFNCT7FKCE4O6TA%2F20210520%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210520T234342Z&X-Amz-SignedHeaders=host&X-Amz-Expires=120&X-Amz-Signature=60f0b76be9af35e8f88e57a7aa23f623581c46262a13db252a3256c4dc8203a4") 8 players with teams
+            | ! It's also possible to do this with&nbsp;
+            a.text-link(href="https://amzn.to/2QCIeHB") Queendomino
+            | , but we haven't tried that yet.
+      .section(id=`${toID(rec4)}`)
+        h2 4. #{rec4}
+        img(src='../img/ticket.jpg' alt='Ticket to Ride')
         .tags
           .tag
             .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | More Complex
+              img(src='../img/people.svg' alt='player count')
+            | 2-5 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 45-90 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Alan R. Moon
+        p
+          | Ticket to Ride is a great successor to older titles your family may have played, like Monopoly or Scrabble. This game has a nice level of strategy with simple turns, and the train theme is fun for all. After playing a few times, you can finish each game pretty quickly - they don't drag on like Monopoly.
+          br
+          br
+          | The aim of this game is to connect cities in the US with your train pieces, and you'll do this by laying down colored cards that correspond to some tracks on the map. Your route cards will tell you which cities to connect, as well as how many points you'll get for doing so. Multiple players will be eyeing the same track sections, so it's a race to get the cards required to play in a specific spot without getting blocked!
+          br
+          br
+          | Ticket to Ride is easy to set up, teach, and start playing. If you are trying to introduce your family to more complex games, Ticket to Ride is a great place to start!
+          br
+          br
+          a.text-link(href="https://amzn.to/3f3xHhS") Buy #{rec4} on Amazon
+          br
+          .note
+            | #[strong Note:] If you've already played Ticket to Ride, the&nbsp;
+            a.text-link(href="https://amzn.to/33YA1R4") 1910 expansion
+            | &nbsp; is a great upgrade to try, as it adds some more route cards and other mechanics.
+      .section(id=`${toID(rec5)}`)
+        h2 5. #{rec5}
+        img(src='../img/ice-cool.png' alt='Ice Cool')
+        .caption
+          | Photo credit:&nbsp;
+          a.text-link(href="https://boardgamegeek.com/image/3317817/icecool") @W Eric Martian, on BGG
+        .tags
           .tag
             .icon
               img(src='../img/people.svg' alt='player count')
@@ -129,19 +174,71 @@ include ../includes/_head.pug
           .tag
             .icon
               img(src='../img/designer.svg' alt='designer')
-            | Designers: Chris Quilliams
+            | Designers: Brian Gomez
         p
-          | Reef is another brightly-colored game that awards points for arranging pieces on your board strategically, but it uses a few interesting mechanics that make you think in new ways.
+          | Ice Cool is a fun dexterity game where you flick penguins through the rooms and halls of a frozen tabletop high school. Dexterity games don't have complicated rules and mechanics - it's all about who can physically control and maneuver their penguin the best!
           br
           br
-          | Unlike Azul, you can choose from 2 different actions each turn. You may EITHER (1) choose a card to add to your hand OR (2) play a card from your hand. The cards provide new coral pieces and then trigger scoring for certain patterns on your board. This adds a new level of strategy because you must balance your need to take good cards with building up your reef to score points.
+          | In each round, one player will be the Hall Monitor trying to catch the other penguins, the "Runners." If you're the Hall Monitor, you simply need to flick your penguin into another to "catch" them - whether it's across rooms, through doorways, or even over walls! If you're a Runner, you'll try to flick your penguin through doorways, collecting fish (and points) along the way, and of course avoiding the Hall Monitor.
           br
           br
-          | Instead playing tiles on one level, in Reef, you can stack coral pieces on top of each other to dramatically change the patterns and score more points. Since you score points throughout the game (not just at the end), you have to think several turns ahead to line up scoring combinations.
+          | If your family has enjoyed Jenga or Crokinole in the past, this is a really fun game to try next. It's easy to pick up and start playing, but getting good at controlling your penguin is definitely not always easy. Even if your family prefers strategy games, Ice Cool has very satisfying moments that any gamer can appreciate.
           br
           br
-          | Reef will stretch your mind even further than Azul, so give it a shot if you want to test your limits. Regardless of who wins, you&apos;ll love the towers of colorful coral in your reef at the end of each play!
+          a.text-link(href="https://amzn.to/3fzChUb") Buy #{rec5} on Amazon
+      .section(id=`${toID(rec6)}`)
+        h2 6. #{rec6}
+        img(src='../img/codenames.jpg' alt='Codenames')
+        .tags
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-8 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 20-30 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Vlaada Chvátil
+        p
+          | Codenames is a great word-guessing game for larger groups (including families), and it's no surprise that it has sold over 1 million copies. and family is no exception. Codenames has simple rules, but is definitely more challenging than some of the previous games on this list.
           br
           br
-          a.text-link(href="https://amzn.to/3aLsLvs") Buy #{rec3} on Amazon
+          | Your family will split into two teams, each led by a Spymaster. Word cards are laid out on the table - some are words that your team must identify and some are for the other team, but only the Spymasters know which are which. As Spymaster, you might give the clue "ground, 2," meaning that 2 of the words are related to "ground." It's then up to your team to figure out which they are. Be careful of giving misleading clues though - your team can guess words for the other team!
+          br
+          br
+          | This is a solid lightweight game that gets everybody's brain working. The team play also lets your family work together while still enjoying some friendly competition, and the game will only get better each time you play.
+          br
+          br
+          a.text-link(href="https://amzn.to/3bEgE3J") Buy #{rec6} on Amazon
+      .section(id=`${toID(rec7)}`)
+        h2 7. #{rec7}
+        img(src='../img/azul.jpg' alt='Azul')
+        .tags
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-4 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 30-45 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Michael Kiesling
+        p
+          | Azul is a wildly popular game and for good reason - excellent game design, beautiful components, and highly replayable. This game is also a good introduction to modern board games, as many of the mechanics and scoring systems are found in other newer games.
+          br
+          br
+          | On your turn, you take all tiles of the same color from a factory tray and push the rest to the center of the table. Tiles can also be taken from the center, which will quickly become more and more valuable. You then lay down your chosen tiles to construct a beautiful mosaic for your palace. Points are awarded based on how good your pattern is, dictated by cards that show tile layouts. Of course, it will be tricky to satisfy all objectives perfectly, so you need to make the best of the tiles you collect.
+          br
+          br
+          | The turns in this game are quite simple for how much thinking you can put into your tile placement. Azul is easy to get into but has enough depth for any group of players. If your family ends up loving Azul, then it's a game you can keep playing over and over!
+          br
+          br
+          a.text-link(href="https://amzn.to/3f5xN8H") Buy #{rec7} on Amazon
+      include ../includes/_article-end.pug
 include ../includes/_footer.pug
