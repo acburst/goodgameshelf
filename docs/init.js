@@ -41,7 +41,7 @@
         } else if (i === sections.length - 1 &&
                    (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
           // progress.style.height = '100%';
-          if (!link.classList.contains('active')) {
+          if (link && !link.classList.contains('active')) {
             if (indicator) indicator.style.transform = `translateY(${i * 36}px)`;
             link.classList.add('active');
           }
@@ -50,7 +50,7 @@
           let perc = Math.min(Math.max((scrollTop - top) / rect.height, 0), 1);
           // console.log("ACTIVE", i, perc);
           // progress.style.height = perc * 100 + '%';
-          if (!link.classList.contains('active')) {
+          if (link && !link.classList.contains('active')) {
             if (indicator) indicator.style.transform = `translateY(${i * 36}px)`;
             link.classList.add('active');
           }
