@@ -84,6 +84,11 @@ form::after {
   display: flex;
   justify-content: space-between;
 }
+.col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .flex-wrap {
   display: flex;
   justify-content: space-between;
@@ -271,6 +276,10 @@ main {
 .note {
   font-size: 16px;
   line-height: 28px;
+}
+.update {
+  font-size: 12px;
+  line-height: 22px;
 }
 /* .note-container {
   font-size: 14px;

@@ -21,7 +21,9 @@ include ../includes/_head.pug
       .section
         h1 #{articleTitle}
         .top-bar.row
-          span.date April 13, 2021
+          .col
+            span.date April 13, 2021
+            span.date.update Updated May 30, 2021
           include ../includes/_share.pug
         .img-container
           img(src='../img/7wonders.png' alt='7 Wonders')
@@ -85,7 +87,7 @@ include ../includes/_head.pug
           | Mastering this shift is no easy task though! You will constantly be weighing your options and will be forced to take risks along the way. You'll often find yourself thinking "this card produces so much Yellow for me, but there's only 1 round of production left. And this card *might* give me 10 VP if I can get enough Blue. But if I pass this card to April, she's going to get so many points! But that Yellow production!"
           br
           br
-          | This is a great strategy game that packs a punch for how simple its gameplay is. Simultaneous turns and quick setup make this a great option for any group, big or small. Definitely check this one out if you're looking for a similar 7 Wonders experience and also love engine builders!
+          | This is a great strategy game that packs a punch for how simple its gameplay is. Simultaneous turns and quick setup make this a great option for 3-5 players. Definitely check this one out if you're looking for a similar 7 Wonders experience and also love engine builders!
           br
           br
           a.text-link(href="https://amzn.to/3sLONW2") Buy #{rec1} on Amazon
@@ -93,7 +95,7 @@ include ../includes/_head.pug
           .note
             | #[strong Note:] also consider the&nbsp;
             a.text-link(href="https://amzn.to/39CgtFh") Corruption &amp; Ascension expansion&nbsp;
-            | which adds some crazy cards for more interesting strategies.
+            | which adds some crazy cards for more interesting strategies and supports up to 7 players!
 
       .section(id=`${toID(rec2)}`)
         h2 #{rec2}

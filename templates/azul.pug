@@ -3,8 +3,8 @@
 - var articleType = "IF_YOU_LIKE";
 
 - rec1 = "Sagrada";
-- rec2 = "Kingdomino";
-- rec3 = "Reef";
+- rec2 = "Reef";
+- rec3 = "Kingdomino";
 - metadescription = 'Azul is a very popular board game, and these 3 are great games to play next. Each of these board games have deep strategy while being easy to learn.';
 
 doctype html
@@ -21,7 +21,9 @@ include ../includes/_head.pug
       .section
         h1 #{articleTitle}
         .top-bar.row
-          span.date August 4, 2020
+          .col
+            span.date August 4, 2020
+            span.date.update Updated May 30, 2021
           include ../includes/_share.pug
         img(src='../img/azul.jpg' alt='azul')
         .game-overview
@@ -77,37 +79,6 @@ include ../includes/_head.pug
           a.text-link(href="https://amzn.to/3i6oRic") Buy #{rec1} on Amazon
       .section(id=`${toID(rec2)}`)
         h2 #{rec2}
-        img(src='../img/kingdomino.jpg' alt='kingdomino')
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | Similar Complexity
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 2-4 Players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 20-45 Minutes
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designers: Bruno Cathala
-        p
-          | Kingdomino is another drafting game: you take turns taking (you guessed it!) domino-like tiles. Instead of having pips, these dominos depict different terrains, which you use to build your own brightly-colored kingdom.
-          br
-          br
-          | In this game, you don&apos;t have to match any specific pattern like the board in Azul - instead, you must place tiles around your starting castle to strategically to build out each terrain. This means that you&apos;ll have to plan your terrains out over several turns and hope that you&apos;re able to secure the right tiles to make your plans work just right. Player interaction is even more important in Kingdomino than Azul - if you keep an eye on your opponents&apos; kingdoms, you might be able to snag a few tiles that would be really valuable for them.
-          br
-          br
-          | Just like Azul, you can learn this game in less than 10 minutes, but the strategy isn&apos;t easy to master. Kingdomino is quick to setup, has quick turns, and it lets you build a lovely kingdom by the end of the game, even if you don&apos;t win.
-          br
-          br
-          a.text-link(href="https://amzn.to/3gu3JBZ") Buy #{rec2} on Amazon
-      .section(id=`${toID(rec3)}`)
-        h2 #{rec3}
         img(src='../img/reef.jpg' alt='reef')
         .tags
           .tag
@@ -139,6 +110,37 @@ include ../includes/_head.pug
           | Reef will stretch your mind even further than Azul, so give it a shot if you want to test your limits. Regardless of who wins, you&apos;ll love the towers of colorful coral in your reef at the end of each play!
           br
           br
-          a.text-link(href="https://amzn.to/2ERaMqF") Buy #{rec3} on Amazon
+          a.text-link(href="https://amzn.to/2ERaMqF") Buy #{rec2} on Amazon
+      .section(id=`${toID(rec3)}`)
+        h2 #{rec3}
+        img(src='../img/kingdomino.jpg' alt='kingdomino')
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Similar Complexity
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-4 Players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 20-45 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Bruno Cathala
+        p
+          | Kingdomino is another drafting game: you take turns taking (you guessed it!) domino-like tiles. Instead of having pips, these dominos depict different terrains, which you use to build your own brightly-colored kingdom.
+          br
+          br
+          | In this game, you don&apos;t have to match any specific pattern like the board in Azul - instead, you must place tiles around your starting castle to strategically to build out each terrain. This means that you&apos;ll have to plan your terrains out over several turns and hope that you&apos;re able to secure the right tiles to make your plans work just right. Player interaction is even more important in Kingdomino than Azul - if you keep an eye on your opponents&apos; kingdoms, you might be able to snag a few tiles that would be really valuable for them.
+          br
+          br
+          | Just like Azul, you can learn this game in less than 10 minutes, but the strategy isn&apos;t easy to master. Kingdomino is quick to setup, has quick turns, and it lets you build a lovely kingdom by the end of the game, even if you don&apos;t win.
+          br
+          br
+          a.text-link(href="https://amzn.to/3gu3JBZ") Buy #{rec3} on Amazon
       include ../includes/_article-end.pug
 include ../includes/_footer.pug

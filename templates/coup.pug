@@ -3,8 +3,8 @@
 - var articleType = "IF_YOU_LIKE";
 
 - rec1 = "Sherrif of Nottingham";
-- rec2 = "Werewords";
-- rec3 = "Two Rooms and a Boom";
+- rec2 = "Love Letter";
+- rec3 = "Werewords";
 - metadescription = 'Do you love Coup and bluffing games? These are awesome board games like Coup to try next that require a great poker face!';
 
 doctype html
@@ -21,7 +21,9 @@ include ../includes/_head.pug
       .section
         h1 #{articleTitle}
         .top-bar.row
-          span.date August 4, 2020
+          .col
+            span.date August 4, 2020
+            span.date.update Updated May 30, 2021
           include ../includes/_share.pug
         img(src='../img/coup.png' alt=titles[index])
         .game-overview
@@ -84,10 +86,47 @@ include ../includes/_head.pug
           | If you love Coup but want a longer game with a more involved scoring system, Sheriff is a great option.  This game takes more time to play, but nobody can be eliminated like they can in Coup. It's also harder to tell exactly who is in the lead in Sheriff, which adds to the mind games and strategy.
           br
           br
-          a.text-link(href="https://amzn.to/3ih2cQr") Buy #{rec1} on Amazon
+          a.text-link(href="https://amzn.to/3ih2cQr") Buy #{rec2} on Amazon
       .section(id=`${toID(rec2)}`)
         h2 #{rec2}
-        img(src='../img/werewords.png' alt=rec2)
+        img(src='../img/love-letter.jpg' alt=rec2)
+        .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/3664266/love-letter") @aldoojeda, on BGG
+        .tags
+          .tag
+            .icon
+              img(src='../img/puzzle.svg' alt='complexity')
+            | Similar Complexity
+          .tag
+            .icon
+              img(src='../img/people.svg' alt='player count')
+            | 2-4 players
+          .tag
+            .icon
+              img(src='../img/time.svg' alt='play time')
+            | Playtime: 20 Minutes
+          .tag
+            .icon
+              img(src='../img/designer.svg' alt='designer')
+            | Designers: Seiji Kanai
+        p
+          | Love Letter is a deception game similar to Coup, but you won't be lying about which cards you have. This game still requires a poker face, and the fact that you can't bluff means the strategy is more about which cards you play and which opponent you use them on.
+          br
+          br
+          | You'll play one of 2 cards in your hand on your turn, and each has a number and ability. The King (6) lets you trade hands with an opponent, the Handmaid (4) lets you avoid negative effects, and the Priest (2) lets you peek at another player's hand. Your goal is to have the highest-numbered card at the end of a round (to deliver a love letter to the princess), and if you do this enough times, you win!
+          br
+          br
+          | Some cards make this tricky though. The Guard (1) is a low card, but it lets you guess a card in someone's hand - if you're right, they are eliminated! On the other hand, the Princess (9) is the highest card, but if you are forced to play it, you are also eliminated.
+          br
+          br
+          | This game is great if you are looking something that is as quick and fun as Coup. Not being able to lie adds a nice constraint, and it will make you think in a different way for a change of pace.
+          br
+          br
+          a.text-link(href="https://amzn.to/3p6zIgx") Buy #{rec2} on Amazon
+      .section(id=`${toID(rec3)}`)
+        h2 #{rec3}
+        img(src='../img/werewords.png' alt=rec3)
         .tags
           .tag
             .icon
@@ -100,7 +139,7 @@ include ../includes/_head.pug
           .tag
             .icon
               img(src='../img/time.svg' alt='play time')
-            | Playtime: 10 minutes
+            | Playtime: 10-15 minutes
           .tag
             .icon
               img(src='../img/designer.svg' alt='designer')
@@ -118,40 +157,19 @@ include ../includes/_head.pug
           | Werewords uses a nice (free) mobile app which "narrates" the game and chooses the secret word for the group. This makes the game flow quickly and means it fits into a tiny box just like Coup!
           br
           br
-          a.text-link(href="https://amzn.to/39UAUfA") Buy #{rec2} on Amazon
-      .section(id=`${toID(rec3)}`)
-        h2 #{rec3}
-        img(src='../img/tworooms.png' alt=rec3)
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | Less Complex
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 6-30 players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 10-20 minutes
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designers: Alan Gerding, Sean McCoy
-        p
-          | If you've got a bigger group, you've got to try Two Rooms and a Boom. This is a ridiculously fun game of deception for how simple it is, thanks to the unique use of your home's floorplan. This game plays anywhere from 6 to 30 players!
-          br
-          br
-          | To start, the group splits up into two adjacent rooms in your home, and everyone is assigned a secret team color - Red or Blue. One Red player will also be the "Bomber," and one Blue player will be the "President." At the end of the game, Red wins if the Bomber and President are in the same room, and Blue wins if they are separated.
-          br
-          br
-          | The game is played over 3 timed rounds, and each room may talk openly together. Thus begins the insanity - you may choose to share your identity, keep it secret, lie to one person, or lie to everyone. You can even stay completely silent - it's up to you. But at the end of each round, each room votes to send a single person to the other room. Who will it be?
-          br
-          br
-          | This game never disappoints and is one of the few games that caters to larger crowds. Just make sure to play at someone's home whose neighbors won't mind - people tend to yell...
-          br
-          br
-          a.text-link(href="https://shop.tuesdayknightgames.com/products/two-rooms-and-a-boom") Buy #{rec3} on Amazon
+          a.text-link(href="https://amzn.to/39UAUfA") Buy #{rec3} on Amazon
+      hr
+      .end-section
+        h2 Honorable Mentions
+        p.honor
+          | Have you already played the above games or just want some more to consider? We also love these other deception and bluffing games!
+        .honor
+          p
+            | #[strong Two Rooms and a Boom] is a great social bluffing game if you have a very large group (10-16+ people). Everyone is dealt a red or blue card in secret, and you then split up into 2 rooms in your home. You must talk amongst those in your group, and each room votes to send over one person at the end of a round. Blue team wants to keep the President and Assassin separate, while Red team wants them to be in the same room at the end of the game.
+          a.text-link(href="https://shop.tuesdayknightgames.com/products/two-rooms-and-a-boom") Buy Two Rooms and a Boom from Tuesday Knight Games
+        .honor
+          p
+            | #[strong Silver Amulet] is a memory and deception game where you are trying to get the lowest score at the end of each round. You'll have number cards face-down in front of you, and you must try to figure out their values during the game! Each card you draw has an ability you can use (swapping with another player, peeking at your own cards, etc.), or you can exchange it for one of your own. Fun and casual, this game can be played many times and is great for 3-4 players!
+          a.text-link(href="https://amzn.to/3c4Dulu") Buy Silver Amulet on Amazon
       include ../includes/_article-end.pug
 include ../includes/_footer.pug
