@@ -131,4 +131,14 @@
   }
 
 
+  // Hamburger menu
+  let hamburgerEl = document.querySelector('.hamburger');
+  if (hamburgerEl) {
+    hamburgerEl.addEventListener('click', () => {
+      console.log("HAMB CLICK");
+      let linksEl = document.querySelector('.links');
+      linksEl.classList.toggle('active');
+    });
+  }
+
 })();
