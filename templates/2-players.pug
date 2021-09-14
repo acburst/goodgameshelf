@@ -1,0 +1,292 @@
+- var gameTitle = "2 Players";
+- var articleTitle = "7 of The Best Board Games for 2 Players";
+- var articleType = "BEST_OF";
+
+- rec1 = "Patchwork";
+- rec2 = "7 Wonders Duel";
+- rec3 = "Onitama";
+- rec4 = "Watergate";
+- rec5 = "Super Motherload";
+- rec6 = "Santorini";
+- rec7 = "My City";
+- metadescription = 'These 2-player board games feature interesting mechanics, quick turns, and tactical decision making.';
+
+doctype html
+include ../includes/_head.pug
+- index = titlesBestOf.indexOf(gameTitle);
+
+body
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date September 14, 2021
+            include ../includes/_share.pug
+          img(src='../img/onitama.png' alt='Onitama - 2 Player Game')
+          .game-overview
+          p
+            | Whether you're looking for board games that are good for couples or can't always get a big group together, two player games are the answer!
+            br
+            br
+            | Some of the best strategy games are designed specifically for two players, and these board games feature interesting mechanics, quick turns, and tactical decision making. We have played all of these games many times and they are still fun and challenging.
+        .section(id=`${toID(rec1)}`)
+          h2 1. #{rec1}
+          img(src='../img/patchwork.png' alt='Patchwork Two Player Board Game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 30-40 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Uwe Rosenberg
+          p
+            | Patchwork is all about sewing the best quilt by fitting together Tetris-shaped pieces in an optimal way. You and your opponent take turns choosing pieces to add to your board, but it can be quite tricky to do this perfectly without leaving holes!
+            br
+            br
+            | Each piece costs buttons and time. Buttons are your money but are also your points, and time is a unique cost - if a piece costs 3 time, you move up the time track 3 spaces. You keep taking pieces until you pass your opponent on the time track, and you both will end on the same final space (and use the same amount of time for your quilts).
+            br
+            br
+            | This game is easy to learn and set up, and it strikes a great balance between competitive strategy and solo puzzle. If you have enjoyed other games like&nbsp;
+            a.text-link(href="https://amzn.to/3BWOMCS") Blokus
+            | &nbsp;or&nbsp;
+            a.text-link(href="https://boardgamegeek.com/boardgame/40393/fits") Fits
+            | &nbsp;in the past, Patchwork is a great game to play next!
+            br
+            br
+            a.text-link(href="https://amzn.to/3n2NFNR") Buy #{rec1} on Amazon
+            br
+            .note
+              | #[strong Note:]&nbsp;
+              a.text-link(href="https://amzn.to/2TPoy4w") Patchwork: Americana
+              | &nbsp;is now available and is simply a re-skin of Patchwork. We think the original game's artwork is nicer, but the Americana version is notably less expensive.
+        .section(id=`${toID(rec2)}`)
+          h2 2. #{rec2}
+          img(src='../img/7-wonders-duel.jpg' alt='7 Wonders Duel Two Player Board Game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 40-60 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Antoine Bauza, Bruno Cathala
+          p
+            | 7 Wonders Duel is an engine-building card game set in the ancient era, when the wonders of the world were constructed. Even if you haven't played the original 7 Wonders, Duel stands on its own as a game with many strategies and ways to win the game.
+            br
+            br
+            | Cards are laid out in a pattern with some overlapping others. On your turn, you may take any uncovered card and add it to your city. You need to be careful though - this may reveal a strong card that your opponent could take on their turn. The primary way to win is by having the most points, but anyone can win immediately through a military or science victory as well! This keeps the game interesting and is a good mechanic to keep the leading player in check.
+            br
+            br
+            | 7 Wonders Duel is well-balanced and the overlapping card layout adds a lot of depth to decision making. It captures the feel of the original game but is well tuned for a 2-player experience.
+            br
+            br
+            a.text-link(href="https://amzn.to/3qcV1hd") Buy #{rec2} on Amazon
+            br
+            .note
+              | #[strong Note:]&nbsp;
+              | There are a multiple expansions for this game, but we recommend&nbsp;
+              a.text-link(href="https://www.boardgameatlas.com/game/liDOjtmpFp/7-wonders-duel-pantheon") the Pantheon expansion
+              | as it adds additional strategic depth without increasing play time by much.
+        .section(id=`${toID(rec3)}`)
+          h2 3. #{rec3}
+          img(src='../img/onitama.png' alt='Onitama Two Player Board Game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 10-20 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Shimpei Sato
+          p
+            | Onitama is a minimalist tactical strategy game that has its roots in Chess. You move your pawns and Emperor around the board, aiming to capture your opponent's Emperor. However, you can also win the game by moving your Emperor onto your opponent's Shrine space!
+            br
+            br
+            | Each piece in Onitama does not have a movement pattern of its own, unlike Chess. Instead, 2 cards in front of you determine your available moves for that turn, and you may move any of your pieces following one of these patterns. Each time you use a pattern card, you slide it toward your opponent and take the other card. There are 5 total movement cards each game, and the rotation of these cards between turns creates the mind game and strategy of Onitama.
+            br
+            br
+            | If you have enjoyed Chess in the past (or just want a great tactical game), Onitama offers a new type of strategy that changes depending on which 5 movement cards are dealt. This game also has a beautiful Japanese theme and comes in a nicely designed box with quality components.
+            br
+            br
+            a.text-link(href="https://amzn.to/3cVQ7zH") Buy #{rec3} on Amazon
+        .section(id=`${toID(rec4)}`)
+          h2 4. #{rec4}
+          img(src='../img/watergate.jpg' alt='Watergate Two Player Game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45-75 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Matthias Cramer
+          p
+            | Watergate is an asymmetric card game set during the Nixon presidency of the United States. One player uses Nixon's deck and tries to cover up the Watergate scandal. The other player uses The Washington Post's deck and aims to collect enough evidence to implicate Nixon.
+            br
+            br
+            | You take turns playing cards to try and secure evidence and collaborators. As the Post, you place evidence face-up, creating evidence trails leading toward Nixon. Nixon, however, places evidence face-down on its redacted side, blocking the Post's paths! Some cards also have powerful "events" on them, which may allow you to remove evidence or even end a round immediately. It's tempting to hold on to your best cards for the opportune moment, but don't miss your chance!
+            br
+            br
+            | Watergate feels like a strategic tug-of-war, and it's difficult to nail down a perfect strategy. If you enjoy making calculated gambles or are interested in games where each player's objective is different, this is a great choice.
+            br
+            br
+            a.text-link(href="https://amzn.to/35Crkg3") Buy #{rec4} on Amazon
+        .section(id=`${toID(rec5)}`)
+          h2 5. #{rec5}
+          img(src='../img/super-motherload.jpg' alt='Super Motherload Two Player Game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 60-90 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Gavan Brown, Matt Tolman
+          p
+            | Super Motherload is a deck-building and tile-laying game with a fun mineral excavation theme. Based on a 2004 flash game, Super Motherload is a hidden gem among strategy board games.
+            br
+            br
+            | You start out on the surface with only your base deck of cards. On your turn, you may discard matching cards from your hand to drill tunnels that progress deeper underground. If you drill through any minerals, you can use these to unlock new cards to add to your deck.
+            br
+            br
+            | The strategy of this game comes from the fact that  #[em all tunnels are shared!] Rather than moving a vehicle around, you simply branch tunnels off of the existing tunnel system. You may want to drill into an area with valuable resources, but this also opens up new paths for your opponent.
+            br
+            br
+            | If you want a challenging game that is easy to learn and set up (thanks to an excellent rulebook), Super Motherload is a great choice. Collecting minerals and digging tunnels is also just very satisfying and adds to the fun!
+            br
+            br
+            a.text-link(href="https://amzn.to/3iTYNKE") Buy #{rec5} on Amazon
+            br
+            .note
+              | #[strong Note:]&nbsp;
+              | Super Motherload can play up to 4 players, but we found that it definitely plays best with 2. You can strategize much more effectively with only 1 opponent, and there will be less time between turns.
+        .section(id=`${toID(rec6)}`)
+          h2 6. #{rec6}
+          img(src='../img/santorini.jpg' alt='Santorini Two Player Game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 20-30 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Gordon Hamilton
+          p
+            | You and your opponent will construct the blue-domed city of Santorini, playing as greek gods with special powers. Most board games are played on a flat game board, but in Santorini, you get to climb to higher levels using the structures you build!
+            br
+            br
+            | On your turn, you get to build sections of a tower. You may either add a tower base to an empty space on the board, or you may build the next section of an existing tower. You then may move around the board, and can jump up or down a level on an adjacent space. Your goal is to stand on the topmost space of a completed tower (3 stories tall)! However, other players can add a blue dome to "cap" off a building on their turn, preventing you from standing on it!
+            br
+            br
+            | This game is full of mind games, blocking, and abstract strategy. Your god's special ability also adds asymmetry to each game of Santorini, and you'll have a new one each game to increase replayability.
+            br
+            br
+            a.text-link(href="https://amzn.to/3vHAa6S") Buy #{rec6} on Amazon
+            br
+            .note
+              | #[strong Note:]&nbsp;
+              | Santorini can play up to 4 players, but we've found it plays best with 2 or 3 players (even the rulebook notes it plays best with 2). With 4 players, we think the landscape changes too much to plan ahead, though the game is still fun!
+        .section(id=`${toID(rec7)}`)
+          h2 7. #{rec7}
+          img(src='../img/my-city.jpg' alt='My City Two Player Game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 30 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Reiner Knizia
+          p
+            | My City is a tile-laying legacy game where you place Tetris-shaped buildings to develop your city. Legacy games evolve each time you play them, and in this case, you add stickers to your board to reveal new features and add new buildings to your supply of pieces.
+            br
+            br
+            | Each turn, a card is drawn from the deck, and this card shows the piece ALL players must place on their boards. Each player's board will end up looking very different, as everyone will have different objectives based on where they placed their legacy stickers. Points are scored in multiple ways, such as from contiguous groups of buildings of the same color, buildings touching wells, and more. Even the scoring rules will change after multiple chapters!
+            br
+            br
+            | My City is an awesome legacy game that is fun to play whether back to back, or weekly over a few months. As a bonus, this game plays well for 3 or 4 players as well, and it's possible to play a non-campaign game with other friends by flipping your board over to its neutral side.
+            br
+            br
+            a.text-link(href="https://amzn.to/3cTXveY") Buy #{rec7} on Amazon
+        br
+        br
+        | Some other fun games that didn't make our top picks for 2 players were Unmatched, Jaipur, and Lost Cities.&nbsp;
+        a.text-link(href="https://amzn.to/3htn1K6") Unmatched
+        | &nbsp;is a tactical combat card game with characters like Alice in Wonderland and Bigfoot.&nbsp;
+        a.text-link(href="https://amzn.to/2Xd8UC5") Jaipur
+        | &nbsp;is a goods-trading game with camels.&nbsp;
+        a.text-link(href="https://amzn.to/3tDX8MK") Lost Cities
+        | &nbsp;is a great introductory card game with some push-your-luck mechanics.
+        br
+        br
+        hr
+        .end-section
+          h2 Heavier Strategy Games for 2 Players
+          p.honor
+            | If you're looking for heavier strategy games that play well with 2 players, we have you covered here as well! The following games have a ton of depth and will require 2 to 3 hours to complete. Almost any heavy Euro game can be played with just 2 players, but these are our favorites.
+          .honor
+            p
+              | #[strong Terraforming Mars] is an engine building game where you compete to be the best terraforming corporation. All players work to increase the oxygen level, temperature, and ocean coverage of Mars, and the game ends when all of these are brought to a habitable level. However, each player will try to accomplish this in an entirely different way, as there are hundreds of unique cards and many ways to score points! Excellent for 2, 3, or 4 players.
+            a.text-link(href="https://amzn.to/3hsFR4q") Buy Terraforming Mars on Amazon
+          .honor
+            p
+              | In #[strong Great Western Trail], you'll be traveling along a trail of buildings to Kansas City, where you will deliver cow cards for a profit. The trail evolves each time you make a delivery however, as players can add buildings with various effects on them. This game is hard to figure out as it will feel very different each time you play, and mastering the subtle deck-building aspect is a real challenge. Excellent for 2, 3, or 4 players.
+            a.text-link(href="https://amzn.to/3z7F3I3") Buy Great Western Trail on Amazon
+          .honor
+            p
+              | #[strong A Feast for Odin] is a Viking-themed game that pretty much has...everything. At its core, it's a worker placement game. You can focus on hunting, combat, crafting, exploration, or even animal breeding. But you do all of this to accumulate goods tiles of varying shapes which you fit together on numerous boards like a swiss-cheese Tetris puzzle. And you do this because these boards generate money and more goods that can be used to take more actions and get more goods that can be used to do more Tetris which can give you more goods which gives more income and goods and animals and...yeah. This game is a ton of puzzling and strategy fun, but it does take about 3 hours to play (even after learning and setup). We promise it's worth it if you're not scared off by now! Excellent for 2, or 3 players. 4 might just be a lot, but we haven't tried.
+            a.text-link(href="https://amzn.to/2XlS0kD") Buy A Feast for Odin on Amazon
+          .honor
+            p
+              | #[strong Maracaibo] takes you to the 17th century Caribbean, where you'll sail around and hire assistants, complete quests, and gain influence with colonial France, England, and Spain. There are so many ways to build an engine and score points, and the tiles on the board change each game, so you'll need to change your strategy accordingly. This can also be played as a legacy game, which means the board and available cards evolve between plays as the story progresses. Excellent for 2, 3, or 4 players.
+            a.text-link(href="https://amzn.to/2XmlUoL") Buy Maracaibo on Amazon
+          .honor
+            p
+              | #[strong Orléans] is a bag-building game - you will be pulling workers out of a bag in order to perform various actions on your board. Each action costs a different combination of workers, and some actions let you add more workers to your bag, while some give you other bonuses. You can focus on growing your presence on the map, generating points from buildings, or just accumulating goods - you will have to see what will work each game! Excellent for 2, 3, or 4 players.
+            a.text-link(href="https://capstone-games.com/board-games/orleans/") Buy Orléans from Capstone Games
+          .honor
+            p
+              | #[strong Grand Austria Hotel] is a hotel management game where you must serve guests in your dining room before moving them into an available rooms. This is no easy feat though as rolled dice govern the actions available each round, and these dice are shared between players! You may need to make cake and coffee to serve your guests, but your opponent may snatch that die from you! However, there is often another way to do what you want, be it hiring staff, opening new rooms, or gaining favor with the Emperor. Excellent for 2. In 3 or 4 player, it's much harder to plan ahead in a satisfying way.
+            a.text-link(href="https://online.gamekastle.com/index.php?m=product&p=115183&ref=bgp&utm_source=boardgameprices.com&utm_medium=price-search") Buy Grand Austria Hotel from Game Kastle
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug

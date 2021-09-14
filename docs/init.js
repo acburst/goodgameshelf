@@ -20,7 +20,7 @@
       let rect = sections[i].getBoundingClientRect()
       let top = rect.top + scrollTop;
       let bottom = top + rect.height;
-      let id = sections[i].id || 'null';
+      let id = sections[i].id.replaceAll(/[0-9]/g, '') || 'null';
       let stickyTags = sections[i].querySelector('.tags');
       let link = document.querySelector('.section-link[data-target='+id+']');
       scrollTop += contentOffset;

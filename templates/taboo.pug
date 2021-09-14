@@ -11,157 +11,157 @@
 doctype html
 include ../includes/_head.pug
 - index = titles.indexOf(gameTitle);
-- console.log(gameTitle, index)
 
-.container
-  .navbar
-    include ../includes/_sidebar.pug
-  main
-    .content
-      .section
-        h1 #{articleTitle}
-        .top-bar.row
-          span.date September 5, 2020
-          include ../includes/_share.pug
-        img(src='../img/taboo.png' alt=titles[index])
-        .game-overview
-          .row
+body
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date September 5, 2020
+            include ../includes/_share.pug
+          img(src='../img/taboo.png' alt=titles[index])
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 2+ Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 10-30 minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designer: Brian Hersch
+            a.text-link(href="https://amzn.to/344HeA8") Buy #{titles[index]} on Amazon
+          p
+            | Taboo is a classic word game that is fun for any big group. The game might be simple, but the time pressure and word limitations make it a real challenge.
+            br
+            br
+            | If you're looking for a new team-based competition all about guessing secret words, these 3 games are similar to Taboo and add some fun new rules.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/timesup.png' alt=rec1)
+          .tags
             .tag
               .icon
-                img(src='../img/people.svg' alt='complexity')
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
               | 2+ Players
             .tag
               .icon
                 img(src='../img/time.svg' alt='play time')
-              | 10-30 minutes
+              | Playtime: 20-30 minutes
             .tag
               .icon
                 img(src='../img/designer.svg' alt='designer')
-              | Designer: Brian Hersch
-          a.text-link(href="https://amzn.to/344HeA8") Buy #{titles[index]} on Amazon
-        p
-          | Taboo is a classic word game that is fun for any big group. The game might be simple, but the time pressure and word limitations make it a real challenge.
-          br
-          br
-          | If you're looking for a new team-based competition all about guessing secret words, these 3 games are similar to Taboo and add some fun new rules.
-      .section(id=`${toID(rec1)}`)
-        h2 #{rec1}
-        img(src='../img/timesup.png' alt=rec1)
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | Similar Complexity
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 2+ Players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 20-30 minutes
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designer: Peter Sarrett
-        p
-          | Time's Up! is another game where two teams race to guess the most words before time runs out. This game is played over 3 rounds, and the rules for giving clues become progressively more strict. This gives more variety in gameplay compared to Taboo, where the rules stay the same.
-          br
-          br
-          | In Round 1, the clue giver is allowed to say #[strong anything they want] besides the secret word - there are no off-limits words like in Taboo. In Round 2 however, clues can only be a single word! And in Round 3, you can't speak at all and must act out the word like charades.
-          br
-          br
-          | Here's the catch though - the same 30 cards will be used for all 3 rounds. This means that both teams will hear every secret word after the first round, and you can rely on your memory when you're working with 1-word and charades clues.
-          br
-          br
-          | Time's Up! will test your memory on top of the quick thinking required in Taboo. If you want a game that is just as easy to learn but offers a fresh take on the rules, give this game a shot!
-          br
-          br
-          | #[em Quick note - we think the "Title Recall" version is easier for more people to have fun with:]
-          br
-          br
-          a.text-link(href="https://amzn.to/31Vb5Zd") Buy #{rec1} on Amazon
-      .section(id=`${toID(rec2)}`)
-        h2 #{rec2}
-        img(src='../img/codenames.jpg' alt=rec2)
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | More Complex
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 2-8 Players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 15-30 Minutes
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designer: Vlaada Chvátil
-        p
-          | Codenames has become a popular game since its release in 2015, and for very good reasons. This game blends word association, deductive reasoning, and high-stakes strategy, all into a game that is easy and fun to play. If you like Taboo but want a new challenge, you'll love Codenames - it lives up to the hype!
-          br
-          br
-          | 25 word cards are laid out in a grid on the table. Another card shows a pattern of blue and red squares which correspond to the grid, but only one player from each team will see this information - the Spymasters. As Spymaster, you give clues to your team about the words that match your color, and it's a race to get your team to identify all of your words first!
-          br
-          br
-          | Here's the tricky part though - clues must be only one word and one number. If you give the clue "Sandwich, 2," this would mean 2 words on the board are related to "sandwich." Your team then tries to guess which words you are thinking of - maybe "cheese" and "bread." However, it is entirely possible that your team accidentally guesses a word for the opposing team!
-          br
-          br
-          | Codenames requires deep strategic thinking, but any group can quickly pick it up and start playing. If you think you and your friends can mind-meld for the win, Codenames is the best in its class.
-          br
-          br
-          a.text-link(href="https://amzn.to/3gWlAlg") Buy #{rec2} on Amazon
-      .section(id=`${toID(rec3)}`)
-        h2 #{rec3}
-        img(src='../img/bannedwords.png' alt=rec3)
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | More Complex
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 4+ Players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 30 Minutes
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designer: Forrest-Pruzan Creative, Prospero Hall
-        p
-          | Banned Words is similar to Taboo, but instead of each card showing the words that are off-limits, the other team gets to decide!
-          br
-          br
-          | Each round, one team draws a card showing 5 secret words that their opponents will be guessing. They collectively write down 10 "banned words" they think their opponents will use as clues, and hand the card to the clue-giver on the opposing team.
-          br
-          br
-          | The clue-giver provides clues to the 5 words like in Taboo - if a word is correctly guessed, the guesser's team earns 1 point. If the clue-giver OR the guessers say a banned word though, the opposing team gets a point! Banned Words really is a mind-game at its core. It goes something like this:
-          br
-          br
-          span.quote
-            | #[strong Secret Words:] Flute, Tree, Raccoon, Brain, Pot
+              | Designer: Peter Sarrett
+          p
+            | Time's Up! is another game where two teams race to guess the most words before time runs out. This game is played over 3 rounds, and the rules for giving clues become progressively more strict. This gives more variety in gameplay compared to Taboo, where the rules stay the same.
             br
-            | #[strong(style={color: 'red'}) Kolby:] "I'm putting trash and panda for Raccoon"
             br
-            | #[strong(style={color: 'red'}) Levi:] "What the heck, that's not a thing."
+            | In Round 1, the clue giver is allowed to say #[strong anything they want] besides the secret word - there are no off-limits words like in Taboo. In Round 2 however, clues can only be a single word! And in Round 3, you can't speak at all and must act out the word like charades.
             br
-            | #[strong(style={color: 'red'}) Kolby:] "Just wait."
             br
-            | #[strong(style={color: 'blue'}) Steven:] "Okay, so this is a living creature, some people call it a trash panda..."
+            | Here's the catch though - the same 30 cards will be used for all 3 rounds. This means that both teams will hear every secret word after the first round, and you can rely on your memory when you're working with 1-word and charades clues.
             br
-            | #[strong(style={color: 'red'}) Kolby:] "TRASHPANDAAA! WE'LL TAKE THOSE POINTS, LET'S GOOO!"
-          br
-          br
-          | If you love Taboo but would prefer more teamwork and ridiculousness, Banned Words will give you exactly that. This game will keep everyone entertained and is perfect for a tight-knit group.
-          br
-          br
-          a.text-link(href="https://amzn.to/3iL0eYK") Buy #{rec3} on Amazon
-      include ../includes/_article-end.pug
-include ../includes/_footer.pug
+            br
+            | Time's Up! will test your memory on top of the quick thinking required in Taboo. If you want a game that is just as easy to learn but offers a fresh take on the rules, give this game a shot!
+            br
+            br
+            | #[em Quick note - we think the "Title Recall" version is easier for more people to have fun with:]
+            br
+            br
+            a.text-link(href="https://amzn.to/31Vb5Zd") Buy #{rec1} on Amazon
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/codenames.jpg' alt=rec2)
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-8 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 15-30 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designer: Vlaada Chvátil
+          p
+            | Codenames has become a popular game since its release in 2015, and for very good reasons. This game blends word association, deductive reasoning, and high-stakes strategy, all into a game that is easy and fun to play. If you like Taboo but want a new challenge, you'll love Codenames - it lives up to the hype!
+            br
+            br
+            | 25 word cards are laid out in a grid on the table. Another card shows a pattern of blue and red squares which correspond to the grid, but only one player from each team will see this information - the Spymasters. As Spymaster, you give clues to your team about the words that match your color, and it's a race to get your team to identify all of your words first!
+            br
+            br
+            | Here's the tricky part though - clues must be only one word and one number. If you give the clue "Sandwich, 2," this would mean 2 words on the board are related to "sandwich." Your team then tries to guess which words you are thinking of - maybe "cheese" and "bread." However, it is entirely possible that your team accidentally guesses a word for the opposing team!
+            br
+            br
+            | Codenames requires deep strategic thinking, but any group can quickly pick it up and start playing. If you think you and your friends can mind-meld for the win, Codenames is the best in its class.
+            br
+            br
+            a.text-link(href="https://amzn.to/3gWlAlg") Buy #{rec2} on Amazon
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}
+          img(src='../img/bannedwords.png' alt=rec3)
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 4+ Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 30 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designer: Forrest-Pruzan Creative, Prospero Hall
+          p
+            | Banned Words is similar to Taboo, but instead of each card showing the words that are off-limits, the other team gets to decide!
+            br
+            br
+            | Each round, one team draws a card showing 5 secret words that their opponents will be guessing. They collectively write down 10 "banned words" they think their opponents will use as clues, and hand the card to the clue-giver on the opposing team.
+            br
+            br
+            | The clue-giver provides clues to the 5 words like in Taboo - if a word is correctly guessed, the guesser's team earns 1 point. If the clue-giver OR the guessers say a banned word though, the opposing team gets a point! Banned Words really is a mind-game at its core. It goes something like this:
+            br
+            br
+            span.quote
+              | #[strong Secret Words:] Flute, Tree, Raccoon, Brain, Pot
+              br
+              | #[strong(style={color: 'red'}) Kolby:] "I'm putting trash and panda for Raccoon"
+              br
+              | #[strong(style={color: 'red'}) Levi:] "What the heck, that's not a thing."
+              br
+              | #[strong(style={color: 'red'}) Kolby:] "Just wait."
+              br
+              | #[strong(style={color: 'blue'}) Steven:] "Okay, so this is a living creature, some people call it a trash panda..."
+              br
+              | #[strong(style={color: 'red'}) Kolby:] "TRASHPANDAAA! WE'LL TAKE THOSE POINTS, LET'S GOOO!"
+            br
+            br
+            | If you love Taboo but would prefer more teamwork and ridiculousness, Banned Words will give you exactly that. This game will keep everyone entertained and is perfect for a tight-knit group.
+            br
+            br
+            a.text-link(href="https://amzn.to/3iL0eYK") Buy #{rec3} on Amazon
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug

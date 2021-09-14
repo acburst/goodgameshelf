@@ -11,134 +11,135 @@ doctype html
 include ../includes/_head.pug
 - index = titles.indexOf(gameTitle);
 
-.container
-  .navbar
-    include ../includes/_sidebar.pug
-  main
-    .content
-      .section
-        h1 #{articleTitle}
-        .top-bar.row
-          .col
-            span.date August 4, 2020
-            span.date.update Updated May 30, 2021
-          include ../includes/_share.pug
-        img(src='../img/azul.jpg' alt='azul')
-        .game-overview
-          .row
+body
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            .col
+              span.date August 4, 2020
+              span.date.update Updated May 30, 2021
+            include ../includes/_share.pug
+          img(src='../img/azul.jpg' alt='azul')
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 2-4 players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 30-45 minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designer: Michael Kiesling
+            a.text-link(href="https://amzn.to/3i2ItDN") Buy #{titles[index]} on Amazon
+          p
+            | Azul has made a huge splash since its release in 2017, thanks to its clever design and the fact that  anyone can learn the game quickly. If you enjoy Azul, you might like the competition of drafting tiles or the puzzle of placing your tiles to earn the highest score. Maybe you just love the beautiful theme and smooth tiles. Or maybe you appreciate that it truly is easy to learn and difficult to master.
+            br
+            br
+            | These 3 games share many of Azul&apos;s best features along with their own unique twists &amp; fun themes.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/sagrada.jpg' alt='sagrada')
+          .tags
             .tag
               .icon
-                img(src='../img/people.svg' alt='complexity')
-              | 2-4 players
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Slightly More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-4 Players
             .tag
               .icon
                 img(src='../img/time.svg' alt='play time')
-              | 30-45 minutes
+              | Playtime: 30-45 Minutes
             .tag
               .icon
                 img(src='../img/designer.svg' alt='designer')
-              | Designer: Michael Kiesling
-          a.text-link(href="https://amzn.to/3i2ItDN") Buy #{titles[index]} on Amazon
-        p
-          | Azul has made a huge splash since its release in 2017, thanks to its clever design and the fact that  anyone can learn the game quickly. If you enjoy Azul, you might like the competition of drafting tiles or the puzzle of placing your tiles to earn the highest score. Maybe you just love the beautiful theme and smooth tiles. Or maybe you appreciate that it truly is easy to learn and difficult to master.
-          br
-          br
-          | These 3 games share many of Azul&apos;s best features along with their own unique twists &amp; fun themes.
-      .section(id=`${toID(rec1)}`)
-        h2 #{rec1}
-        img(src='../img/sagrada.jpg' alt='sagrada')
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | Slightly More Complex
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 1-4 Players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 30-45 Minutes
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designers: Adrian Adamescu, Daryl Andrews
-        p
-          | Sagrada is a delightful sister game to Azul - instead of laying tiles, you&apos;re placing panes into a beautiful stained glass window. Like Azul, you spend each turn drafting a piece to add to your board. But in Sagrada, you take colored dice.
-          br
-          br
-          | When you place dice, you must meet placement requirements based on their color and number to maximize your score at the end of the game. You have to place your dice strategically like in Azul, but you never know what numbers will be rolled on which color dice, so flexibility is key. In case you ever get stuck with a bad die, Sagrada introduces special abilities that you can use to get yourself out of a pinch.
-          br
-          br
-          | Overall, Sagrada is slightly more complex than Azul, but it&apos;s just as easy to learn. The game also includes window mats of increasing difficulties, so you can test your strategic limits with each play.
-          br
-          br
-          a.text-link(href="https://amzn.to/3i6oRic") Buy #{rec1} on Amazon
-      .section(id=`${toID(rec2)}`)
-        h2 #{rec2}
-        img(src='../img/reef.jpg' alt='Reef Board Game Components')
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | More Complex
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 2-4 Players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 30-45 Minutes
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designers: Chris Quilliams
-        p
-          | Reef is another brightly-colored game that awards points for arranging pieces on your board strategically, but it uses a few interesting mechanics that make you think in new ways.
-          br
-          br
-          | Unlike Azul, you can choose from 2 different actions each turn. You may EITHER (1) choose a card to add to your hand OR (2) play a card from your hand. The cards provide new coral pieces and then trigger scoring for certain patterns on your board. This adds a new level of strategy because you must balance your need to take good cards with building up your reef to score points.
-          br
-          br
-          | Instead playing tiles on one level, in Reef, you can stack coral pieces on top of each other to dramatically change the patterns and score more points. Since you score points throughout the game (not just at the end), you have to think several turns ahead to line up scoring combinations.
-          br
-          br
-          | Reef will stretch your mind even further than Azul, so give it a shot if you want to test your limits. Regardless of who wins, you&apos;ll love the towers of colorful coral in your reef at the end of each play!
-          br
-          br
-          a.text-link(href="https://amzn.to/2ERaMqF") Buy #{rec2} on Amazon
-      .section(id=`${toID(rec3)}`)
-        h2 #{rec3}
-        img(src='../img/kingdomino.jpg' alt='kingdomino')
-        .tags
-          .tag
-            .icon
-              img(src='../img/puzzle.svg' alt='complexity')
-            | Similar Complexity
-          .tag
-            .icon
-              img(src='../img/people.svg' alt='player count')
-            | 2-4 Players
-          .tag
-            .icon
-              img(src='../img/time.svg' alt='play time')
-            | Playtime: 20-45 Minutes
-          .tag
-            .icon
-              img(src='../img/designer.svg' alt='designer')
-            | Designers: Bruno Cathala
-        p
-          | Kingdomino is another drafting game: you take turns taking (you guessed it!) domino-like tiles. Instead of having pips, these dominos depict different terrains, which you use to build your own brightly-colored kingdom.
-          br
-          br
-          | In this game, you don&apos;t have to match any specific pattern like the board in Azul - instead, you must place tiles around your starting castle to strategically to build out each terrain. This means that you&apos;ll have to plan your terrains out over several turns and hope that you&apos;re able to secure the right tiles to make your plans work just right. Player interaction is even more important in Kingdomino than Azul - if you keep an eye on your opponents&apos; kingdoms, you might be able to snag a few tiles that would be really valuable for them.
-          br
-          br
-          | Just like Azul, you can learn this game in less than 10 minutes, but the strategy isn&apos;t easy to master. Kingdomino is quick to setup, has quick turns, and it lets you build a lovely kingdom by the end of the game, even if you don&apos;t win.
-          br
-          br
-          a.text-link(href="https://amzn.to/3gu3JBZ") Buy #{rec3} on Amazon
-      include ../includes/_article-end.pug
-include ../includes/_footer.pug
+              | Designers: Adrian Adamescu, Daryl Andrews
+          p
+            | Sagrada is a delightful sister game to Azul - instead of laying tiles, you&apos;re placing panes into a beautiful stained glass window. Like Azul, you spend each turn drafting a piece to add to your board. But in Sagrada, you take colored dice.
+            br
+            br
+            | When you place dice, you must meet placement requirements based on their color and number to maximize your score at the end of the game. You have to place your dice strategically like in Azul, but you never know what numbers will be rolled on which color dice, so flexibility is key. In case you ever get stuck with a bad die, Sagrada introduces special abilities that you can use to get yourself out of a pinch.
+            br
+            br
+            | Overall, Sagrada is slightly more complex than Azul, but it&apos;s just as easy to learn. The game also includes window mats of increasing difficulties, so you can test your strategic limits with each play.
+            br
+            br
+            a.text-link(href="https://amzn.to/3i6oRic") Buy #{rec1} on Amazon
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/reef.jpg' alt='Reef Board Game Components')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 30-45 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Chris Quilliams
+          p
+            | Reef is another brightly-colored game that awards points for arranging pieces on your board strategically, but it uses a few interesting mechanics that make you think in new ways.
+            br
+            br
+            | Unlike Azul, you can choose from 2 different actions each turn. You may EITHER (1) choose a card to add to your hand OR (2) play a card from your hand. The cards provide new coral pieces and then trigger scoring for certain patterns on your board. This adds a new level of strategy because you must balance your need to take good cards with building up your reef to score points.
+            br
+            br
+            | Instead playing tiles on one level, in Reef, you can stack coral pieces on top of each other to dramatically change the patterns and score more points. Since you score points throughout the game (not just at the end), you have to think several turns ahead to line up scoring combinations.
+            br
+            br
+            | Reef will stretch your mind even further than Azul, so give it a shot if you want to test your limits. Regardless of who wins, you&apos;ll love the towers of colorful coral in your reef at the end of each play!
+            br
+            br
+            a.text-link(href="https://amzn.to/2ERaMqF") Buy #{rec2} on Amazon
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}
+          img(src='../img/kingdomino.jpg' alt='kingdomino')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 20-45 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designers: Bruno Cathala
+          p
+            | Kingdomino is another drafting game: you take turns taking (you guessed it!) domino-like tiles. Instead of having pips, these dominos depict different terrains, which you use to build your own brightly-colored kingdom.
+            br
+            br
+            | In this game, you don&apos;t have to match any specific pattern like the board in Azul - instead, you must place tiles around your starting castle to strategically to build out each terrain. This means that you&apos;ll have to plan your terrains out over several turns and hope that you&apos;re able to secure the right tiles to make your plans work just right. Player interaction is even more important in Kingdomino than Azul - if you keep an eye on your opponents&apos; kingdoms, you might be able to snag a few tiles that would be really valuable for them.
+            br
+            br
+            | Just like Azul, you can learn this game in less than 10 minutes, but the strategy isn&apos;t easy to master. Kingdomino is quick to setup, has quick turns, and it lets you build a lovely kingdom by the end of the game, even if you don&apos;t win.
+            br
+            br
+            a.text-link(href="https://amzn.to/3gu3JBZ") Buy #{rec3} on Amazon
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug
