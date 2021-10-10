@@ -1,0 +1,189 @@
+- var gameTitle = "Wingspan";
+- var articleTitle = "If you like Wingspan, try these 3 games";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Parks";
+- rec2 = "Everdell";
+- rec3 = "Terraforming Mars";
+- metadescription = 'If you love the awesome theme and strategic depth of Wingspan, these 3 games will provide a similar experience!';
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
+body
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date October 10, 2021
+            include ../includes/_share.pug
+          img(src='../img/wingspan-board-game.jpg' alt='wingspan-board-game')
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 1-5 Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 75-120 Minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designed by Elizabeth Hargrave
+            a.text-link(href="https://amzn.to/3lUIr65") Buy #{titles[index]} on Amazon
+          p
+            | Wingspan has beautifully illustrated artwork, great production quality, and its gameplay is smart. Wingspan's theme and game mechanics also complement each other very well, which always makes for a great experience. Once you've played this game, it's easy to understand why it has become incredibly popular and has sold over 1 million copies!
+            br
+            br
+            | Wingspan has complex strategy behind its approachable theme, and it's definitely more challenging than your average board game. If you already love Wingspan, then you're ready for these games.
+            br
+            .note
+              | #[strong Expansions:] If you just want more Wingspan, we think the&nbsp;
+              a.text-link(href="https://amzn.to/3CG7ik5") European Expansion
+              | &nbsp;balances the game nicely by adding more birds with a wider variety of powers. We also recommend the&nbsp;
+              a.text-link(href="https://amzn.to/2VMAKUm") Oceania Expansion
+              | &nbsp;for more experience players, as it changes gameplay more dramatically by adding new player boards and Nectar, a wild resource.
+        include ../includes/_affiliate-disclaimer.pug
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/parks-board-game.jpg'
+          alt='parks-board-game')
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/4989691/parks") @Hipopotam, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 60-90 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Henry Audubon
+          p
+            | If you want another game with beautiful illustrations and challenging gameplay, look no further than Parks. As a player, you trek the National Parks of the U.S., taking photographs, purchasing gear, and trying to outwit other hikers along the way.
+            br
+            br
+            | The game is played on a path of location tiles that are placed in a random order each round - some provide resources, while others let you take special actions. On your turn, you may move one of your two hikers to any unoccupied tile down the trail. You will leapfrog the other hikers until you reach the end, at which point you can visit a park by paying its resource cost. Parks are valuable, so you'll want to visit as many as possible!
+            br
+            br
+            | There are some mind-games in how quickly you should advance along the path, and you'll frequently have to choose whether to take more resources or stay ahea. Special gear, bonus cards, and your fellow campers' actions will also influence your own strategy.
+            br
+            br
+            | There are some mind-games in how quickly you should advance along the path, and you'll frequently have to choose whether to take more resources or stay ahead. Special gear, bonus cards, and your fellow campers' actions will also influence your own strategy.
+            br
+            br
+            a.text-link(href="https://amzn.to/3yisYR8") Buy #{rec1} on Amazon
+            br
+            .note
+              | #[strong Expansions:] If you've already played Parks, the&nbsp;
+              a.text-link(href="https://amzn.to/3Cugk2H") Nightfall expansion
+              | &nbsp;is great and adds more parks and a mechanism to gain more secret objective cards.
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/everdell.jpg' alt='everdell-board-game-setup')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 90-120 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by James A. Wilson
+          p
+            | Everdell is a card game with a woodland creature theme that sports incredible artwork. You'll be adding Critter and Construction cards to your village, and these each have a unique effect. Some cards also chain into others, so you can pull off satisfying combos just like in Wingspan!
+            br
+            br
+            | You start each game with nothing but the cards in your hand. Cards require various resources to play, so you'll need to send workers to the board to collect berries, resin, stone, and wood. Each space can hold only one worker, so the board quickly fills up! This aspect of worker placement adds some great player interaction, and you'll need to carefully plan ahead to play all the cards you want.
+            br
+            br
+            | There are many viable strategies in Everdell. You can build Farms and Chip Sweeps to have good harvests, construct buildings with a Crane or two, or even give berries and cards to your opponents to gain rewards! There are many ways to score points, and you'll just have to figure out what works best each game.
+            br
+            br
+            | Everdell is a joy to play for the artwork and fun card combos, and you'll want to play again and again to try out new strategies. Everdell is also a step up in difficulty from Wingspan, so this is a great option if you're looking to get into slightly heavier games.
+            br
+            br
+            a.text-link(href="https://amzn.to/3iU8Nnl") Buy #{rec2} on Amazon
+            br
+            .note
+              | #[strong Expansions:] We think&nbsp;
+              a.text-link(href="https://amzn.to/3iEGckQ") Bellefaire
+              | &nbsp;is the single best expansion, as it gives each player a fun, helpful ability throughout the game.&nbsp;
+              a.text-link(href="https://amzn.to/3lHG0lx") The Collector's Edition
+              | &nbsp;also features new cards (including Legendaries!) and upgraded components, but it does come with a higher price tag.
+              | You can also upgrade Everdell later on with the&nbsp;
+              a.text-link(href="https://amzn.to/3CuxZXT") Glimmergold upgrade pack
+              | , but this wouldn't be as cost effective.
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}
+          img(src='../img/terraforming-mars-board-game-end.jpg' alt='terraforming mars board game end state')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 120-180 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Jacob Fryxelius
+          p
+            | Terraforming Mars is an engine-building card game like Wingspan, but in this game, you and your opponents work to make Mars into a habitable planet. If you're ready for a bigger challenge, this is an excellent game to play next (and it's one of our all-time favorites).
+            br
+            br
+            | Every card in Terraforming Mars provides a unique effect - these can be placing forests on the board, establishing a city on a moon, or even raising livestock. Some cards increase your resource production levels, which help you afford more expensive cards later on. You'll also be able to claim valuable Milestones, fund Awards, and most importantly, terraform Mars!
+            br
+            br
+            | The game ends when the temperature, oxygen level, and ocean coverage reach a livable threshold. A cool twist in Terraforming Mars is that all players raise these levels together, despite the game being competitive The number of rounds in a game varies depending on how fast your group terraforms Mars, so you'll have to adjust your strategy accordingly.
+            br
+            br
+            | Despite its strategic depth, Terraforming Mars is relatively straightforward to learn. The rulebook is concise, each card explains what it does, and a beginner mode lets players ease into the experience. Terraforming Mars is harder to be good at right away compared to Wingspan, but its higher strategy ceiling leads to very rewarding sessions!
+            br
+            br
+            a.text-link(href="https://amzn.to/3qdogAh") Buy #{rec3} on Amazon
+        hr
+        .end-section
+          h2 Honorable Mentions
+          p.honor
+            | If you're looking for a lighter game to play, these games are less complex than Wingspan and the other games on this list.
+          .honor
+            p
+              | #[strong Bunny Kingdom] is another card game with a fun animal theme, this time centered around bunnies vying for medieval territories. Instead of having a hand, you'll draft many cards over four rounds. You take two cards on your turn, and each card either lets you place a bunny on the board OR score points based on which areas your bunnies control. The trick is to have a strong board presence while still earning enough points to win! This game is quite different from Wingspan, but it will add some great variety to your collection.
+            a.text-link(href="https://amzn.to/3cWV0Zo") Buy Bunny Kingdom on Amazon
+          .honor
+            p
+              | #[strong Gizmos] is another fun engine-builder that takes the bird-power-chaining mechanic from Wingspan and focuses on it 100%. Every machine you construct will play off of another machine or action in Gizmos. It's so satisfying to trigger the powers of 4 or 5 birds at once, and Gizmos gives you that feeling every turn. This game is lighter than Wingspan, and could be a great option if you're looking for something shorter. Also, as a bonus, the 2nd edition of this game also added a cool marble tower for picking energy spheres from!
+            a.text-link(href="https://amzn.to/3hNwJXV") Buy Gizmos on Amazon
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug
