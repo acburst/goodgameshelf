@@ -44,6 +44,7 @@ body
                   img(src='../img/designer.svg' alt='Designer')
                 | Designer: Antoine Bauza
             a.text-link(href="https://amzn.to/2R8jLtA") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
           p
             | 7 Wonders is a classic strategy game from 2010 that does so many things well: fast-paced gameplay for up to 7 players, simultaneous turns with little downtime, and a diverse set of strategies to choose from.
             br
@@ -58,7 +59,7 @@ body
               |, were also remade!
         .section(id=`${toID(rec1)}`)
           h2 #{rec1}
-          img(src='../img/itsawonderfulworld.png' alt="It's a Wonderful World")
+          img(src='../img/its-a-wonderful-world.png' alt="It's a Wonderful World Board Game")
           .tags
             .tag
               .icon
@@ -92,7 +93,7 @@ body
             a.text-link(href="https://amzn.to/3sLONW2") Buy #{rec1} on Amazon
             br
             .note
-              | #[strong Note:] also consider the&nbsp;
+              | #[strong Note:] Also consider the&nbsp;
               a.text-link(href="https://amzn.to/39CgtFh") Corruption &amp; Ascension expansion&nbsp;
               | which adds some crazy cards for more interesting strategies and supports up to 7 players!
 

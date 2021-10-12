@@ -1,0 +1,202 @@
+- var gameTitle = "Terraforming Mars";
+- var articleTitle = "If you like Terraforming Mars, try these 3 games";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Underwater Cities";
+- rec2 = "It's a Wonderful World";
+- rec3 = "Great Western Trail";
+- metadescription = 'If you love the awesome theme and strategic depth of Wingspan, these 3 games will provide a similar experience!';
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
+body
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date October 11, 2021
+            include ../includes/_share.pug
+          img(src='../img/terraforming-mars-board-view.jpg' alt='terraforming-mars-board-view')
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 1-5 Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 120-180 Minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designed by Jacob Fryxelius
+            a.text-link(href="https://amzn.to/3ArFiiI") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
+          p
+            | Terraforming Mars is an awesome engine-building card game with endless strategies and card combos to pursue. Every game feels different, and it's very satisfying to improve at this game.
+            br
+            br
+            | Complexity and strategic diversity are some of Terraforming Mars's best traits, and these are also found in the games we're recommending below.
+            br
+            br
+            | However, if you just want more Terraforming Mars, there are also several great #[strong expansions] to try! We rarely list out all of a game's expansions, but this game deserves it.
+            .note
+              ul
+                li
+                  a.text-link(href="https://amzn.to/3Cw09C1") Prelude
+                  | &nbsp;adds starter cards to increase starting production and resources. We'd never play without this one!
+                li
+                  a.text-link(href="https://amzn.to/3zw6MlQ") Hellas and Elysium
+                  | &nbsp;are two new boards with new milestones and awards. Good for all players.
+                li
+                  a.text-link(href="https://amzn.to/2VXDmPP") Venus Next
+                  | &nbsp;adds new cards and a Venus track which can also be terraformed. This one is great after you've played the base game a few times.
+                li
+                  a.text-link(href="https://amzn.to/3lI50JF") Colonies
+                  | &nbsp;provides more ways to spend and gain resources. Great for advanced players.
+                li
+                  a.text-link(href="https://amzn.to/3tWXWMJ") Turmoil
+                  | &nbsp;adds politics, and special bonuses are applied by the ruling party in power. Expert players only - increases difficulty and game length.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/underwater-cities-board-game.jpg'
+          alt='underwater-cities-board-game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 120-180 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Vladimír Suchý
+          p
+            | Underwater Cities is another engine-building card game, this time with worker placement. Rather than competing to place tiles on the board like in Terraforming Mars, you'll send your submarine to action spaces that can be used only once each round.
+            br
+            br
+            | Each space lets you improve your underwater metropolis. One space allows you to build habitable domes, another space lets you connect them with tunnels, and other spaces allow you to upgrade your buildings or gain resources. All of your buildings produce resources, but unlike Terraforming Mars, production happens only 3 times in this game! Timing your actions is very important but hard to master.
+            br
+            br
+            | You may also play a card that matches your space's color to gain its bonus - often more resources or a special action. However, your hand size is only 3, which adds a challenging limit to how well you can plan ahead. You will find your strategy change throughout the game based on the cards you have.
+            br
+            br
+            | Underwater Cities will flex a similar part of your brain with hundreds of effective card combos to try. This is a great game to play after Terraforming Mars, especially if you're intrigued by more persistent player interaction that comes with the worker placement aspect.
+            br
+            br
+            a.text-link(href="https://amzn.to/3AvzHI1") Buy #{rec1} on Amazon
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/its-a-wonderful-world.png' alt="It's a Wonderful World board game")
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Less Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45-60 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Frédéric Guérard
+          p
+            | It's a Wonderful World is a straightforward engine building game that takes less than an hour to play but really gets your brain working. This game focuses purely on card drafting and resource production, so this game is for you if that's what you love about Terraforming Mars.
+            br
+            br
+            | Every card costs various colored cubes to activate, and you start off producing only the few shown on your starter corporation. Early on, you will likely focus on cheaper cards that increase your production levels, until you can afford more expensive cards that grant loads of victory points (sound familiar?). However, you'll constantly have to weigh your options and will be forced to take risks, as drafting ensures you won't know which cards will turn up.
+            br
+            br
+            | This is a great strategy game that packs a punch for how simple its gameplay is. Simultaneous turns and quick setup make this a great option for any group, big or small. Definitely check this one out if you're looking for something lighter to balance with Terraforming Mars!
+            br
+            br
+            a.text-link(href="https://amzn.to/2ZoV8Nl") Buy #{rec2} on Amazon
+            br
+            .note
+              | #[strong Note:] The&nbsp;
+              a.text-link(href="https://amzn.to/3mJ5JdX") Corruption &amp; Ascension expansion
+              | &nbsp; adds some crazy cards for more interesting strategies, and it plays well with up to 7 players!
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}
+          img(src='../img/great-western-trail.jpg' alt='great western trail board game')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 120-150 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Alexander Pfister
+          p
+            | Great Western Trail is a deck-building game where you move along a trail of buildings in the Old West to ultimately deliver cattle in Kansas City. This game has very different mechanics compared to Terraforming Mars, but it has that same satisfying feeling when you start getting the hang of it.
+            br
+            br
+            | The game takes place on a path with several buildings, and you stop at one each turn. Every building lets you perform a different action - hire workers, buy cattle, create new buildings, or discard cards from your hand for money. When you reach the end of the trail, you deliver all of the #[em uniquely colored cows] in your hand - the more unique, the better your reward. You then move back to the start, independent of everyone else. It's up to you if you'll move slowly or rush through!
+            br
+            br
+            | In some games, you may focus on adding better buildings that only you can use. In others, you may focus on buying better quality cows to make more profitable deliveries. Or maybe you'll do a mix of both. Your strategy will depend on which tiles, workers, and building appear during setup.
+            br
+            br
+            | Great Western Trail feels very different from other games, in large part to how the trail evolves throughout the game. This game feels impossible to "solve," and it's a great option if you want a heavy strategy game that contrasts well with Terraforming Mars.
+            br
+            br
+            a.text-link(href="https://amzn.to/39mEFL8") Buy #{rec3} on Amazon
+        hr
+        .end-section
+          h2 Honorable Mentions
+          p.honor
+            | If you've already played the games above or want some more to choose from, you also might like these options!
+          .honor
+            p
+              | #[strong Wingspan] is another awesome engine-building game that has hundreds of unique cards, and it's centered around beautifully illustrated birds. You'll feed birds to add them to your habitat board in order to use their special powers, and these powers can chain together every time you use an action! You can achieve some satisfying cascading combos this way, just like in Terraforming Mars. Wingspan is certainly a lighter game, but it still has great strategic depth for its shorter time frame.
+            a.text-link(href="https://amzn.to/2XCs6cI") Buy Wingspan on Amazon
+          .honor
+            p
+              | #[strong 7 Wonders (with the Armada Expansion)]  is a card drafting game with simultaneous turns. Each card you play has a different effect and could bolster your military power, improve your scientific research, or increase your resource production. With the Armada expansion, you may also advance up a track matching your card's color to gain more bonuses, adding to the strategy! Whether you're a 7 Wonders Veteran or haven't played before, this is a great game to try. Also, consider teaching 7 Wonders to friends who haven't played Terraforming Mars yet, as a nice introduction to card drafting.
+            ul.no-bullets
+              li
+                a.text-link(href="https://amzn.to/3tYx92T") Buy 7 Wonders on Amazon
+              li
+                a.text-link(href="https://amzn.to/39upr6R") Buy the Armada Expansion on Amazon
+          .honor
+            p
+              | #[strong On Mars] turns the process of establishing a colony on Mars into a worker placement board game. The mechanics in this game are precise, and the objectives and constraints are highly thematic. The actions available to you depend on whether you're currently on the Surface or in Orbit, and you'll frequently shuttle between the two throughout the game. If your group is looking for something even more complex than Terraforming Mars, this may be the game for you. On Mars does come with a higher price tag, but the component quality is the best in the industry, featuring double-layer player boards, beautiful wooden pieces, and exceptional graphic design.
+            a.text-link(href="https://amzn.to/2XyKQcu") Buy On Mars on Amazon
+          .honor
+            p
+              | #[strong Terraforming Mars: Ares Expedition] is a spin-off of Terraforming Mars that has simultaneous turns. When you select an action, all players may take that action - if everyone picks Production, everyone will produce, but nobody can build anything! You'll need to anticipate what your opponents will need for themselves and plan accordingly. If you're a Terraforming Mars junkie, this game may not fully satisfy your craving to pull off a beautifully crafted titanium-spacetag-energy-heat engine, but it does have new cards and mechanics to master. Some of our friends now prefer Ares Expedition for its simultaneous turns, as it takes much less time than the original game.
+            a.text-link(href="https://www.target.com/p/terraforming-mars-ares-expedition-card-game/-/A-82006562") Buy Terraforming Mars: Ares Expedition from Target
+          .honor
+            p
+              | #[strong Beyond the Sun] combines resource management with planetary conquest, and it's played on a massive tech tree, in space. You need Civilians to research new technologies, and you need Ore to use special actions, such as deploying and moving ships to new planets. When researching technologies, you can open up new space-faring actions for yourself later, or even increase your Civilian growth or Ore production. Beyond the Sun is relatively quick to play, is much less complex than Terraforming Mars, and the tech tree is randomized between games, making it quite replayable.
+            a.text-link(href="https://www.boardgameatlas.com/game/zA3feokLvS/beyond-the-sun") Beyond the Sun on Board Game Atlas
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug

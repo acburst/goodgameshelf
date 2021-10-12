@@ -38,6 +38,7 @@ body
                   img(src='../img/designer.svg' alt='designer')
                 | Designed by Elizabeth Hargrave
             a.text-link(href="https://amzn.to/3lUIr65") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
           p
             | Wingspan has beautifully illustrated artwork, great production quality, and its gameplay is smart. Wingspan's theme and game mechanics also complement each other very well, which always makes for a great experience. Once you've played this game, it's easy to understand why it has become incredibly popular and has sold over 1 million copies!
             br
@@ -50,7 +51,6 @@ body
               | &nbsp;balances the game nicely by adding more birds with a wider variety of powers. We also recommend the&nbsp;
               a.text-link(href="https://amzn.to/2VMAKUm") Oceania Expansion
               | &nbsp;for more experience players, as it changes gameplay more dramatically by adding new player boards and Nectar, a wild resource.
-        include ../includes/_affiliate-disclaimer.pug
         .section(id=`${toID(rec1)}`)
           h2 #{rec1}
           img(src='../img/parks-board-game.jpg'
