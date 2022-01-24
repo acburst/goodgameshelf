@@ -76,6 +76,12 @@ form::after {
 .navbar .rounded-btn:hover {
   color: #fff !important;
 }
+
+.navbar .logo-desktop {
+  width: 66px;
+  height: 85px;
+}
+
 .rounded-btn:active {
   transform: translateY(1px);
   opacity: .7;
@@ -357,6 +363,18 @@ img {
   border-radius: 6px;
 }
 
+.promotional {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  flex-direction: column;
+}
+
+.promotional img {
+  width: 150px;
+}
+
 .game-overview {
   margin: 24px 0 0;
   padding-bottom: 24px;
@@ -504,12 +522,20 @@ footer {
       0 1px 5px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
+
+  .promotional {
+    display: none;
+  }
   .navbar .logo-title {
     padding: 0;
     margin: -20px -20px -20px 0;
   }
-  .navbar .logo-desktop { display: none; }
-  .navbar .logo-mobile { display: block; }
+  .navbar .logo-desktop {
+    display: none;
+  }
+  .navbar .logo-mobile {
+    display: block;
+  }
   .navbar .links {
     transform: translateY(20px);
     overflow: auto;
