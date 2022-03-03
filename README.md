@@ -17,4 +17,5 @@ npm install pug-cli (previously npm install pug)
 
 # Compile for prod - UNIX
 1) pug templates -P -o ./docs/recommendations
-2) drag index.html to root
+2) drag index.html to root from recommendations
+3) drag best-games files to best-games folder from recommendations
