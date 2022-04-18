@@ -40,9 +40,15 @@ h2 {
   margin-top: 24px;
   font-size: 24px;
 }
-h3 {
-  color: #FF5C00;
+h2.category-header {
+  margin-top: 32px;
+  font-size: 32px;
 }
+h3 {
+  margin-top: 24px;
+  font-size: 24px;
+}
+
 hr {
   border-top: 1px solid #A68A87;
   margin-bottom: 64px;
