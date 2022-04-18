@@ -1,5 +1,9 @@
-- var twitterLink = "https://twitter.com/intent/tweet?url=http%3A%2F%2Fgoodgameshelf.com%2Frecommendations%2F" + toID(titles[index]) + "&text=Check%20out%20these%20%23boardgame%20recommendations%20if%20you%20like%20" + titles[index] + "!%0D%0A%0D%0A";
-- var fbLink = "https://www.facebook.com/sharer/sharer.php?u=http://goodgameshelf.com/recommendations/" + toID(titles[index]);
+- var twitterLink = "https://twitter.com/intent/tweet?url=https%3A%2F%2Fgoodgameshelf.com%2Frecommendations%2F" + toID(titles[index]) + "&text=Check%20out%20Good%20Game%20Shelf's%20board%20game%20recommendations%20if%20you%20like%20" + titles[index] + "!%0D%0A%0D%0A";
+- var fbLink = "https://www.facebook.com/sharer/sharer.php?u=https://goodgameshelf.com/recommendations/" + toID(titles[index]);
+
+- if (articleType === 'BEST_OF') twitterLink = "https://twitter.com/intent/tweet?url=https%3A%2F%2Fgoodgameshelf.com%2Fbest-games%2F" + toID(titlesBestOf[index]) + "&text=Check%20out%20Good%20Game%20Shelf's%20board%20game%20recommendations%20for%20" + titlesBestOf[index] + "!%0D%0A%0D%0A";
+- if (articleType === 'BEST_OF') fbLink = "https://www.facebook.com/sharer/sharer.php?u=https://goodgameshelf.com/best-games/" + toID(titlesBestOf[index]);
+
 .row
   a.icon(href=twitterLink)
     img(src='../img/twitter.svg' alt='Twitter Share Icon')
