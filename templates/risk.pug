@@ -1,0 +1,188 @@
+- var gameTitle = "Risk";
+- var articleTitle = "If you want a new game like Risk, try these 3 board games";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Root";
+- rec2 = "Small World";
+- rec3 = "A Game of Thrones";
+- metadescription = "Risk is a classic war game, and these modern titles bring an even better experience to the table.";
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(gameTitle);
+
+body
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date April 25, 2022
+            include ../includes/_share.pug
+          img(src='../img/risk.jpg' alt='Risk board game that has just started')
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 2-6 Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 120-300 Minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designed by Albert Lamorisse and Michael I. Levin
+            a.text-link(href="https://amzn.to/3vJY8QO" rel= "nofollow" target="_blank") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
+          p
+            | Growing up, Risk was always one of #[em the] board games, alongside Sorry, Monopoly, and Scrabble. It’s satisfying to plan a grand strategy and win territory in Risk, but each game takes so long to play (and often is never finished at all)!
+            br
+            br
+            | These modern games build on many of Risk’s mechanics but deliver a more balanced and engaging experience with a shorter play time.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/root-close-up.jpg' alt='Root board game close up')
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/4285889/root") @Romn, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 90-120 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Cole Wehrle
+          p
+            | Root is a game of adorable woodland creature warfare. You and your opponents each play as a unique faction of critters to spread across the map, fight for rule, and score points to win. Root has been one of our favorite games of all time since its release, with every matchup being interesting and competitive.
+            br
+            br
+            | The best aspect of Root is its asymmetric factions that operate and score points in entirely different ways. Marquise de Cat focuses on wide map presence and building many structures. The Eyrie are relentless and must follow an ever-growing list of commands. And the Vagabond controls only a single piece, focusing on quests and managing items.
+            br
+            br
+            | In Root, multiple factions can coexist in a given clearing, with rule being determined by the number of warriors and buildings present. Battles are decided by dice rolls (but more balanced than Risk), and cards can be used to influence the outcome of current and future battles.
+            br
+            br
+            | Look no further than Root if you want a satisfying follow-up to Risk. There are more rules to learn, but once you and your friends know the game and factions, play time will drop below 2 hours.
+            br
+            br
+            a.text-link(href="https://amzn.to/38rcKgc" rel= "nofollow" target="_blank") Buy #{rec1} on Amazon
+            br
+            .note
+              | #[strong Expansions:] Try these if you already love Root! The&nbsp;
+              a.text-link(href="https://amzn.to/3vb2Sjt" rel= "nofollow" target="_blank") Riverfolk Expansion
+              |  introduces Lizard and Otter factions, and the&nbsp;
+              a.text-link(href="https://amzn.to/3vahMqa" rel= "nofollow" target="_blank") Underworld Expansion
+              |  has the Crows and Moles. We also love finding new strategies to pursue with the&nbsp;
+              a.text-link(href="https://amzn.to/37JsLxV" rel= "nofollow" target="_blank") more advanced deck of cards
+              | .
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/small-world.jpg' alt="Small World board game in progress")
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/709557/small-world") @Renegade84, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45-90 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Philippe Keyaerts
+          p
+            | Small World is a pure territory control game which plays like Risk without dice rolls. The flow of the game is fun and lighthearted, and it takes the least amount of time to play out of the games on this list.
+            br
+            br
+            | Throughout the game, players take turns placing their faction tokens on regions on the board to indicate ownership. Once the map is filled, players can spend additional tokens to capture their opponents’ regions. Players score points each round based on how many total regions they control, which creates a balanced path to victory.
+            br
+            br
+            | The factions in Small World each have their own abilities to add asymmetry to the game. The Giants are better at conquering mountain regions, while Dwarves gain extra points for controlling Mine regions. The Ratmen simply have strength in numbers by having more tokens than any other faction.
+            br
+            br
+            | Small World has a lot of replayability due to the many faction combos you get to play, and it’s a great introduction to games with asymmetric player abilities.
+            br
+            br
+            a.text-link(href="https://amzn.to/3KhLCx8" rel= "nofollow" target="_blank") Buy #{rec2} on Amazon
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}: The Board Game
+          img(src='../img/game-of-thrones.jpg' alt='A Game of Thrones: The Board Game in progress')
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/1318951/game-thrones-board-game-second-edition") @hoarmurath, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 3-6 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 120-240 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Christian T. Petersen
+          p
+            | A Game of Thrones: The Board Game is a territory control game that does justice to the series, with players acting as one of the high Houses - Stark, Baratheon, Lanister, Martell, Greyjoy, or Tyrell. It may take as much time to play as Risk, but GoT has many more mechanics to strategize around.
+            br
+            br
+            | Each turn, players commit their units to perform actions like marching to attack an area, defending an area, and consolidating power. Players choose these actions without knowing the decisions of their opponents, but then they reveal and resolve them in turn order.
+            br
+            br
+            | Preparing to attack in GoT is straightforward, but each House can play combat cards with varying strengths and abilities that can turn the tide of battle. Battling is not everything however; choosing to consolidate power will allow you to increase your standings on influence tracks, which can improve your turn order and give you access to more potent actions.
+            br
+            br
+            | This game has everything you would want in a successor to Risk, including the chance to pull off an epic nail-biting victory. The GoT theming makes this game really stand out, and it’s fun to play as the characters you know and love. However, these mechanics are still great even if you’re not a fan of the series.
+            br
+            br
+            a.text-link(href="https://amzn.to/3xSdO7w" rel= "nofollow" target="_blank") Buy #{rec3}: The Board Game on Amazon
+            br
+            .note
+              | #[strong Note:] Just like Risk, some players may find themselves in poor positions for 2+ hours, especially in 5- or 6- player games. In case your group has had bad experiences with this in the past, this game won't fix that 🙃. After all, “when you play the game of thrones, you win or you die.”
+        hr
+        .end-section
+          h2 Honorable Mentions
+          p.honor
+            | These games also feature territory control in addition to other neat mechanics. These are a great choice if you're looking to branch out!
+          .honor
+            p
+              | #[strong Rising Sun] is a premium board game with a feudal Japan theme that mashes up area control and deception. At the heart of Rising Sun are its beautifully crafted miniatures that will demarcate your territory on the map. Each turn, you’ll secretly allocate resources to bid on available actions such as moving or recruiting units. You can form an alliance with another player to gain access to their action as well, but run the risk of Betrayal at an opportune moment! It’s up to you how you’ll focus on scoring points and whether you’ll follow an Honorable path or not. If you’re willing to pay more for high-end components, Rising Sun will reward you with a top tier experience and a lot of replayability.
+            a.text-link(href="https://amzn.to/3k8FVqC" rel= "nofollow" target="_blank") Buy Rising Sun on Amazon
+          .honor
+            p
+              | #[strong Ticket to Ride] is worth mentioning here as a family-friendly route-building game, which is an offshoot of the territory control mechanic. This one has a very approachable railroad theme, and it’s definitely worth trying if you haven’t played it yet. Players collect colorful train cards and then construct routes on the map by cashing in enough matching cards, aiming to connect cities shown on their route cards. This game is easy to learn, but its strategy can be tough to master. It’s always satisfying to pull off a win, especially if you go for a big route that spans the United States!
+            a.text-link(href="https://amzn.to/3vOsge6" rel="nofollow" target="_blank") Buy Ticket to Ride on Amazon
+          .honor
+            p
+              | #[strong Scythe] is a popular strategy game that mixes resource management, area control, and asymmetric player factions. Unlike many combat-oriented games, players are able to to diversify their strategies in Scythe. Non-combat objectives include upgrading actions, building structures, and deploying workers for resource production. Playing defensively, keeping your territory safe, and focusing on production is not only a viable winning strategy but necessary depending on how your opponents play. Scythe is definitely worth checking out, and it has tons of expansion content to build on the experience!
+            a.text-link(href="https://amzn.to/3xOhlDx" rel= "nofollow" target="_blank") Buy Scythe on Amazon
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug
