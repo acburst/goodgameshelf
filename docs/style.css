@@ -48,6 +48,15 @@ h3 {
   margin-top: 24px;
   font-size: 24px;
 }
+.card h3 {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.card p {
+  font-size: 16px;
+  margin: 0 0 5px 10px;
+}
 
 hr {
   border-top: 1px solid #A68A87;
@@ -365,8 +374,52 @@ main {
   background: none;
 }
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+a.card {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  margin: 0 5px 30px 5px;
+  padding: 0px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-color: #FFF;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.19);
+  transition: box-shadow .3s, transform .3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 19px 28px rgba(0,0,0,0.22), 0 15px 12px rgba(0,0,0,0.18);
+}
+.card::after {
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+  line-height: calc(100vh - 112px);
+  text-align: center;
+  font-size: 48px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
 img {
   border-radius: 6px;
+}
+
+.card img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .promotional {
