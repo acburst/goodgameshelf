@@ -34,7 +34,8 @@
           if (indicator) indicator.style.transform = '';
           for (let i = 0; i < links.length; i++) { links[i].classList.remove('active') }
 
-        } else if (scrollTop < top) {
+        } else if (stickyTags && scrollTop < top) {
+          // check for stickTags because some pages have sections without tags (e.g homepage)
           stickyTags.classList.remove('sticky');
           stickyTags.style = null;
 
