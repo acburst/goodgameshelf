@@ -1,0 +1,29 @@
+//- link(rel="stylesheet",href="https://emailoctopus.com/bundles/emailoctopuslist/css/formEmbed.css")
+
+.email-octopus-form-wrapper
+  p Join our mailing list to find out when we add new recommendations!
+  p.email-octopus-success-message
+  p.email-octopus-error-message
+
+  form.email-octopus-form(method="post",
+    action="https://emailoctopus.com/lists/0503ed25-d750-11ea-a3d0-06b4694bee2a/members/embedded/1.3s/add",
+    data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6")
+
+    .email-octopus-form-row
+      input(id="field_0",name="field_0",type="email",placeholder="Email Address")
+
+    .email-octopus-form-row-hp(aria-hidden="true")
+      //- <!-- Do not remove this field, otherwise you risk bot sign-ups -->
+      input(type="text",
+        name="hp0503ed25-d750-11ea-a3d0-06b4694bee2a",
+        tabindex="-1",
+        autocomplete="nope")
+
+    .email-octopus-form-row-subscribe
+      input(type="hidden",
+        name="successRedirectUrl",
+        value="")
+      button.rounded-btn(type="submit") I want recommendations!
+
+script(src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.5/recaptcha.js")
+script(src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.5/formEmbed.js")

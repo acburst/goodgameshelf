@@ -25,7 +25,7 @@
       let link = document.querySelector('.section-link[data-target='+id+']');
       scrollTop += contentOffset;
 
-      if (window.innerWidth <= 700) {
+      if (window.innerWidth <= 1170) {
         if (indicator) indicator.style = null;
 
       } else {

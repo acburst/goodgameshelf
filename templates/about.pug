@@ -1,6 +1,10 @@
 - isIndex = true;
 
-- metadescription = 'Curated board game recommendations based on games you already enjoy. We want to make it easy for you to find your next game to play!'
+- var linkTitle = "About";
+- var articleTitle = "About Good Game Shelf";
+- var articleType = "INFO"; //- ?
+
+- metadescription = "Learn about the Good Game Shelf blog and how we're recommending games!";
 
 doctype html
 include ../includes/_head.pug
@@ -19,36 +23,56 @@ body
 
       .content
         .section
-          h2 About Us
+          h1 About Good Game Shelf
           p
-            | We're 3 friends #[a.text-link(href="https://www.youtube.com/channel/UCjrwJy6p2SWqyIDXvavEoug") awesome board game group] who love playing games and working on side projects together. We created Good Game Shelf after seeing how much research by our&nbsp;
-            a.text-link(href="https://www.youtube.com/channel/UCjrwJy6p2SWqyIDXvavEoug") awesome board game group
-            |, after seeing how much research they do before buying a new game.
+            | So many amazing board games are released every year, but it's tough to know which ones #[em you] will actually like. We're trying to make that easier by recommending a few games based on one you already enjoy.
             br
             br
+            | We mostly recommend games with similar mechanics and a similar "feel" to the game you know. However, we also recommend fun games that aren't as closely related to expose you to a wider variety.
+            br
+            br
+            | We hope you find our curated recommendations helpful, and please #[a.text-link(href="https://forms.gle/HAWRTytXp4CV1nob8") let us know] if we can improve anything!
+            br
+            br
+          h2.category-header About Us
+          | We're 3 friends who love playing games and working on projects together. We play regularly with our #[a.text-link(href="https://www.youtube.com/channel/UCjrwJy6p2SWqyIDXvavEoug") awesome board game group], and they've helped expose us to a ton of modern games. We've also seen how much research they put into deciding on which games to buy, which inspired us to make Good Game Shelf.
 
+          .members
+            .member
+              .avatar
+                img(src="img/about/felicia-portrait.jpg")
+              .bio Felicia designed the Good Game Shelf site and writes some of our articles. She once placed 3rd in a Can't Stop tournament at a board game convention, and less prestigiously won 1st for Orléans in another 🤓. Her favorite game is #[a.text-link(href="https://boardgamegeek.com/boardgame/167791/terraforming-mars") Terraforming Mars].
+            .member
+              .avatar
+                img.portrait(src="img/about/alan-portrait.jpg")
+              .bio
+                | Alan implemented the site's functionality and structure. You probably can't beat him at SSBM, Starcraft, or Chess, but Castles of Mad King Ludwig, no problem. He loves deck builders and his favorite is #[a.text-link(href="https://boardgamegeek.com/boardgame/316554/dune-imperium") Dune: Imperium].
+            .member
+              .avatar
+                img.portrait(src="img/about/christian-portrait.png")
+              .bio Christian writes most of Good Game Shelf's articles and upkeeps the site on occasion. He somehow has an 85% winrate in Quacks of Quedlinberg and swears there is a strategy (it's blue chips). His favorite game is #[a.text-link(href="https://boardgamegeek.com/boardgame/237182/root") Root] and likes the lizards and crows the best.
+          br
+          | We’ve also always wanted to create games of our own, so we founded Spiralburst Studio in 2019. We've made a couple of our own word games, and we now specialize in making the app versions of board games. Check them out below!
+        hr
+        .section
+          h2.category-header Spiralburst Studio's Games
 
-
-            | We’ve also always wanted to create games of our own, so we founded Spiralburst Studio in 2019. Our games include the digital version of Maracaibo, and our word games Hexicon and Honeycomb. Check them out below!
-
-          hr
-
-          h2 Maracaibo Digital
+          h3 Maracaibo Digital
           img(src='img/maracaibo-digital.webp' alt="maracaibo-digital")
           p
             | Maracaibo Digital is the official app version of Alexander Pfister's awesome strategy board game.
           a.text-link(href="https://maracaiboapp.com") Play Maracaibo on Android and iOS
           br
           br
-          h2 Honeycomb
-          img(src='img/honeycomb-banner.webp' alt="honeycomb")
+          h3 Honeycomb
+          img(src='img/honeycomb-banner.webp' alt="honeycomb, a solo word puzzle played on a hex grid")
           p
             | Honeycomb is our solo word puzzle game. You need to form words with all available letters to beat each level. You can also make your own puzzles and share them with friends!
           a.text-link(href="https://honeycomb.goodgameshelf.com") Play Honeycomb in your browser
           br
           br
-          h2 Hexicon: Strategy Word Game
-          img(src='img/hexicon.webp' alt="hexicon")
+          h3 Hexicon: Strategy Word Game
+          img(src='img/hexicon.webp' alt="hexicon, a strategy word game played on a hex grid")
           p
             | Hexicon is our multiplayer word game with a territory control twist. If you enjoy word games and strategic 2-player board games, give Hexicon a try!
           a.text-link(href="https://hexiconapp.com") Play Hexicon on Android and iOS

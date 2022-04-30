@@ -60,7 +60,7 @@ h3 {
 }
 .card p {
   font-size: 16px;
-  margin: 0 0 5px 10px;
+  margin: 0 0 5px 12px;
 }
 
 hr {
@@ -284,9 +284,9 @@ form::after {
 main {
   display: flex;
   max-width: 700px;
+  width: calc(100% - 652px); /* 300px + 20px for right sticky */
   flex-grow: 1;
   margin-left: 332px; /* 32px of padding */
-  width: calc(100% - 652px); /* 300px + 20px for right sticky */
 }
 
 .content {
@@ -419,6 +419,40 @@ a.card {
   transition: opacity .3s;
 }
 
+.members {
+  /* display: flex; */
+  flex-direction: row;
+}
+.member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 0;
+  /* align-items: center; */
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  border: 5px solid #9876F9;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar img {
+  height: 100%;
+}
+.avatar img.portrait {
+  width: 100%;
+  height: auto;
+}
+.bio {
+  flex: 1;
+  min-width: 210px;
+  line-height: 20px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
 img {
   border-radius: 6px;
 }
@@ -516,21 +550,55 @@ footer {
 .email-octopus-form {
   display: flex;
 }
-.footer-content .email-octopus-form-row {
+.email-octopus-form-row {
   flex-grow: 1;
   margin-right: 16px;
   margin-bottom: 32px;
 }
+.email-octopus-form-row input {
+  width: 100%;
+  border: 0;
+  height: 40px;
+  box-sizing: border-box;
+  /* max-width: none; */
+  padding: 8px;
+
+}
+
+
+/*
 .footer-content .email-octopus-form-row input {
   border: 0;
   height: 40px;
   box-sizing: border-box;
   max-width: none;
-}
-.footer-content .email-octopus-form-row-subscribe {
+} */
+
+/* .email-octopus-form-row input {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  height: 32px;
+  border: 1px solid #ccc;
+} */
+
+
+
+.email-octopus-form-row-subscribe {
   margin: 0;
 }
-.footer-content .email-octopus-form-row-subscribe button {
+.email-octopus-form-wrapper {
+  background-color: #FFE4DE;
+  padding: 20px;
+}
+
+.email-octopus-form-row-hp {
+  position: absolute;
+  left: -5000px;
+}
+
+.email-octopus-form-wrapper .email-octopus-form-row-subscribe button {
+  border: 0;
   margin: 0;
   padding: 0 20px;
   font-weight: normal;
@@ -544,15 +612,32 @@ footer {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1170px) {
   .navbar {
     padding: 16px;
   }
 
   main,
   .footer-content {
-    width: calc(100% - 556px); /* -96px for narrower padding */
+    width: calc(100% - 356px); /* -96px for narrower padding */
     margin-left: 204px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    position: relative;
+    width: 100%;
+    transform: none;
+    right: auto;
+  }
+  .tags .tag {
+    margin-right: 16px;
+    font-size: 12px;
+  }
+  .promotional {
+    display: none;
   }
 }
 
@@ -561,14 +646,22 @@ footer {
     font-size: 16px;
   }
 
-  main,
-  .footer-content {
-    width: calc(100% - 456px); /* -100px for smaller tags */
+  .bio {
+    font-size: 14px;
   }
 
-  .tags {
-    width: 200px;
+  .members {
+    flex-direction: column;
   }
+
+  main,
+  .footer-content {
+    width: calc(100% - 250px); /* -100px for smaller tags */
+  }
+
+  /* .tags {
+    width: 200px;
+  } */
 }
 
 @media (max-width: 700px) {

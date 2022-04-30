@@ -6,7 +6,7 @@ npm install pug-cli (previously npm install pug)
 
 # Adding a new article
 1) Add game's name to _head.pug "titles" array in ALPHABETICAL position
-2) Set gameTitle to game's name in new article
+2) Set linkTitle to game's name in new article
 3) Set articleTitle to desired blog post title in new article
 4) populate rec1, rec2, rec3
 5) populate article content

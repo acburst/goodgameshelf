@@ -1,42 +1,12 @@
 footer
   .container
     .footer-content
-      p If you're enjoying Good Game Shelf, join our mailing list to find out when we add new content.
-      link(rel="stylesheet",href="https://emailoctopus.com/bundles/emailoctopuslist/css/formEmbed.css")
-
-      div.email-octopus-form-wrapper
-        p.email-octopus-success-message
-        p.email-octopus-error-message
-
-        form(method="post",
-          action="https://emailoctopus.com/lists/0503ed25-d750-11ea-a3d0-06b4694bee2a/members/embedded/1.3s/add",
-          class="email-octopus-form",
-          data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6")
-
-          div.email-octopus-form-row
-            input(id="field_0",name="field_0",type="email",placeholder="Email Address")
-
-          div.email-octopus-form-row-hp(aria-hidden="true")
-            //- <!-- Do not remove this field, otherwise you risk bot sign-ups -->
-            input(type="text",
-              name="hp0503ed25-d750-11ea-a3d0-06b4694bee2a",
-              tabindex="-1",
-              autocomplete="nope")
-
-          div.email-octopus-form-row-subscribe
-            input(type="hidden",
-              name="successRedirectUrl",
-              value="")
-            button.rounded-btn(type="submit") I want recommendations!
-
+      .note
+        ul
+          li
+            a.text-link(src="about.html") About Good Game Shelf
+            a.text-link(src="https://spiralburst.com") Spiralburst Studio
+            a.text-link(src="mailto:support@spiralburst.com") Contact
+            //- a.text-link(src="affiliate.html") Affiliate Program
       p.amazon-disclaimer As an Amazon Associate, we earn money from qualifying purchases.
-
-      script(src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.5/recaptcha.js")
-      script(src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.5/formEmbed.js")
-
-      ul
-        a.text-link(src="recommendations/azul.html") About Us
-        a.text-link(src="recommendations/azul.html") Affiliate Program
-
-
 script(type="text/javascript", src=isIndex ? "init.js" : "../init.js")
