@@ -454,7 +454,6 @@ a.card {
 }
 .bio {
   flex: 1;
-  min-width: 210px;
   line-height: 20px;
   font-size: 16px;
   margin-right: 20px;
@@ -542,6 +541,10 @@ li {
   margin: 0;
 }
 
+.no-bullets.footer-links {
+  margin-bottom: 40px;
+}
+
 footer {
   margin-top: 20px;
   background-color: #363636;
@@ -553,7 +556,13 @@ footer {
   max-width: 700px;
   width: calc(100% - 652px); /* 300px + 20px for right sticky */
   margin: 40px 0 0 332px; /* 32px of padding */
+  line-height: 28px;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 .email-octopus-form {
   display: flex;
   flex-direction: column;
@@ -599,9 +608,19 @@ footer {
   font-family: 'Montserrat', sans-serif;
 }
 
-.amazon-disclaimer {
-  margin-top: 30px;
+.footer-note {
+  margin-bottom: 0;
   font-size: 14px;
+}
+
+.footer-note-end {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.footer-note-end a {
+  padding: 0;
+  color: #FFF;
 }
 
 .mobile-welcome-text {
@@ -672,6 +691,7 @@ footer {
     width: 100%;
     padding: 24px 20px;
     box-sizing: border-box;
+    justify-content: center;
     background: white;
     box-shadow:
       0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -699,6 +719,7 @@ footer {
   }
   .navbar .logo-mobile {
     display: block;
+    height: 28px;
   }
   .navbar .links {
     transform: translateY(20px);
@@ -724,7 +745,7 @@ footer {
   .hamburger {
     position: absolute;
     cursor: pointer;
-    top: 13px;
+    top: 9px;
     right: 20px;
     display: block;
     z-index: 2;
@@ -758,5 +779,11 @@ footer {
   .tags .tag {
     margin-right: 16px;
     font-size: 12px;
+  }
+  .email-octopus-form-wrapper {
+    margin: 0 20px 30px 20px;
+    background-color: #FFE4DE;
+    padding: 30px 20px;
+    border-radius: 6px;
   }
 }
