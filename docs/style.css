@@ -147,6 +147,13 @@ form::after {
   transform: translateY(-2px);
   background-color: #FFE4DE;
 }
+.footer-link {
+  color: #FFF;
+  padding: 0;
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+}
 
 .quote {
   display: inline-block;
@@ -545,66 +552,55 @@ footer {
   flex-direction: column;
   max-width: 700px;
   width: calc(100% - 652px); /* 300px + 20px for right sticky */
-  margin: 40px 0 40px 332px; /* 32px of padding */
+  margin: 40px 0 0 332px; /* 32px of padding */
 }
 .email-octopus-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .email-octopus-form-row {
   flex-grow: 1;
-  margin-right: 16px;
-  margin-bottom: 32px;
+  width: 100%;
+  max-width: 450px;
+  margin: 20px 0;
 }
 .email-octopus-form-row input {
   width: 100%;
   border: 0;
   height: 40px;
   box-sizing: border-box;
-  /* max-width: none; */
   padding: 8px;
-
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
 }
-
-
-/*
-.footer-content .email-octopus-form-row input {
-  border: 0;
-  height: 40px;
-  box-sizing: border-box;
-  max-width: none;
-} */
-
-/* .email-octopus-form-row input {
-  width: 100%;
-  max-width: 400px;
-  padding: 8px;
-  height: 32px;
-  border: 1px solid #ccc;
-} */
-
-
-
 .email-octopus-form-row-subscribe {
   margin: 0;
 }
 .email-octopus-form-wrapper {
+  margin: 0 40px 30px 40px;
   background-color: #FFE4DE;
-  padding: 20px;
+  padding: 40px;
+  border-radius: 6px;
 }
-
+.email-octopus-form-wrapper p {
+  margin: 0 0 10px 0;
+}
 .email-octopus-form-row-hp {
   position: absolute;
   left: -5000px;
 }
-
 .email-octopus-form-wrapper .email-octopus-form-row-subscribe button {
   border: 0;
   margin: 0;
   padding: 0 20px;
   font-weight: normal;
   background-color: #FF5C00;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .amazon-disclaimer {
+  margin-top: 30px;
   font-size: 14px;
 }
 
