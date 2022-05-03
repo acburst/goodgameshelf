@@ -142,4 +142,10 @@
     });
   }
 
+  // Email Signup
+  let emailErrorMessage = document.getElementById('email-octopus-error-message');
+  let emailSuccessMessage = document.getElementById('email-octopus-success-message');
+  if (emailErrorMessage.innerHTML || emailSuccessMessage.innerHTML) {
+    document.getElementById('email-octopus-form').style.visibility = 'hidden';
+  }
 })();

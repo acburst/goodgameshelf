@@ -608,6 +608,10 @@ footer {
   font-family: 'Montserrat', sans-serif;
 }
 
+.email-octopus-error-message {
+  color:#e74c3c
+}
+
 .footer-note {
   margin-bottom: 0;
   font-size: 14px;
