@@ -88,13 +88,13 @@
     if (footer) {
       if (window.innerWidth > 700) {
         let el = document.getElementById('sidebar-1');
-        console.log(el.offsetHeight);
+        // console.log(el.offsetHeight);
         let footerRect = footer.getBoundingClientRect();
-        console.log(document.body.offsetHeight , scrollTop , footerRect.height, window.innerHeight);
+        // console.log(document.body.offsetHeight , scrollTop , footerRect.height, window.innerHeight);
         let scrollOffset = sections.length ? contentOffset * (2 - sections.length) : 100; // because each page type has different initial scrollTop value for some reason (multiple of contentOffset i think)
         if (document.body.offsetHeight - footerRect.height < scrollTop + el.offsetHeight + scrollOffset) {
           let navbarRect = navbar.getBoundingClientRect();
-          console.log(navbarRect);
+          // console.log(navbarRect);
           if (!navbar.classList.contains('sticky-bottom')) {
             navbar.classList.add('sticky-bottom');
             navbar.style.top = (footer.offsetTop - navbarRect.height) + 'px';
@@ -121,7 +121,7 @@
     links[i].addEventListener('click', (e) => {
       e.preventDefault();
       let target = e.target.getAttribute('data-target');
-      console.log(target);
+      // console.log(target);
       let section = document.querySelector('#' + target);
       window.scrollTo({
         'behavior': 'smooth',
@@ -136,7 +136,7 @@
   let hamburgerEl = document.querySelector('.hamburger');
   if (hamburgerEl) {
     hamburgerEl.addEventListener('click', () => {
-      console.log("HAMB CLICK");
+      // console.log("HAMB CLICK");
       let linksEl = document.querySelector('.links');
       linksEl.classList.toggle('active');
     });
