@@ -611,6 +611,9 @@ footer {
 .email-octopus-error-message {
   color:#e74c3c
 }
+.email-octopus-success-message {
+  color:#3081e5
+}
 
 .footer-note {
   margin-bottom: 0;
