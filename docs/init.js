@@ -143,9 +143,9 @@
   }
 
   // Email Signup
-  let emailErrorMessage = document.getElementById('email-octopus-error-message');
-  let emailSuccessMessage = document.getElementById('email-octopus-success-message');
+  let emailErrorMessage = document.querySelector('.email-octopus-error-message');
+  let emailSuccessMessage = document.querySelector('.email-octopus-success-message');
   if (emailErrorMessage.innerHTML || emailSuccessMessage.innerHTML) {
-    document.getElementById('email-octopus-form').style.visibility = 'hidden';
+    document.querySelector('.email-octopus-form').style.visibility = 'hidden';
   }
 })();

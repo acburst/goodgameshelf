@@ -1,0 +1,181 @@
+- var linkTitle = "Scrabble";
+- var articleTitle = "If you like Scrabble, try these 3 board games";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Letter Tycoon";
+- rec2 = "Qwirkle";
+- rec3 = "Big Boggle";
+- metadescription = "Try these games like Scrabble if you're looking for a new word game experience!";
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(linkTitle);
+
+body
+  include ../includes/_analytics.pug
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date May 4, 2022
+            include ../includes/_share.pug
+          img(src='../img/scrabble-header.jpg' alt='Scrabble board game in progress')
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/3821060/scrabble") @blondeslovetoshop, on BGG
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 2-4 Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 60-90 Minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designed by Alfred Mosher Butts
+            a.text-link(href="https://amzn.to/3F9KFGe" rel= "nofollow" target="_blank") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
+          p
+            | Scrabble is a beloved word game that can be played with anyone, and we have very fond memories playing with our families and friends.
+            br
+            br
+            | These games add new mechanics and twists to the word game formula and will be a hit with anyone who loves the genre.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/letter-tycoon-recommendation.png' alt='Letter Tycoon board game in progress')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 30-45 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Brad Brooks
+          p
+            | Letter Tycoon is an awesome word game where you can patent letters to earn royalties when other players use them. Your goal is still to construct the best words possible, but Letter Tycoon gives you more to think about as there are more ways to earn points.
+            br
+            br
+            | On your turn, you can play one word using the 7 letter cards in your hand and the 3 public “community letters.” The longer your word, the more money and stocks you earn. After playing your word, you have the opportunity to buy an available patent for a letter in your word. For example, if you play “PLASTIC,” you could buy the “A” patent. From then on, you would collect a $1 royalty from the bank for each “A” used in an opponent’s word!
+            br
+            br
+            | To make things even more interesting, patents for less common letters also have special abilities. The Z patent lets you add an S to the end of your word, and the J patent doubles your word’s score if it is made up of mostly vowels. You’ll need to choose the most effective patents, as their royalties and powers can turn the tide of the game.
+            br
+            br
+            | Letter Tycoon is a great mix between a word game and a modern board game. Just like Scrabble, the longest word won’t always be the most valuable, and that leaves a lot of room for strategic play.
+            br
+            br
+            a.text-link(href="https://amzn.to/3KSI7hf" rel= "nofollow" target="_blank") Buy #{rec1} on Amazon
+            br
+            .note
+              | #[strong Note:] The original version has limited stock right now so you can also #[a.text-link(href="https://www.boardgameatlas.com/game/IsPSKf1mwg/letter-tycoon-board-game ") check Board Game Atlas] for availability. There may be a version with new artwork coming soon too, which #[a.text-link(href="https://boardgamegeek.com/thread/2640504/2-online-letter-tycoon-play-options-new-version-ar") the publisher has stated on BGG].
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/qwirkle-recommendation.jpg' alt="Qwirkle board game in progress")
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/6819723/qwirkle") @Phreekshow1, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 30-45 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Susan McKinley Ross
+          p
+            | Qwirkle is essentially Scrabble without words. Yes, you heard that right! Qwirkle takes the crossword-style play but its tiles have only shapes and colors on them. You’ll need to arrange your tiles on the board to create as many patterns as you can to score points.
+            br
+            br
+            | You can place any number of tiles on your turn, but they all must match in shape OR they must all match in color. When you add them to the board, you score 1 point for each tile in all the lines you create, horizontal or vertical. And if you manage to complete a line of 6 tiles, that’s a Qwirkle and you’ll score 6 bonus points!
+            br
+            br
+            | The catch is that each line you make on the board must have all different shapes but the same color, OR all different colors but the same shape. This makes Qwirkle quite tricky, and it’s rewarding when you find that perfect play.
+            br
+            br
+            | If you love finding all the ways to make multiple words at once in Scrabble, Qwirkle takes that to the max.
+            br
+            br
+            a.text-link(href="https://amzn.to/3854ySJ" rel= "nofollow" target="_blank") Buy #{rec2} on Amazon
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}
+          img(src='../img/big-boggle-recommendation.jpg' alt='Box art for Big Boggle')
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/907925/big-boggle") @K_I_T, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Less Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-8+ Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 10 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Alan Turoff
+          p
+            | If you love Scrabble, I bet you’ve played Boggle. But did you know there’s a BIG Boggle? Instead of a 4x4 grid, you’ll be playing on a 5x5 grid! It’s the same old Boggle, but with way more possibilities for intense logophiles.
+            br
+            br
+            | You still are trying to find words nobody else does, and you still can connect only adjacent or diagonal letters. However, long words appear more frequently, and you’ll be saying “oh, good word!” more than usual. Big Boggle also comes with an optional “double letter” die which has two letters on each face!
+            br
+            br
+            a.text-link(href="https://amzn.to/3FaQ67P" rel= "nofollow" target="_blank") Buy #{rec3} on Amazon
+            br
+            .note
+              | #[strong Note:] If you’re an absolute logomaniac, there is also #[a.text-link(href="https://amzn.to/3KE2EG3") SUPER Big Boggle]. With a 6x6 grid. Yeah. It comes with a “blocking” die that creates an unusable space in addition to the double letter die that Big Boggle has.
+        hr
+        .end-section
+          h2 Honorable Mentions
+          p.honor
+            | These word games feature various other mechanics to have fun with while flexing your vocabulary.
+          .honor
+            p
+              | #[strong Paperback] is a cool game that mashes up word-building with deck-building! We haven’t had a chance to play this one yet, but it’s frequently referenced in threads discussing Letter Tycoon. The premise is that you add increasingly powerful letters to your deck as you build words throughout the game, which sounds awesome. Letters also have abilities like Letter Tycoon patents, but the deck-building aspect must make this highly strategic! We’ll have to play this one and report back - it may end up taking an official spot on this page.
+            a.text-link(href="https://www.fowers.games/products/paperback" target="_blank") Buy Paperback on Fowers Games
+          .honor
+            p
+              | #[strong Bananagrams] is Scrabble if it were a race! To start the game, one player yells “SPLIT” and all players begin assembling a Scrabble-style grid of letters using their own tiles. You can even rearrange your grid as much as you want! If you run out of tiles, yell “PEEL” and then you and all other players take a new tile from the center of the table (called the Bunch). Play continues until the Bunch runs out and one player has used all of their tiles. That player yells BANANAS and is the winner...unless they made a mistake, in which case they’re a ROTTEN BANANA!
+            a.text-link(href="https://amzn.to/3Fe8gpb" rel="nofollow" target="_blank") Buy Banagrams on Amazon
+          .honor
+            p
+              | #[strong Hexicon] is our own multiplayer word game on Android and iOS. It’s played on a hex grid of letters, and it blends territory control with word search. You need to make words that fully surround tiles to capture them and score points. You can play online against a friend, or play against our bots. Check it out!
+            a.text-link(href="https://hexiconapp.com" target="_blank") Play Hexicon on Android or iOS
+          .honor
+            p
+              | #[strong Honeycomb] is our second word game, and it’s a solo word puzzle playable on any web browser. It also uses a hex grid, and you need to make paths of words that use all of the available letters. We have almost 200 hand-crafted puzzles and a daily challenge if you’re looking for something else after the Wordle craze!
+            a.text-link(href="https://honeycomb.goodgameshelf.com" target="_blank") Play Honeycomb in your browser
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug

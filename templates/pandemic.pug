@@ -1,0 +1,188 @@
+- var linkTitle = "Pandemic";
+- var articleTitle = "If you like Pandemic, try these 3 board games";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Forbidden Desert";
+- rec2 = "Small World";
+- rec3 = "Gloomhaven: JOTL";
+- metadescription = "Check out these awesome board games that are similar to Pandemic!";
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(linkTitle);
+
+body
+  include ../includes/_analytics.pug
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date May 3, 2022
+            include ../includes/_share.pug
+          img(src='../img/pandemic-header.jpg' alt='Pandemic board game close up view')
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/2570360/pandemic") @arnora21, on BGG
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 2-4 Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 45-90 Minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designed by Matt Leacock
+            a.text-link(href="https://amzn.to/3OSwCtg" rel= "nofollow" target="_blank") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
+          p
+            | Pandemic requires you to work together as a team to contain multiple deadly global outbreaks. This cooperative game has a bit of everything - unique roles, challenging time pressure, and a good level of strategizing required to pull off a win.
+            br
+            br
+            | We’re recommending games that each build on some of these traits while introducing new mechanics.
+            .note
+              | #[strong Note:] If you simply want more Pandemic, try out #[a.text-link(href="https://amzn.to/3vE0UZ1" rel= "nofollow" target="_blank") Pandemic Legacy: Season 1]. This “campaign” game is meant to be played with a group over many sessions, and it steadily introduces new mechanics and advances the plot throughout. There’s good reason it’s held a #[a.text-link(href="https://boardgamegeek.com/browse/boardgame" target="_blank") 5 rank on BGG] since its release! There is also a #[a.text-link(href="https://amzn.to/3kBADEv" rel= "nofollow" target="_blank") version with red artwork] which is otherwise identical. This is for groups that want to run simultaneous campaigns without confusion, as player choice will cause the story to branch differently.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/forbidden-desert-recommendation.jpg' alt='Forbidden Desert board game, close up of flying machine components')
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/4688925/forbidden-desert") @Johnny Dangerously , on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Matt Leacock
+          p
+            | Forbidden Desert is another cooperative game by the same designer as Pandemic! You and your friends must search for an ancient flying machine and its missing parts in a treacherous desert, all while surviving sand storms and dehydration.
+            br
+            br
+            | Dune tiles are laid out in a grid on the table, and all players start together on one of them. On your turn, you will move around the map to uncover artifacts, information, and landmarks by flipping tiles over. Sand gradually accumulates on tiles though, and it must be cleared in order to interact with that tile and progress.
+            br
+            br
+            | Like Pandemic, each player has a unique ability. The Archaeologist is more efficient at clearing sand, while the Climber is able to move over sandy tiles and take another player with them. On top of this, players must adapt to a deck of storm cards that will intensify the storm, move tiles around, or worse!
+            br
+            br
+            | Forbidden Desert provides another great teamwork experience and has a fun theme with cool components. Definitely pick this one up if your group wants more gameplay like Pandemic but with a new theme!
+            br
+            br
+            a.text-link(href="https://amzn.to/3LK6ejo" rel= "nofollow" target="_blank") Buy #{rec1} on Amazon
+            br
+            .note
+              | #[strong Note:] Note: Forbidden Desert is a follow-up to #[a.text-link(href="https://amzn.to/3FeUy5r" rel= "nofollow" target="_blank") Forbidden Island], which is also very popular. These games share similar mechanics, but Forbidden Desert streamlines several aspects of play and is the better game in our opinion.
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/small-world.jpg' alt="Small World board game in progress")
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/709557/small-world") @Renegade84, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45-90 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Philippe Keyaerts
+          p
+            | Small World is a competitive territory control game where players take control of various factions to grow and protect their presence on the board (similar to how the viruses spread in Pandemic). You will have to manage the ebb and flow of your board presence to win.
+            br
+            br
+            | Players choose a starting faction and take turns placing all of their tokens on the map - one per territory. When territories are filled, you can spend additional tokens to take over one of your opponent’s adjacent territories. At the end of a round, you score points based on the number of territories you control, plus any bonus points your faction provides.
+            br
+            br
+            | Each faction also plays differently. For instance, Humans gain bonus points for controlling Farmland, and Orcs gain additional points for conquering enemy territory. You’ll also get to play multiple factions each game, so you must consider all of their powers when targeting territories!
+            br
+            br
+            | If you love Pandemic but are looking for a competitive experience, Small World is a great option. The theme and mechanics may be different, but the territorial strategy shines in this title too.
+            br
+            br
+            a.text-link(href="https://amzn.to/38Jv04n" rel= "nofollow" target="_blank") Buy #{rec2} on Amazon
+        .section(id=`${toID(rec3)}`)
+          h2 Gloomhaven: Jaws of the Lion
+          img(src='../img/gloomhaven-jotl-recommendation.jpg' alt='Gloomhaven: Jaws of the Lion board game tutorial close up')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 90-150 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Isaac Childres
+          p
+            | Gloomhaven: Jaws of the Lion is a cooperative campaign game where players assume the roles of mercenaries to fight hordes of monsters. Each mercenary plays differently, and there is a ton of content packed into this game.
+            br
+            br
+            | If you’re thinking “this isn't for me,” we were also unsure at first but have had so much fun with it! It is important to note however that completing this game will likely take 20+ sessions, so you’ll need a group to play with consistently.
+            br
+            br
+            | As you progress through the campaign, you gain new cards, items, and fun secrets. We won’t spoil any specifics, but they are awesome! This makes every session feel unique, as your characters evolve along with the story. Your enemies also will grow stronger, and losing a scenario is totally possible (and probable!).
+            br
+            br
+            | In each scenario, you choose which cards to bring along. You’ll play two each turn, and these determine your available actions and turn order. You decide in secret from your friends, however! This detail makes this cooperative game shine. Each player is fully in control of their own character, and no single player directs the strategy. Your character also has their own strengths that only you know best, and the game really comes alive when everyone has mastered their cards.
+            br
+            br
+            | We’ve played through 80% of the campaign and have had many nail-biting wins (and several losses too). While the mechanics are fairly complex, a great tutorial scenario makes it easy to get started. Give Gloomhaven: Jaws of the Lion a try if you’re even the slightest bit curious!
+            br
+            br
+            a.text-link(href="https://amzn.to/3F9W353" rel= "nofollow" target="_blank") Buy Gloomhaven: Jaws of the Lion on Amazon
+            br
+            .note
+              | #[strong Note:] This game is a less intense spin-off of #[a.text-link(href="https://amzn.to/3ya9jFc" rel= "nofollow" target="_blank") Gloomhaven], its even more successful older sibling. While both games are incredible, Jaws of the Lion is closer in complexity and play time to Pandemic. Everything we wrote above applies to Gloomhaven as well, but Gloomhaven simply has more stuff and more secrets. Gloomhaven also has many more scenarios to complete (70+) and requires more setup time. If you have a group that can play consistently and are up for it, the price will be worth it (especially if split)!
+        hr
+        .end-section
+          h2 Honorable Mentions
+          p.honor
+            | Here are some other great cooperative games that we've also had a lot of fun with.
+          .honor
+            p
+              | #[strong Betrayal at House on the Hill] is a fun semi-cooperative game set in a haunted house. Players move around the house, uncover new tiles to expand the map, and use each room’s special features to improve their character’s stats. It’s “semi-cooperative” because when conditions are met, one player is designated the Traitor and is pitted against the rest! The Traitor has a secret goal to win, and the players have their own. Without knowing the other party’s intentions, you must strategize about where they want to move, if and who they need to kill, and what you can do to stop them. This is a unique game that is a blast to play.
+            a.text-link(href="https://amzn.to/3FcFzcz" rel= "nofollow" target="_blank") Buy Betrayal on Amazon
+          .honor
+            p
+              | #[strong Tranquility] is a relaxing cooperative card game with great artwork. A deck of numbered cards is dealt out, and your team takes turns trying to place cards in ascending order. When you place a card next to another, you must discard a number of cards equal to the difference of the two cards’ numbers! You lose if you run out of cards, so you can’t constantly discard. On top of this, you can't talk about anything related to the game, so you must anticipate your friend's actions.
+            a.text-link(href="https://amzn.to/3F9qisI" rel="nofollow" target="_blank") Buy Tranquility on Amazon
+          .honor
+            p
+              | #[strong Hanabi] is a cooperative card game where you and your team must launch colored fireworks in ascending order from 1 to 5. The catch is that you hold your cards facing away from you, so you can’t see them! Players give each other clues to help with this - you can tell someone they have 3 ones, or you can identify which of their cards are blue. You need to play cards in the right order, but if you make 3 mistakes, it’s game over! Hanabi is quite tricky, but it’s so satisfying when you manage to play all 25 cards correctly and win.
+            a.text-link(href="https://amzn.to/379Pm6o" rel= "nofollow" target="_blank") Buy Hanabi on Amazon
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug
