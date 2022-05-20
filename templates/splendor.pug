@@ -1,0 +1,175 @@
+- var linkTitle = "Splendor";
+- var articleTitle = "If you like Splendor, try these 3 games";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Century: Spice Road";
+- rec2 = "It's a Wonderful World";
+- rec3 = "Sagrada";
+- metadescription = "Splendor is an awesomely simple and fun engine building game, and these are some great games you should try next!";
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(linkTitle);
+
+body
+  include ../includes/_analytics.pug
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date May 20, 2022
+            include ../includes/_share.pug
+          img(src='../img/splendor-header.jpg' alt='Splendor board game in progress')
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/2043600/splendor") @The Innocent, on BGG
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 2-4 Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 30 Minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designed by Marc André
+            a.text-link(href="https://amzn.to/3P6W7Hv" rel= "nofollow" target="_blank") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
+          p
+            | Splendor is an approachable engine-building game, and it’s an amazing entry point into modern board games. It’s easy to learn, but it takes a few plays to figure out the best strategy.
+            br
+            br
+            | If you’re looking for new games to play after Splendor, these options are slightly more complex while still being easy to learn and teach.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/century-spice-road-recommendation.jpg' alt='Century: Spice Road board game showing a hand of cards')
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/4293853/century-spice-road") @xDAllaNxD, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Slightly More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 30-45 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Emerson Matsuuchi
+          p
+            | You play as a spice merchant in Century: Spice Road, and your goal is to trade spice to claim the most valuable cards. This game is the perfect follow-up to Splendor as it has familiar mechanics but requires a higher level of strategy.
+            br
+            br
+            | The setup is similar to Splendor: there are 4 types of spice you use to purchase face up cards on the table. Point cards are scoring objectives and require a combination of specific spices to buy. Market cards require you to spend a number of spice of any type, and they have effects that help you convert spice into what’s required for the point cards.
+            br
+            br
+            | The twist is that when you acquire market cards, they go into your hand instead of in front of you like in Splendor. You need to spend a turn to play a card to use its effect. And if you want to reuse the cards you’ve already played, you need to spend a turn to Rest and pick your cards back up! You’ll need to carefully time your actions and plan further ahead than in Splendor to win this one.
+            br
+            br
+            | While Century: Spice Road is slightly more challenging than Splendor, it’s just as easy to learn. If you’re looking for a game with similar genre and more replayability, give this one a try!
+            br
+            br
+            a.text-link(href="https://amzn.to/3L6vkro" rel= "nofollow" target="_blank") Buy #{rec1} on Amazon
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/its-a-wonderful-world.png' alt="It's a Wonderful World board game in progress")
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45-60 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Frédéric Guérard
+          p
+            | It’s a Wonderful World is a pure engine-building game, and you’ll draft cards to grow your production empire. If you wish you could just have more gems in Splendor, this might be your game - there’s no limit to the amount of resources you can produce. And best of all, play is simultaneous, so there is no down-time!
+            br
+            br
+            | Each player starts with a factory that produces basic resources. The cards you draft also produce resources, but you must pay their resource cost to build them. For instance, one card might produce 2 Blue and require 3 Yellow and 1 Green to complete. You’ll need to choose cards that work well with your current production and future needs!
+            br
+            br
+            | Every resource is produced at the end of each of the 4 rounds. Gray is produced first, then Black, Green, Yellow, and then Blue. You can use Gray you just produced to complete a card that will produce Green later in the round, which creates opportunities to chain cards together in a satisfying way. And of course, you need to get points too. Some cards are worth points on their own, while others give points based on the other cards you’ve completed.
+            br
+            br
+            | It’s a Wonderful World’s gameplay is straightforward, but your brain will be burning by the 3rd or 4th round. There’s some deep strategy in this game, and it’s a great introduction to games that have card drafting.
+            br
+            br
+            a.text-link(href="https://amzn.to/39b5DIP" rel= "nofollow" target="_blank") Buy #{rec2} on Amazon
+            br
+            .note
+              | #[strong Note:] The #[a.text-link(href="https://amzn.to/3No8iOk") Corruption and Ascension expansion] brings the game up to 7 players without adding much play time! New powerful cards are also introduced which have big effects and provide a fresh spin on the game.
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}
+          img(src='../img/sagrada.jpg' alt='Sagrada board game in progress')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Slightly More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Adrian Adamescu, Daryl Andrews
+          p
+            | Sagrada is a spatial reasoning game in which you aim to make the best stained glass window with clear, colored dice acting as the window’s panes. This game works a different part of the brain but is also easy to learn, so it’s great alongside Splendor.
+            br
+            br
+            | Dice are drawn from a bag and rolled on the table each round, and players take turns selecting a die to place on their board. Placing dice can be tricky though - you can’t place two dice next to each other if they have the the same color OR the same number of pips. To make things even harder, certain spaces on your board require a specific color or number!
+            br
+            br
+            | You score points by creating the patterns shown on 3 objective cards that are randomly chosen each game. These might include “5 points per column with all different colors” or “2 points per set of 1 and 2.” Sagrada is replayable because of these cards, and you’ll have to learn how to strategize around any combination of them.
+            br
+            br
+            | Sagrada is a solid option to try next and is a good introduction to modern spatial reasoning games. Its components are also great, with double-layered boards and tons of pretty dice!
+            br
+            br
+            a.text-link(href="https://amzn.to/3lsJZ5Z" rel= "nofollow" target="_blank") Buy #{rec3} on Amazon
+        hr
+        .end-section
+          h2 Honorable Mentions
+          .honor
+            p
+              | #[strong Gizmos] is an engine-building game where you build an ever-growing machine to convert energy into points. On your turn, you can Pick energy spheres from an awesome marble tower, or you can spend energy to Build a new gizmo for your machine. When you Build a gizmo, you slot it under its associated action, such as Pick. From then on, if you use the Pick action to gain energy, you also activate the new gizmo! This may let you take additional actions or even generate points or extra energy. This is a fun, quick game that lets you experiment with cool combos. And did we mention the marble tower!?
+            a.text-link(href="https://amzn.to/3w0Fqpz" rel= "nofollow" target="_blank") Buy Gizmos on Amazon
+          .honor
+            p
+              | #[strong Wingspan] is an engine-building game with mechanics that perfectly complement its amazing bird theme. You play as an ornithologist working to make the best bird habitats. As you add birds to your Forest, Plains, or Water habitats, your actions grow in strength. You can create very satisfying combos with birds that combo with each other, and it’s awesome to fill up your board with all of the unique species. Wingspan is definitely a few steps up in complexity from Splendor, but it’s just too good to not recommend (especially with the European expansion!).
+            a.text-link(href="https://amzn.to/38hlcPe" rel="nofollow" target="_blank") Buy Wingspan on Amazon
+          .honor
+            p
+              | #[strong Last Will] is a unique reverse engine-building game. Your late uncle has decided in his will that his inheritance will go to whoever can spend a large sum of money as quickly as possible. This adds a funny race mechanic to the genre and flips many concepts upside-down. You can host excessive galas every week, or take  unnecessary carriage rides around town. Or you can buy properties, let them deteriorate, and then sell them for nothing. It’s your money, and you’ve got to spend it so you can get more!
+            a.text-link(href="https://amzn.to/3w11C2F" rel= "nofollow" target="_blank") Buy Last Will on Amazon
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug
