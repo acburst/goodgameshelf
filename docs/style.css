@@ -642,7 +642,7 @@ footer {
   main,
   .footer-content {
     width: calc(100% - 356px); /* -96px for narrower padding */
-    margin-left: 204px;
+    margin-left: 240px;
   }
 
   .tags {
