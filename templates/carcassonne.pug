@@ -1,0 +1,182 @@
+- var linkTitle = "Carcassonne";
+- var articleTitle = "If you like Carcassonne, try these 3 games";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Isle of Skye";
+- rec2 = "Cascadia";
+- rec3 = "Galaxy Trucker";
+- metadescription = "Carcassonne is a great family-friendly tile laying game, and these titles bring new themes and mechanics to the genre!";
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(linkTitle);
+
+body
+  include ../includes/_analytics.pug
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date May 31, 2022
+            include ../includes/_share.pug
+          img(src='../img/carcassonne-header.jpg' alt='Carcassonne board game in progress')
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/56436/carcassonne") @cscottk, on BGG
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 2-5 Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 30-45 Minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designed by Klaus-Jürgen Wrede
+            a.text-link(href="https://amzn.to/3lpvBev" rel= "nofollow" target="_blank") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
+          p
+            | Carcassonne is a snappy tile-placement game that’s been hitting board game tables for more than 20 years! It’s a great introduction to modern board gaming, especially for people who enjoy spatial reasoning games.
+            br
+            br
+            | These recommendations take the puzzle-y gameplay of Carcassonne to new heights with fresh themes. There are a lot of great games in this genre, so we’ve narrowed it down to the ones we love most.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}: From Chieftain to King
+          img(src='../img/isle-of-skye-recommendation.jpg' alt='Isle of Skye: From Chieftain to King board game showing a hand of cards')
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/2974945/isle-skye-chieftain-king") @Muse23PT, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-5 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45-60 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Andreas Pelikan and Alexander Pfister
+          p
+            | Isle of Skye whisks you off to the Northwest Highlands of Scotland where you play as a clan chieftain working to build the best kingdom. This game uses similar tiles to Carcassonne, but you build your own kingdom instead of working on a shared one.
+            br
+            br
+            | Isle of Skye also has a more interesting system for choosing what tiles you get. Every round, each player draws tiles from a bag and sets their prices in secret using coins. Each player then buys one tile from another player in turn order. When someone buys a tile from you, you keep the coins you used to set its price, as well as the coins they pay you!
+            br
+            br
+            | Every game also features 4 randomly chosen scoring objectives. One might score points for the number of sheep in your domain, while another scores for having columns with 3 or more tiles. Different objectives are also scored each round, so you really need to plan ahead. You’ve got to consider what you want and what your opponents want when pricing your tiles.
+            br
+            br
+            | Isle of Skye is an excellent next game to try after Carcassonne, and no two plays feel alike. The added bit of deception in price-setting also keeps the game fresh as you get to decide the value of the tiles.
+            br
+            br
+            a.text-link(href="https://amzn.to/3wuEw4Q" rel= "nofollow" target="_blank") Buy #{rec1} on Amazon
+            br
+            .note
+              | #[strong Note:] The #[a.text-link(href="https://www.boardgameatlas.com/game/SYqKm0s4wh/isle-of-skye-druids-expansion") Druids expansion] is a great addition once you're a veteran of the base game. It adds an extra buying phase where you can buy tiles with special bonuses. This also helps out players who keep having both of their tiles purchased from them!
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/cascadia-recommendation.jpg' alt="Cascadia board game in progress")
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 30-45 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Randy Flynn
+          p
+            | Cascadia is a wildlife-themed game from 2021 that has become an instant classic. This game has a similar complexity level to Carcassonne, but it uses hex tiles and animal tokens instead of meeples.
+            br
+            br
+            | On each turn, you choose a habitat tile and animal token from 4 available sets. You first place your habitat tile, and you then place the animal token on any empty tile. However, choosing tiles is tricky! Habitat tiles support only specific types of animals, and you won’t always get animal tokens that match. You’ll need to plan ahead to accommodate any animal that comes your way!
+            br
+            br
+            | A different set of scoring cards are dealt out each game, and they define how animals must be arranged on your map to score points. For example, Elk score points for being in a straight line, and Hawks score points for not being next to any other Hawks. You have to think ahead about where to place your habitats so they can support the right animal formations.
+            br
+            br
+            | Finally, you also score points for having the largest sections of each habitat, so you have to pay some attention to what everyone else is doing! Cascadia is an ideal follow-up for Carcassonne lovers for its strategic twists and incredible artwork.
+            br
+            br
+            a.text-link(href="https://amzn.to/3G2Jp8f" rel= "nofollow" target="_blank") Buy #{rec2} on Amazon
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}
+          img(src='../img/galaxy-trucker-recommendation.jpg' alt='Galaxy Trucker board game in progress')
+          .caption
+            | Photo credit:&nbsp;
+            a.text-link(href="https://boardgamegeek.com/image/4293846/galaxy-trucker") @xDAllaNxD, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 60 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Vlaada Chvátil
+          p
+            | Galaxy Trucker is a chaotic tile-laying game where you build precarious space ships, and the best part is that it takes place in real time! If you love the puzzle of Carcassonne but want something more fast-paced and light-hearted, Galaxy Trucker is for you.
+            br
+            br
+            | When the timer begins, you race to flip over facedown tiles and equip your ship with engines, lasers, crew cabins, cargo space, and more. Inconveniently, spaceship parts use different connectors, and you can’t connect a 1-prong edge of one tile to a 2-prong edge of another. The better you build your ship, the better your chance of surviving the long journey through space!
+            br
+            br
+            | Once everyone has finished, players flip through a deck of cards that includes events like meteor storms or planetary visits to pick up cargo. You earn money for completing events and delivering cargo, but only if your ship survives! Meteors knock off tiles with exposed connectors, pirates can destroy any tile with a laser blast, and yes, you can lose your precious cargo!
+            br
+            br
+            | This game has more complex rules than Carcassonne and it takes a few plays to really get the hang of it, but it’s a sillier game that is always a ton of fun. Even if you end up in dead last because some meteors destroyed your ship, you will have a blast playing.
+            br
+            br
+            a.text-link(href="https://amzn.to/3wsU7Sj" rel= "nofollow" target="_blank") Buy #{rec3} on Amazon
+        hr
+        .end-section
+          h2 Honorable Mentions
+          .honor
+            p
+              | #[strong Calico] is a cat-themed tile-laying game with simple rules, but it will make your brain burn even more than Carcassonne. On your turn, you choose a hex tile with a pattern and color and add it to your quilt. To score points, you need to earn buttons and attract adorable cats by creating the right pattern and color combinations in your quilt. You will quickly find that it’s very difficult to do this optimally though, and you’ll need to make sacrifices somewhere! The simple rules but increased difficulty of this game make it a great next step after Carcassonne - and the theme is 11/10.
+            a.text-link(href="https://amzn.to/3LpV5mB" rel= "nofollow" target="_blank") Buy Calico on Amazon
+          .honor
+            p
+              | #[strong Kingdomino] uses domino tiles with different terrain types rather than simple square or hex tiles. You draft two dominos each turn and place them in your kingdom, trying to make large areas of each terrain. Some dominos also have crowns on them, and you score points for the number of squares in each terrain times the number of crowns. If you have 5 crowns on your 12-square water section, you’ll score 60 points for water! The rules of this game are as easy as Carcassonne (it’s even kid-friendly), but you have more control over which tiles you get to add to your kingdom. #[strong Pro tip:] you can combine two copies to play teams with up to 8-players for even more fun!
+            a.text-link(href="https://amzn.to/3FYE95L" rel="nofollow" target="_blank") Buy Kingdomino on Amazon
+          .honor
+            p
+              | #[strong The Isle of Cats] is another option that’s a bit heavier than Carcassonne but is sure to be a hit with puzzle lovers. In this game, you place polyomino-shaped cats on your ship to help them escape from the evil Lord Vesh. You draft cards that help you gain cats or score points, so there is additional strategic depth outside of the tile-laying. It’s really satisfying to build out a strategy based on the cats you have on board, and the tiles are soooo cute!
+            a.text-link(href="https://amzn.to/3FZygVK" rel= "nofollow" target="_blank") Buy The Isle of Cats on Amazon
+          .honor
+            p
+              | #[strong The Isle of Cats: Explore & Draw] is a great spinoff based on The Isle of Cats, if you like roll and write games!
+            a.text-link(href="https://amzn.to/3Pw4zQu" rel= "nofollow" target="_blank") Buy The Isle of Cats: Explore & Draw on Amazon
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug
