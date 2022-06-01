@@ -43,7 +43,7 @@
                    (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
           // progress.style.height = '100%';
           if (link && !link.classList.contains('active')) {
-            if (indicator) indicator.style.transform = `translateY(${i * 36}px)`;
+            if (indicator) indicator.style.transform = `translateY(${i * 32}px)translateX(22px)`;
             link.classList.add('active');
           }
 
@@ -52,7 +52,7 @@
           // console.log("ACTIVE", i, perc);
           // progress.style.height = perc * 100 + '%';
           if (link && !link.classList.contains('active')) {
-            if (indicator) indicator.style.transform = `translateY(${i * 36}px)`;
+            if (indicator) indicator.style.transform = `translateY(${i * 32}px)translateX(22px)`;
             link.classList.add('active');
           }
           if (stickyTags) {

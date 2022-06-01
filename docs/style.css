@@ -195,7 +195,7 @@ form::after {
   color: #A68A87;
   font-size: 16px;
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   height: 20px;
   line-height: 20px;
   transition: color .3s;
@@ -333,10 +333,10 @@ main {
 .toc .indicator {
   content: '';
   display: block;
-  height: 36px;
+  height: 30px;
   width: 4px;
   position: absolute;
-  top: -8px;
+  top: -6px;
   background-color: #FF5C00;
   transition: transform .3s cubic-bezier(.5,.5,0,1.75);
 }
