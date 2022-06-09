@@ -1,0 +1,187 @@
+- var linkTitle = "Clank!";
+- var articleTitle = "If you like Clank!: A Deck-Building Adventure, try these 3 games";
+- var articleType = "IF_YOU_LIKE";
+
+- rec1 = "Lost Ruins of Arnak";
+- rec2 = "Cubitos";
+- rec3 = "Dune: Imperium";
+- metadescription = 'If you love the deck building and push your luck in Clank!, these 3 games are great to try next for more card play with new mechanics.';
+
+doctype html
+include ../includes/_head.pug
+- index = titles.indexOf(linkTitle);
+
+body
+  include ../includes/_analytics.pug
+  .container
+    .navbar
+      include ../includes/_sidebar.pug
+    main
+      .content
+        .section
+          h1 #{articleTitle}
+          .top-bar.row
+            span.date June 9, 2022
+            include ../includes/_share.pug
+          img(src='../img/clank-deck-building-adventure.png' alt='Clank!: A Deck-Building Adventure board game in progress')
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/3533957/clank-deck-building-adventure") @The Innocent, on BGG
+          .game-overview
+            .row
+              .tag
+                .icon
+                  img(src='../img/people.svg' alt='complexity')
+                | 2-4 Players
+              .tag
+                .icon
+                  img(src='../img/time.svg' alt='play time')
+                | 45-90 Minutes
+              .tag
+                .icon
+                  img(src='../img/designer.svg' alt='designer')
+                | Designed by Paul Dennen
+            a.text-link(href="https://amzn.to/3NteqFc" rel= "nofollow" target="_blank") Buy #{titles[index]} on Amazon
+          include ../includes/_affiliate-disclaimer.pug
+          p
+            | Clank! is a fun deck building game that has a great dungeon crawling theme. It’s up to you whether to risk venturing deeper for more loot or to quickly rush back to the surface. Oh, and mind the dragon!
+            br
+            br
+            | These deck building board games also feature more mechanics in addition to card play. Adding new cards to your deck will always be at your strategy’s core, but you must consider the state of the board too!
+            br
+            .note
+              | #[strong Note:] If you just want more Clank!, #[a.text-link(href="https://amzn.to/3PwQmmw" rel= "nofollow" target="_blank") Clank! Legacy: Acquisitions Incorporated] is a campaign version of the game that takes you through 10 scenarios with new mechanics and objectives to strategize around.
+        .section(id=`${toID(rec1)}`)
+          h2 #{rec1}
+          img(src='../img/lost-ruins-of-arnak-recommendation.jpg'
+          alt='Lost Ruins of Arnak board game in progress')
+          .caption
+              | Photo credit:&nbsp;
+              a.text-link(href="https://boardgamegeek.com/image/6172049/lost-ruins-arnak") @zgabor, on BGG
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Similar Complexity
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 90-120 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Mín & Elwen
+          p
+            | Lost Ruins of Arnak is another fun deck building adventure where you explore an ancient jungle. You can add helpful cards to your deck, discover ruins, and research mysterious temples. It has a great theme and is fun for deck building newbies and veterans alike!
+            br
+            br
+            | In addition to deck building, Lost Ruins of Arnak has a fun worker placement board. You can send a worker to a site to gain its resources, but you can also discover a new site, opening it up to everyone in future rounds! This is a fun mechanic that makes the board constantly evolve throughout the game.
+            br
+            br
+            | There’s also a twist to buying cards in this game. Tool cards go to the BOTTOM of your deck instead of to discard, meaning you’ll draw it sooner! You can also use Artifact cards immediately after you buy them. These twists let you plan ahead in a fun way to pull off satisfying card combos.
+            br
+            br
+            | This game is very approachable and all of our friends have enjoyed it so far. It’s fun to figure out how to play efficiently, and the component quality and artwork are excellent!
+            br
+            br
+            a.text-link(href="https://amzn.to/3Lue0wS" rel= "nofollow" target="_blank") Buy #{rec1} on Amazon
+            br
+            .note
+              | #[strong Expansion:] We love the #[a.text-link(href="https://amzn.to/3NH3Smm" rel= "nofollow" target="_blank") Expedition Leaders expansion] because it adds 6 asymmetric player powers and starting decks. Once you’ve played the base game several times, this expansion makes the experience feel fresh all over again.
+        .section(id=`${toID(rec2)}`)
+          h2 #{rec2}
+          img(src='../img/cubitos-recommendation.jpg' alt='Cubitos board game player board view')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | Less Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 2-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 45-60 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by John D. Clair
+          p
+            | Cubitos is just pure fun - you race around a track by rolling tons of dice. You may think this is a completely luck-based game, but you’d be mistaken! There’s strategy in which dice you roll and how much you should push your luck, and it even uses deck-building mechanics.
+            br
+            br
+            | On your turn, you roll your dice and set aside any that turn face-up. You get to use face-up dice at the end of the round - you move along the track with movement symbols and buy new dice with money symbols. However, you need to decide when to stop rolling. If you ever roll all blanks, you bust!
+            br
+            br
+            | Dice you buy throughout the game have special abilities. Green shield dice help you avoid a bust, purple dinosaur dice help you move quickly, and the yellow Stinky Cheese lets you roll way more dice than normal! You can’t roll all of your dice each turn however - used dice go to Discard, and you must empty your Draw pile before “reshuffling!”
+            br
+            br
+            | This game is a guaranteed blast, and you won’t even care if you lose. Try Cubitos for some lighthearted fun!
+            br
+            br
+            a.text-link(href="https://amzn.to/3aMKV32" rel= "nofollow" target="_blank") Buy #{rec2} on Amazon
+        .section(id=`${toID(rec3)}`)
+          h2 #{rec3}
+          img(src='../img/dune-imperium-recommendation.jpg' alt='Dune: Imperium board game in progress')
+          .tags
+            .tag
+              .icon
+                img(src='../img/puzzle.svg' alt='complexity')
+              | More Complex
+            .tag
+              .icon
+                img(src='../img/people.svg' alt='player count')
+              | 1-4 Players
+            .tag
+              .icon
+                img(src='../img/time.svg' alt='play time')
+              | Playtime: 90-150 Minutes
+            .tag
+              .icon
+                img(src='../img/designer.svg' alt='designer')
+              | Designed by Paul Dennen
+          p
+            | Dune is another deckbuilding game by the same publisher as Clank!, this time set in the Dune universe. Building a deck in Dune feels similar to Clank!, but Dune is overall a more competitive and complex card game. It’s also one of our favorites!
+            br
+            br
+            | Cards can be used two ways in Dune. You can send an agent to a board space by playing a card with a matching tag (and trigger its Active ability), OR you can hold on to a card to use its Reveal ability on a later turn. Cards often have both strong Active and Reveal effects, so you have to decide how to use them!
+            br
+            br
+            | Dune also has more player interaction, and it features a race to 10 victory points rather than a race back to the surface. You gain points by increasing your Influence with factions, buying or playing certain cards, or winning combats. Combat happens every round, and there are many satisfying ways to outwit and overwhelm your opponents.
+            br
+            br
+            | Dune is an excellent choice if you want something that feels familiar to Clank! but with more strategic depth. It’s well themed and enjoyable even if you’re not a fan of the series!
+            br
+            br
+            a.text-link(href="https://amzn.to/3G5vlv0" rel= "nofollow" target="_blank") Buy #{rec3} on Amazon
+            br
+            .note
+              | #[strong Expansion:] #[a.text-link(href="https://amzn.to/3aFXDR0" rel= "nofollow" target="_blank") The Rise of Ix expansion] is awesome - it adds some more board spaces, new cards and card mechanics, and passive technologies to diversify your strategy. This is a great addition if you already love Dune!
+            br
+            br
+            include ../includes/_email-inline.pug
+        hr
+        .end-section
+          h2 Honorable Mentions
+          p.honor
+            | These games are also great and are good picks if you're looking for something lighter to play. We play these when we want a more relaxed deck building experience!
+          .honor
+            p
+              | #[strong Res Arcana] is a unique deck-building game where you draft your entire deck during setup! The 8 cards you choose will be the only ones you get to use throughout the game, so you’ve got to strategize from the start. Cards in Res Arcana have a cool magical theme, and they range from useful trinkets that generate resources to powerful Dragons that can attack your opponents. Your goal is to reach 10 points first, and you’ll be able to try a different strategy every game!
+            a.text-link(href="https://amzn.to/3yK9do3" rel= "nofollow" target="_blank") Buy Res Arcana on Amazon
+          .honor
+            p
+              | #[strong Fort] is a compact deck builder with a treehouse theme. On your turn, you play a kid card to get resources, score points, or activate some other ability. Other players can then play a card of their own to “follow the leader” and copy your card’s effect! This is a cool mechanic that increases player interaction and reduces downtime. There are many types of decks you can build, but any kid cards you don’t use on your turn go into your Yard, where other players can recruit them. You have to play with your friends if you want them to stick around! This is a neat option for a quick deck builder that still has a decent amount of strategy.
+            a.text-link(href="https://amzn.to/3Pz1M98" rel= "nofollow" target="_blank") Buy Fort on Amazon
+          .honor
+            p
+              | #[strong Super Motherload] is a deck-building game based on the classic flash game Motherload. If you’re looking for a deck-building game that plays well with 2 players, this is it! Like Clank!, you delve deep underground, but this time you’ll be searching for valuable minerals to buy better cards for your deck. You can take 2 actions on your turn, and these are Drilling, Bombing, and Drawing Cards. To collect minerals, you can drill through them using matching cards, or you can spend a Bomb token to clear a certain area. The awesome twist is that all tunnels are shared - you will need to think carefully to avoid setting your opponent up for a big play!
+            a.text-link(href="https://amzn.to/3wACDm8" rel= "nofollow" target="_blank") Buy Super Motherload on Amazon
+        include ../includes/_article-end.pug
+  include ../includes/_footer.pug
