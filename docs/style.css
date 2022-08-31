@@ -564,6 +564,9 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+.email-octopus-form.bound::after {
+  visibility: hidden;
+}
 .email-octopus-form-row {
   flex-grow: 1;
   width: 100%;
