@@ -1,6 +1,7 @@
 // self executing function here
 (function() {
   let links = document.querySelectorAll('.section-link');
+  let titles = document.querySelectorAll('.section-title');
   const footer = document.querySelector('footer');
   const navbar = document.querySelector('.navbar');
 
@@ -148,4 +149,24 @@
   // if (emailErrorMessage.innerHTML || emailSuccessMessage.innerHTML) {
   //   document.querySelector('.email-octopus-initial-message').style.visibility = 'hidden';
   // }
+
+  // Sidebar Search
+  let searchbarEl = document.querySelector('#searchbar');
+  searchbarEl.addEventListener("input", (e) => {
+    let text = e.target.value.toLowerCase();
+
+    for (var i = 0; i < titles.length; i++) {
+      // Skip active toc
+      if (titles[i].classList.contains('active')) continue;
+
+      let title = titles[i].innerText.toLowerCase();
+      if (title.indexOf(text) === -1) {
+        console.log("TITLE", titles[i], title);
+        titles[i].classList.add('hidden');
+      } else {
+        titles[i].classList.remove('hidden');
+      }
+    }
+  });
+
 })();

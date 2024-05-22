@@ -164,6 +164,18 @@ form::after {
   height: 20px;
 }
 
+#searchbar {
+  padding-left: 20px;
+  margin: 0 0 30px 0;
+  height: 32px;
+  width: 200px;
+  border: 2px solid #A68A87;
+}
+#searchbar:focus {
+  outline: none;
+  border-color: #FF5C00;
+}
+
 .navbar {
   font-family: 'Montserrat', sans-serif;
   position: fixed;
@@ -190,6 +202,9 @@ form::after {
 .navbar .links {
   display: flex;
   flex-direction: column;
+}
+.navbar .links .section-title.hidden {
+  display: none;
 }
 .navbar a {
   color: #A68A87;
